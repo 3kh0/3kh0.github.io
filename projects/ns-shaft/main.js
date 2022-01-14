@@ -3,7 +3,7 @@
  * source: https://github.com/3kh0/ns-shaft
  * made for modern web browsers
  */
-;~function(global) {
+~function(global) {
 	'use strict';
 	var Game = {};
 	global['Game'] = Game;
