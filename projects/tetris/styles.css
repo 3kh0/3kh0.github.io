@@ -30,7 +30,7 @@
 .menuLogo
 {
     width: 150px;
-    margin: 5 5;
+    margin: 5;
     text-align: center;
 }
 
@@ -97,7 +97,7 @@ body
 
 .aboutText
 {
-    margin: 5 5;
+    margin: 5;
     font-size: 16px;
     font-family: VT323;
     color: #008000;
@@ -245,7 +245,7 @@ body
     font-family: VT323;
     font-size:20px;
     position: absolute;
-    height: 0px; width: 200px;
+    height: 0; width: 200px;
     color: #008800;
     line-height: 100%;
     z-index: 2;

@@ -1111,7 +1111,7 @@ function cutImage(image, x, y, width, height) {
   ctx.drawImage(image, x, y, width, height, 0, 0, cut.width, cut.height)
   
   return cut
-};
+}
 
 /* Cut up into frame_size pieces and put them in frames[] */
 jaws.SpriteSheet = function(options) {
