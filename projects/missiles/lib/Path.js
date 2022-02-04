@@ -286,7 +286,7 @@ Path.prototype.parseData = function(d) {
                 case "z": this.segments.push(new RelativeClosePath(      params, this, previous )); break;
                 default:
                     throw new Error("Unsupported segment type: " + mode);
-            };
+            }
 
             // advance to the next unused token
             index += param_length;
