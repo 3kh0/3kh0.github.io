@@ -232,7 +232,7 @@ if (typeof document !== undef_type) {
 function Localize(key) {
     var string = '%' + key;
 	return string.toLocaleString();
-};
+}
 
 function LocalizeElement(className) {
     var element = document.getElementsByClassName(className);
