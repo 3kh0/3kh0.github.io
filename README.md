@@ -42,4 +42,4 @@ There are many ways to can help this project!
 
 © Echo, 2022. Unauthorized use and/or duplication of this material without permission from Echo is strictly prohibited. Excerpts and links may be used, provided that clear credit is given with a link to the original content.
 
-This code is licensed under the [Apache-2.0 License](https://github.com/3kh0/3kh0.github.io/blob/main/LICENSE.md). I ask you that you do not copy the code in the repo what-so-ever, I take time to build this and I do not need another person just yoinking all of my games for there site. If you have any questions please open a issue!
+This code is licensed under the [Apache-2.0 License](https://github.com/3kh0/3kh0.github.io/blob/main/LICENSE.md). I ask you that you do not copy the code in the repo what-so-ever, I take time to build this and I do not need another person just yoinking all of my games for their site. If you have any questions please open a issue!
