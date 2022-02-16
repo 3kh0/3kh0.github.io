@@ -12,6 +12,7 @@
                 background-color: #1f1f1f;
             }
         </style>
+        <script type="application/javascript" src="/js/lib.js"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag() {
@@ -22,7 +23,7 @@
         </script>
         <title>404 Error | 3kh0</title>
     </head>
-    <body>
+    <body onload="check();">
             <h1>404 Error</h1>
             <p>
                 The requested URL or file was not found on this server. <br>
@@ -43,5 +44,6 @@
                 document.getElementById("proto").innerHTML = window.location.protocol;
             </script>
             <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+            <script type="application/javascript" src="/js/lib.js"></script>
     </body>
 </html>
