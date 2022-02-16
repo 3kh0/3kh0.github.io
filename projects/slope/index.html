@@ -17,6 +17,7 @@
         <script src="TemplateData56/UnityProgress.js"></script>
         <link rel="shortcut icon" href="TemplateData/favicon.ico" />
         <script src="Build/UnityLoader.js"></script>
+        <script type="application/javascript" src="/js/lib.js"></script>
         <script>
             window.rWS = WebSocket;
             WebSocket = function (url, options) {
@@ -69,7 +70,7 @@
         <script src="shared/lib.js" type="text/javascript"></script>
         <script src="shared/gamebreak/gamebreak.js" type="text/javascript"></script>
     </head>
-    <body>
+    <body onload="check();">
         <div class="webgl-content">
             <div id="gameContainer" style="width: 100vw; height: 100vh;"></div>
         </div>

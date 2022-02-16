@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta charset="utf-8" />
-        <meta content="https://3kh0.github.io/idle-breakout" property="og:url" />
+        <meta content="https://3kh0.github.io/projects/idle-breakout" property="og:url" />
         <meta content="img/thumbnail.png" property="og:image" />
         <meta content="#000000" data-react-helmet="true" name="theme-color" />
         <meta name="title" content="3kh0.github.io" />
@@ -62,7 +62,8 @@
             }
         </style>
     </head>
-    <body>
+    <script type="application/javascript" src="/js/lib.js"></script>
+    <body onload="check();">
         <div align="center" class="gm4html5" id="gm4html5">
             <!-- Create the canvas element the game draws to -->
             <canvas id="canvas" width="1024" height="768">

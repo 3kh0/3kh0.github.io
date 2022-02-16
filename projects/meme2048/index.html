@@ -1,22 +1,140 @@
-<!doctype html><meta charset=utf-8><title>Meme 2048 | 3kh0</title>
-<link href=style/main.css rel=stylesheet><link rel="shortcut icon" href=favicon.ico>
-<link rel=apple-touch-icon href=meta/apple-touch-icon.png>
-<link rel=apple-touch-startup-image href=meta/apple-touch-startup-image-640x1096.png media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
-<link rel=apple-touch-startup-image href=meta/apple-touch-startup-image-640x920.png media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"><meta name=apple-mobile-web-app-capable content=yes>
-<meta name=apple-mobile-web-app-status-bar-style content=black><meta name=HandheldFriendly content=True>
-<meta name=MobileOptimized content=320><meta name=viewport content="width=device-width,target-densitydpi=160dpi,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
-<style>.tile-inner{background-position:center center!important;background-size:cover!important;background-repeat:no-repeat!important;text-indent:-999px;overflow:hidden}.tile.tile-2 .tile-inner{background-image:url(img/honey_badger.jpg)!important}.tile.tile-4 .tile-inner{background-image:url(img/tron_guy.jpg)!important}.tile.tile-8 .tile-inner{background-image:url(img/peanut_butter_jelly_time.gif)!important}.tile.tile-16 .tile-inner{background-image:url(img/numa_numa.gif)!important}.tile.tile-32 .tile-inner{background-image:url(img/dramatic_chipmunk.gif)!important}.tile.tile-64 .tile-inner{background-image:url(img/star_wars_kid.gif)!important}.tile.tile-128 .tile-inner{background-image:url(img/leave_britney_alone.jpg)!important}.tile.tile-256 .tile-inner{background-image:url(img/keyboard_cat.gif)!important}.tile.tile-512 .tile-inner{background-image:url(img/ceiling_cat.png)!important}.tile.tile-1024 .tile-inner{background-image:url(img/hello_my_future_girlfriend.jpg)!important}.tile.tile-2048 .tile-inner{background-image:url(img/dancing_baby.gif)!important}</style><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-98DP5VKS42"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Meme 2048 | 3kh0</title>
 
-  gtag('config', 'G-98DP5VKS42');
-</script>
-<div class=container><div class=heading><h1 class=title><marquee>Meme 2048</marquee></h1><div class=scores-container><div class=score-container>0</div><div class=best-container>0</div></div></div><div class=above-game>
-    <p class=game-intro><img src=img/hot.gif> Join the memes! <img src=img/hot.gif></p><a class=restart-button>New Game</a></div><div class=game-container><div class=game-message><p><div class=lower><a class=keep-playing-button>Keep going</a> <a class=retry-button>Try again</a></div></div>
-        <div class=grid-container><div class=grid-row><div class=grid-cell></div><div class=grid-cell></div><div class=grid-cell></div><div class=grid-cell></div></div><div class=grid-row><div class=grid-cell></div><div class=grid-cell></div><div class=grid-cell></div>
-        <div class=grid-cell></div></div>
-        <div class=grid-row>
-            <div class=grid-cell></div><div class=grid-cell></div><div class=grid-cell></div><div class=grid-cell></div></div><div class=grid-row><div class=grid-cell></div><div class=grid-cell></div><div class=grid-cell></div><div class=grid-cell></div></div></div><div class=tile-container></div></div><p class=game-explanation><strong class=important>How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same meme touch, they <strong>merge into one!</strong><hr><p>Original version created by <a href=http://gabrielecirulli.com target=_blank>Gabriele Cirulli.</a> Based on <a href=https://itunes.apple.com/us/app/1024!/id823499224 target=_blank>1024 by Veewo Studio</a> and conceptually similar to <a href=http://asherv.com/threes/ target=_blank>Threes by Asher Vollmer.</a><br><br>Remix by <a href=https://3kh0.github.io/ >Echo</a>! Enjoy!<br></div><script src=js/bind_polyfill.js></script><script src=js/classlist_polyfill.js></script><script src=js/animframe_polyfill.js></script><script src=js/keyboard_input_manager.js></script><script src=js/html_actuator.js></script><script src=js/grid.js></script><script src=js/tile.js></script><script src=js/local_storage_manager.js></script><script src=js/game_manager.js></script><script src=js/application.js></script>
+        <link href="style/main.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="apple-touch-icon" href="meta/apple-touch-icon.png" />
+        <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" />
+        <!-- iPhone 5+ -->
+        <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" />
+        <!-- iPhone, retina -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui" />
+
+        <!-- here is a list of all the memes! -->
+        <style>
+            .tile-inner {
+                background-position: center center !important;
+                background-size: cover !important;
+                background-repeat: no-repeat !important;
+                text-indent: -999px;
+                overflow: hidden;
+            }
+            .tile.tile-2 .tile-inner {
+                background-image: url("img/honey_badger.jpg") !important;
+            }
+            .tile.tile-4 .tile-inner {
+                background-image: url("img/tron_guy.jpg") !important;
+            }
+            .tile.tile-8 .tile-inner {
+                background-image: url("img/peanut_butter_jelly_time.gif") !important;
+            }
+            .tile.tile-16 .tile-inner {
+                background-image: url("img/numa_numa.gif") !important;
+            }
+            .tile.tile-32 .tile-inner {
+                background-image: url("img/dramatic_chipmunk.gif") !important;
+            }
+            .tile.tile-64 .tile-inner {
+                background-image: url("img/star_wars_kid.gif") !important;
+            }
+            .tile.tile-128 .tile-inner {
+                background-image: url("img/leave_britney_alone.jpg") !important;
+            }
+            .tile.tile-256 .tile-inner {
+                background-image: url("img/keyboard_cat.gif") !important;
+            }
+            .tile.tile-512 .tile-inner {
+                background-image: url("img/ceiling_cat.png") !important;
+            }
+            .tile.tile-1024 .tile-inner {
+                background-image: url("img/hello_my_future_girlfriend.jpg") !important;
+            }
+            .tile.tile-2048 .tile-inner {
+                background-image: url("img/dancing_baby.gif") !important;
+            }
+        </style>
+    </head>
+    <script type="application/javascript" src="/js/lib.js"></script>
+    <body onload="check();">
+        <div class="container">
+            <div class="heading">
+                <h1 class="title"><marquee>Meme 2048</marquee></h1>
+                <div class="scores-container">
+                    <div class="score-container">0</div>
+                    <div class="best-container">0</div>
+                </div>
+            </div>
+
+            <div class="above-game">
+                <p class="game-intro"><img src="img/hot.gif" /> Join the memes! <img src="img/hot.gif" /></p>
+                <a class="restart-button">New Game</a>
+            </div>
+
+            <div class="game-container">
+                <div class="game-message">
+                    <p></p>
+                    <div class="lower">
+                        <a class="keep-playing-button">Keep going</a>
+                        <a class="retry-button">Try again</a>
+                    </div>
+                </div>
+
+                <div class="grid-container">
+                    <div class="grid-row">
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                    </div>
+                    <div class="grid-row">
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                    </div>
+                    <div class="grid-row">
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                    </div>
+                    <div class="grid-row">
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                    </div>
+                </div>
+
+                <div class="tile-container"></div>
+            </div>
+
+            <p class="game-explanation"><strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same meme touch, they <strong>merge into one!</strong></p>
+            <hr />
+            <p>
+                Original version created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and
+                conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a><br />
+                <br />
+                Remix by <a href="https://3kh0.github.io/">Echo</a>! Enjoy!<br />
+            </p>
+        </div>
+        <script src="js/bind_polyfill.js"></script>
+        <script src="js/classlist_polyfill.js"></script>
+        <script src="js/animframe_polyfill.js"></script>
+        <script src="js/keyboard_input_manager.js"></script>
+        <script src="js/html_actuator.js"></script>
+        <script src="js/grid.js"></script>
+        <script src="js/tile.js"></script>
+        <script src="js/local_storage_manager.js"></script>
+        <script src="js/game_manager.js"></script>
+        <script src="js/application.js"></script>
+    </body>
+</html>

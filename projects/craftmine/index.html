@@ -13,6 +13,7 @@
 
         <!-- Chrome for Android web app tags -->
         <meta name="mobile-web-app-capable" content="yes" />
+        <script type="application/javascript" src="/js/lib.js"></script>
 
         <!-- All margins and padding must be zero for the canvas to fill the screen. -->
         <style type="text/css">
@@ -36,7 +37,7 @@
         </style>
     </head>
 
-    <body>
+    <body onload="check();">
         <script>
             // Issue a warning if trying to preview an exported project on disk.
             (function () {

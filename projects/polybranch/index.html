@@ -70,6 +70,7 @@
             bindJavascript();
         </script>
         <script src="js/script.js" type="text/javascript"></script>
+        <script type="application/javascript" src="/js/lib.js"></script>
         <script type="text/javascript">
             // convenience function to get the id attribute of generated sketch html element
             function getProcessingSketchId() {
@@ -77,7 +78,7 @@
             }
         </script>
     </head>
-    <body>
+    <body onload="check();">
         <div id="content">
             <div id="game-wrapper">
                 <canvas id="polybranch" data-processing-sources="polybranch.pjs" width="800" height="800">

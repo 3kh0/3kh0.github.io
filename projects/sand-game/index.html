@@ -1,1 +1,97 @@
-<!doctype html><html lang=en-US><link rel=stylesheet href=styles.css media=screen><title>Sand Game</title><meta name=keywords content="sand, falling, game"><meta name=description content="Project Sand: A modern version of the classic Hell of Sand Falling Game"><meta name=subject content="Project Sand"><meta charset=UTF-8><meta name=google content=notranslate><link rel=icon href=assets/favicon.ico type=image/x-icon><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1"><script async src="https://www.googletagmanager.com/gtag/js?id=G-98DP5VKS42"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-98DP5VKS42")</script><div class=wrapper id=gameWrapper><div id=titleWrapper><h1 class=title>Sand Game v1.2</h1><div class=subheader><div class=column-left><a href=https://github.com/3kh0/sand-game target=_blank>Source Code</a></div><div class=column-center>By: 3kh0 and retronbv</div><div class=column-right><a href=/ >Website</a></div></div></div><br><canvas id=mainCanvas>Your browser doesn't support HTML5 canvas. :(</canvas><div id=menuWrapper><table id=elementTable></table><div id=optionsCol1 class=optionsCol><div id=penSizeDiv><label for=pensize>Pen Size</label> <select id=pensize></select></div><div><select id=spigot1Type class=spigotType></select> <select id=spigot1Size></select></div><div><select id=spigot2Type class=spigotType></select> <select id=spigot2Size></select></div><div><select id=spigot3Type class=spigotType></select> <select id=spigot3Size></select></div><div><select id=spigot4Type class=spigotType></select> <select id=spigot4Size></select></div></div><div id=optionsCol2 class=optionsCol><div><label for=overwriteCheckbox>Overwrite</label> <input type=checkbox id=overwriteCheckbox></div><div id=speedSliderDiv><label for=speedSlider>Speed</label> <input type=range id=speedSlider></div><div class=optionButtonContainer><input id=saveButton class=optionButton type=button value=Save> <input id=loadButton class=optionButton type=button value=Load></div><div id=clearButtonDiv class=optionButtonContainer><input id=clearButton class=optionButton type=button value=Clear></div></div><div id=fps-counter></div></div></div><br><script src=scripts/util.js></script><script src=scripts/canvasConfig.js></script><script src=scripts/cursor.js></script><script src=scripts/particles.js></script><script src=scripts/elements.js></script><script src=scripts/spigots.js></script><script src=scripts/menu.js></script><script src=scripts/game.js></script>
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+        <title>Sand Game</title>
+        <meta name="keywords" content="sand, falling, game" />
+        <meta name="description" content="Project Sand: A modern version of the classic Hell of Sand Falling Game" />
+        <meta name="subject" content="Project Sand" />
+        <meta charset="UTF-8" />
+        <meta name="google" content="notranslate" />
+        <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <script type="application/javascript" src="/js/lib.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-98DP5VKS42"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-98DP5VKS42");
+        </script>
+    </head>
+    <body onload="check();">
+        <div class="wrapper" id="gameWrapper">
+            <div id="titleWrapper">
+                <h1 class="title">Sand Game v1.2</h1>
+                <div class="subheader">
+                    <div class="column-left">
+                        <a href="https://github.com/3kh0/sand-game" target="_blank">Source Code</a>
+                    </div>
+                    <div class="column-center">
+                        By: 3kh0 and retronbv
+                    </div>
+                    <div class="column-right">
+                        <a href="/">Website</a>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <canvas id="mainCanvas">Your browser doesn't support HTML5 canvas. :(</canvas>
+            <div id="menuWrapper">
+                <table id="elementTable"></table>
+                <div id="optionsCol1" class="optionsCol">
+                    <div id="penSizeDiv">
+                        <label for="pensize">Pen Size</label>
+                        <select id="pensize"></select>
+                    </div>
+                    <div>
+                        <select id="spigot1Type" class="spigotType"></select>
+                        <select id="spigot1Size"></select>
+                    </div>
+                    <div>
+                        <select id="spigot2Type" class="spigotType"></select>
+                        <select id="spigot2Size"></select>
+                    </div>
+                    <div>
+                        <select id="spigot3Type" class="spigotType"></select>
+                        <select id="spigot3Size"></select>
+                    </div>
+                    <div>
+                        <select id="spigot4Type" class="spigotType"></select>
+                        <select id="spigot4Size"></select>
+                    </div>
+                </div>
+                <div id="optionsCol2" class="optionsCol">
+                    <div>
+                        <label for="overwriteCheckbox">Overwrite</label>
+                        <input type="checkbox" id="overwriteCheckbox" />
+                    </div>
+                    <div id="speedSliderDiv">
+                        <label for="speedSlider">Speed</label>
+                        <input type="range" id="speedSlider" />
+                    </div>
+                    <div class="optionButtonContainer">
+                        <input id="saveButton" class="optionButton" type="button" value="Save" />
+                        <input id="loadButton" class="optionButton" type="button" value="Load" />
+                    </div>
+                    <div id="clearButtonDiv" class="optionButtonContainer">
+                        <input id="clearButton" class="optionButton" type="button" value="Clear" />
+                    </div>
+                </div>
+                <div id="fps-counter"></div>
+            </div>
+        </div>
+        <br />
+        <script type="text/javascript" src="scripts/util.js"></script>
+        <script type="text/javascript" src="scripts/canvasConfig.js"></script>
+        <script type="text/javascript" src="scripts/cursor.js"></script>
+        <script type="text/javascript" src="scripts/particles.js"></script>
+        <script type="text/javascript" src="scripts/elements.js"></script>
+        <script type="text/javascript" src="scripts/spigots.js"></script>
+        <script type="text/javascript" src="scripts/menu.js"></script>
+        <script type="text/javascript" src="scripts/game.js"></script>
+    </body>
+</html>

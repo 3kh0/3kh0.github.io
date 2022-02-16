@@ -13,7 +13,7 @@ function check() {
         }
     } else {
         // this will run if the script is run on a domain different to 3kh0.github.io
-        document.write("<h1>Hello gamers! Please go <a href='https://3kh0.github.io/'>here</a> for better games.</h1><h3>Site-owners, if you are confused on why this happened, please read <a href='https://github.com/3kh0/3kh0.github.io/wiki/Note-to-people-stealing-my-games'>this</a>.</h3>");
+        document.write("<h1>Hello gamers! Please go <a href='https://3kh0.github.io/'>here</a> for better games.</h1><h3>Site-owners, if you are confused on why this happened, please read <a href='https://github.com/3kh0/3kh0.github.io/wiki/Note-to-people-stealing-my-games'>this</a>.</h3><p>Was this site supposed to work? <a href='https://github.com/3kh0/3kh0.github.io/issues'>Please report it</a>!</p>");
         console.log("Sorry, but this code is copyrighted so you can not just yoink it! Want to have this game on your site? Read this: https://github.com/3kh0/3kh0.github.io/wiki/Note-to-people-stealing-my-games")
     }
     console.log("The check is complete! You can use check(); to run it again if you wish.")

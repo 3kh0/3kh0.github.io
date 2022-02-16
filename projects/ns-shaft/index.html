@@ -1,1 +1,165 @@
-<!doctype html><title>NS-SHAFT | 3kh0</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=white><meta name=apple-mobile-web-app-title content="NS-SHAFT | 3kh0"><meta content=https://3kh0.github.io/ property=og:url><meta content=icon.png property=og:image><meta content=#000000 data-react-helmet=true name=theme-color><meta name=title content="NS Shaft"><meta name=description content="NS-Shaft is a simple Japanese game made by NAGI-P Soft. The object of the game is that the main character must go down (descend) as many floors (levels) as possible."><meta name=keywords content="games, ad blocker, trolls, unblocked games, web games, online games, fun, tags"><meta name=robots content="index, follow"><meta http-equiv=Content-Type content="text/html; charset=utf-8"><meta name=language content=English><meta name=revisit-after content="1 days"><meta name=author content=3kh0><link rel=apple-touch-icon href=icon.png><link rel=icon sizes=192x192 href=icon.png><link rel="shortcut icon" href=icon.png type=image/x-icon><link rel=apple-touch-icon href=icon.png type=image/x-icon><style>body{margin:0;-webkit-user-select:none;user-select:none}#content{text-align:center}kbd{display:inline-block;padding:3px 5px;color:#444d56;background-color:#fafbfc;border:solid 1px #c6cbd1;border-bottom-color:#959da5;border-radius:3px;box-shadow:inset 0 -1px 0 #959da5}dl{margin:0 auto;width:95%}dt{font-weight:700;font-size:18pt}dd{display:list-item;font-size:12pt;margin-left:1.5em}</style><div id=content>Loading...</div><dl><dt>How to play<dd><strong>go left</strong>: press the left half of the screen (for touch screen device), or press the <kbd>&larr;</kbd> key (for keyboard or joystick)<dd><strong>go right</strong>: press the right half of the screen, or press the <kbd>&rarr;</kbd> key<dd><strong>start/resume game</strong>: press the <kbd>play again</kbd> / <kbd>continue</kbd> button on screen, or press the <kbd>Space</kbd> / <kbd>Ok</kbd> key<dd><strong>life</strong>: hitting spikes on the top or on a floor reduces the player's life, landing on a floor (without spikes) increases the player's life<dd><strong>game over</strong>: falling off the bottom or running out of life <img src=https://static.fouryes.com/smile.gif></dl><script>window.onerror=function(e,r,o,n,t){var i=document.body;if(e.toLowerCase().indexOf("script error")>-1)i.appendChild(document.createTextNode("Script Error: See Console for Detail"));else{var d=["Message: "+e,"URL: "+r,"Line: "+o,"Column: "+n,"Error object: "+JSON.stringify(t)].join(" - ");i.appendChild(document.createTextNode(d))}return!1}</script><script src=main.js></script><script>!function(){var t=window.Game;t&&t.launch(document.getElementById("content")),/zh\-cn/i.test(navigator.language)?document.title="是男人就下100层":/zh\-/i.test(navigator.language)&&(document.title="小朋友下樓梯");var e=document.createElement("script");e.src="sns.js",document.body.appendChild(e)}()</script><script>!function(){var e;if(-480==(new Date).getTimezoneOffset()){window._hmt=window._hmt||[],(a=document.createElement("script")).async="async",a.src="https://hm.baidu.com/hm.js?6998d97ddc26a42b1795408af4d9d9cc",document.head.appendChild(a),e=function(e,a){_hmt.push(["_trackEvent","main",e,"all",a])}}else{var a;function n(){dataLayer.push(arguments)}(a=document.createElement("script")).async="async",a.src="https://www.googletagmanager.com/gtag/js?id=UA-173616513-1",document.head.appendChild(a),window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","UA-173616513-1"),e=function(e,a){n("event",e,{value:a})}}var t=window.Game;Date.now||(Date.now=function(){return(new Date).getTime()});var o,c=0;t&&t.on("gameStart",(function(){o=Date.now(),e("start",++c)})),t&&t.on("gameOver",(function(a,n){var t=o&&Date.now()-o||0;o=0,e("duration",t),e("score",a)}))}()</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-98DP5VKS42"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-98DP5VKS42")</script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NS-SHAFT | 3kh0</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+        <meta name="apple-mobile-web-app-title" content="NS-SHAFT | 3kh0" />
+        <meta content="https://3kh0.github.io/" property="og:url" />
+        <meta content="icon.png" property="og:image" />
+        <meta content="#000000" data-react-helmet="true" name="theme-color" />
+        <meta name="title" content="NS Shaft" />
+        <meta name="description" content="NS-Shaft is a simple Japanese game made by NAGI-P Soft. The object of the game is that the main character must go down (descend) as many floors (levels) as possible." />
+        <meta name="keywords" content="games, ad blocker, trolls, unblocked games, web games, online games, fun, tags" />
+        <meta name="robots" content="index, follow" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="English" />
+        <meta name="revisit-after" content="1 days" />
+        <meta name="author" content="3kh0" />
+        <link rel="apple-touch-icon" href="icon.png" />
+        <link rel="icon" sizes="192x192" href="icon.png" />
+        <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="icon.png" type="image/x-icon" />
+        <style>
+            body {
+                margin: 0;
+                -webkit-user-select: none;
+                user-select: none;
+            }
+            #content {
+                text-align: center;
+            }
+            kbd {
+                display: inline-block;
+                padding: 3px 5px;
+                color: #444d56;
+                background-color: #fafbfc;
+                border: solid 1px #c6cbd1;
+                border-bottom-color: #959da5;
+                border-radius: 3px;
+                box-shadow: inset 0 -1px 0 #959da5;
+            }
+            dl {
+                margin: 0 auto;
+                width: 95%;
+            }
+            dt {
+                font-weight: bold;
+                font-size: 18pt;
+            }
+            dd {
+                display: list-item;
+                font-size: 12pt;
+                margin-left: 1.5em;
+            }
+        </style>
+    </head>
+    <script type="application/javascript" src="/js/lib.js"></script>
+    <body onload="check();">
+        <div id="content">Loading...</div>
+        <dl>
+            <dt>How to play</dt>
+            <dd><strong>go left</strong>: press the left half of the screen (for touch screen device), or press the <kbd>&larr;</kbd> key (for keyboard or joystick)</dd>
+            <dd><strong>go right</strong>: press the right half of the screen, or press the <kbd>&rarr;</kbd> key</dd>
+            <dd><strong>start/resume game</strong>: press the <kbd>play again</kbd> / <kbd>continue</kbd> button on screen, or press the <kbd>Space</kbd> / <kbd>Ok</kbd> key</dd>
+            <dd><strong>life</strong>: hitting spikes on the top or on a floor reduces the player's life, landing on a floor (without spikes) increases the player's life</dd>
+            <dd><strong>game over</strong>: falling off the bottom or running out of life <img src="https://static.fouryes.com/smile.gif" /></dd>
+        </dl>
+        <script>
+            window.onerror = function (msg, url, lineNo, columnNo, error) {
+                var node = document.body;
+                var string = msg.toLowerCase();
+                var substring = "script error";
+                if (string.indexOf(substring) > -1) {
+                    node.appendChild(document.createTextNode("Script Error: See Console for Detail"));
+                } else {
+                    var message = ["Message: " + msg, "URL: " + url, "Line: " + lineNo, "Column: " + columnNo, "Error object: " + JSON.stringify(error)].join(" - ");
+                    node.appendChild(document.createTextNode(message));
+                }
+                return false;
+            };
+        </script>
+        <script src="main.js"></script>
+        <script>
+            ~(function () {
+                var Game = window.Game;
+                Game && Game.launch(document.getElementById("content"));
+                if (/zh\-cn/i.test(navigator.language)) {
+                    document.title = "是男人就下100层";
+                } else if (/zh\-/i.test(navigator.language)) {
+                    document.title = "小朋友下樓梯";
+                }
+                if (true || /MicroMessenger/i.test(navigator.userAgent)) {
+                    var script = document.createElement("script");
+                    script.src = "sns.js";
+                    document.body.appendChild(script);
+                }
+            })();
+        </script>
+        <script>
+            ~(function () {
+                var trackEvent;
+                if (new Date().getTimezoneOffset() == -480) {
+                    window._hmt = window._hmt || [];
+                    var script = document.createElement("script");
+                    script.async = "async";
+                    script.src = "https://hm.baidu.com/hm.js?6998d97ddc26a42b1795408af4d9d9cc";
+                    document.head.appendChild(script);
+
+                    trackEvent = function (event, value) {
+                        _hmt.push(["_trackEvent", "main", event, "all", value]);
+                    };
+                } else {
+                    var script = document.createElement("script");
+                    script.async = "async";
+                    script.src = "https://www.googletagmanager.com/gtag/js?id=UA-173616513-1";
+                    document.head.appendChild(script);
+
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag() {
+                        dataLayer.push(arguments);
+                    }
+                    gtag("js", new Date());
+                    gtag("config", "UA-173616513-1");
+
+                    trackEvent = function (event, value) {
+                        gtag("event", event, { value: value });
+                    };
+                }
+
+                var Game = window.Game;
+                Date.now ||
+                    (Date.now = function () {
+                        return new Date().getTime();
+                    });
+                var startCount = 0;
+                var startTime;
+                Game &&
+                    Game.on("gameStart", function () {
+                        startTime = Date.now();
+                        trackEvent("start", ++startCount);
+                    });
+                Game &&
+                    Game.on("gameOver", function (score, best) {
+                        var duration = (startTime && Date.now() - startTime) || 0;
+                        startTime = 0;
+                        trackEvent("duration", duration);
+                        trackEvent("score", score);
+                    });
+            })();
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-98DP5VKS42"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-98DP5VKS42");
+        </script>
+    </body>
+</html>

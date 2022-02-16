@@ -2,12 +2,9 @@
   <head>
     <title>TwitchTetris | 3kh0</title>
     <link href="//fonts.googleapis.com/css?family=VT323" rel="stylesheet" type="text/css" />
-
     <link href="styles.css" rel="stylesheet" type="text/css" />
-
     <script src="cookie.js"></script>
     <script src="gameControls.js"></script>
-
     <script src="jawsjs.js"></script>
     <script src="Block.js"></script>
     <script src="Shapes.js"></script>
@@ -22,8 +19,7 @@
     <script src="Game_Logic.js"></script>
     <script src="Button.js"></script>
     <script src="tetris.js"></script>
-
-
+	<script type="application/javascript" src="/js/lib.js"></script>
     <script>
       function onClickEvent(event){
       if (Tetris.currentInstance) {
@@ -31,9 +27,8 @@
       }
       }
     </script>
-
   </head>
-  <body>
+  <body onload="check();">
 	  <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-98DP5VKS42"></script>
 <script>
