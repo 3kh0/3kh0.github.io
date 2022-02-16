@@ -20,7 +20,7 @@
 		this.f = 0;
 		this.g = 0;
 		this.h = 0;
-	};
+	}
 	
 	var nodeCache = [];			// for recycling nodes
 	
@@ -40,19 +40,19 @@
 		ret.g = 0;
 		ret.h = 0;
 		return ret;
-	};
+	}
 	
 	function freeNode(n)
 	{
 		if (nodeCache.length < 64000)
 			nodeCache.push(n);
-	};
+	}
 	
 	function resultNode(x_, y_)
 	{
 		this.x = x_ || 0;
 		this.y = y_ || 0;
-	};
+	}
 	
 	var resultNodeCache = [];			// for recycling resultNodes
 	
@@ -62,13 +62,13 @@
 			return resultNodeCache.pop();
 		else
 			return new resultNode(0, 0);
-	};
+	}
 	
 	function freeResultNode(n)
 	{
 		if (resultNodeCache.length < 10000)
 			resultNodeCache.push(n);
-	};
+	}
 	
 	var workersSupported = (typeof Worker !== "undefined");
 	var isInWebWorker = (typeof document === "undefined");		// no DOM in a worker
@@ -178,7 +178,7 @@
 			
 			this.worker.postMessage(null);
 		}
-	};
+	}
 	
 	pathfinder.prototype.init = function (hcells_, vcells_, data_, diagonals_)
 	{
@@ -572,7 +572,7 @@
 	function quickAbs(x)
 	{
 		return x < 0 ? -x : x;
-	};
+	}
 	
 	pathfinder.prototype.estimateH = function (x_, y_)
 	{
