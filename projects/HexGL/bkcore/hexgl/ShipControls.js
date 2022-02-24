@@ -266,7 +266,7 @@ bkcore.hexgl.ShipControls = function(ctx)
 			case 68: /*D*/self.key.rtrigger = true; break;
 			case 69: /*E*/self.key.rtrigger = true; break;
 		}
-	};
+	}
 
 	function onKeyUp(event)
 	{
@@ -286,7 +286,7 @@ bkcore.hexgl.ShipControls = function(ctx)
 			case 68: /*D*/self.key.rtrigger = false; break;
 			case 69: /*E*/self.key.rtrigger = false; break;
 		}
-	};
+	}
 
 	domElement.addEventListener('keydown', onKeyDown, false);
 	domElement.addEventListener('keyup', onKeyUp, false);
