@@ -1,0 +1,32 @@
+<font>
+  <info aa="1" bold="0" charset="" face="NumsBank" italic="0" outline="0" padding="2,2,2,2" size="41" smooth="1" spacing="0,0" stretchH="100" unicode=""/>
+  <common base="37" lineHeight="41" packed="0" pages="1" scaleH="498" scaleW="79"/>
+  <pages>
+    <page file="NumsBank.png" id="0"/>
+  </pages>
+  <chars count="22">
+    <char chnl="15" height="33" id="48" page="0" width="29" x="2017" xadvance="30" xoffset="1" y="1617" yoffset="4"/>
+    <char chnl="15" height="32" id="49" page="0" width="20" x="943" xadvance="21" xoffset="1" y="1931" yoffset="5"/>
+    <char chnl="15" height="33" id="50" page="0" width="26" x="1920" xadvance="27" xoffset="0" y="1867" yoffset="4"/>
+    <char chnl="15" height="33" id="51" page="0" width="25" x="549" xadvance="26" xoffset="1" y="1600" yoffset="4"/>
+    <char chnl="15" height="32" id="52" page="0" width="27" x="1525" xadvance="28" xoffset="1" y="1867" yoffset="5"/>
+    <char chnl="15" height="33" id="53" page="0" width="26" x="1948" xadvance="27" xoffset="1" y="1867" yoffset="5"/>
+    <char chnl="15" height="33" id="54" page="0" width="28" x="1373" xadvance="28" xoffset="1" y="1857" yoffset="4"/>
+    <char chnl="15" height="32" id="55" page="0" width="26" x="1488" xadvance="27" xoffset="0" y="1870" yoffset="5"/>
+    <char chnl="15" height="33" id="56" page="0" width="28" x="172" xadvance="29" xoffset="0" y="1860" yoffset="4"/>
+    <char chnl="15" height="33" id="57" page="0" width="28" x="202" xadvance="28" xoffset="0" y="1860" yoffset="4"/>
+    <char chnl="15" height="7" id="46" page="0" width="7" x="1320" xadvance="10" xoffset="2" y="1587" yoffset="30"/>
+    <char chnl="15" height="21" id="43" page="0" width="21" x="1515" xadvance="24" xoffset="2" y="1963" yoffset="13"/>
+    <char chnl="15" height="7" id="45" page="0" width="14" x="549" xadvance="16" xoffset="1" y="1635" yoffset="22"/>
+    <char chnl="15" height="15" id="42" page="0" width="16" x="1880" xadvance="17" xoffset="1" y="2006" yoffset="5"/>
+    <char chnl="15" height="41" id="47" page="0" width="19" x="1531" xadvance="17" xoffset="-1" y="1722" yoffset="2"/>
+    <char chnl="15" height="46" id="40" page="0" width="14" x="1474" xadvance="15" xoffset="1" y="1724" yoffset="0"/>
+    <char chnl="15" height="46" id="41" page="0" width="14" x="2032" xadvance="15" xoffset="0" y="629" yoffset="0"/>
+    <char chnl="15" height="49" id="91" page="0" width="12" x="576" xadvance="13" xoffset="2" y="1528" yoffset="0"/>
+    <char chnl="15" height="49" id="93" page="0" width="12" x="1320" xadvance="13" xoffset="0" y="1536" yoffset="0"/>
+    <char chnl="15" height="21" id="60" page="0" width="18" x="1125" xadvance="20" xoffset="1" y="1967" yoffset="13"/>
+    <char chnl="15" height="17" id="61" page="0" width="17" x="68" xadvance="20" xoffset="2" y="1990" yoffset="14"/>
+    <char chnl="15" height="21" id="62" page="0" width="18" x="1236" xadvance="20" xoffset="2" y="1968" yoffset="13"/>
+    <char chnl="15" height="1" id="32" page="0" width="1" x="2032" xadvance="12" xoffset="2" y="307" yoffset="13"/>
+  </chars>
+</font>

@@ -1,0 +1,106 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <!-- All credit to bkcore to making this game, he is the true legend! -->
+    <title>HexGL | 3kh0</title>
+    <meta charset="utf-8">
+    <meta name="description" content="HexGL is a futuristic racing game built by Thibaut Despoulain (BKcore) using HTML5, Javascript and WebGL. Come challenge your friends on this fast-paced 3D game!">
+    <meta property="og:title" content="HexGL, the HTML5 futuristic racing game." />
+    <meta property="og:type" content="game" />
+    <meta property="og:url" content="http://hexgl.bkcore.com/" />
+    <meta property="og:image" content="http://hexgl.bkcore.com/image.png" />
+    <meta property="og:site_name" content="HexGL by BKcore" />
+    <meta property="fb:admins" content="1482017639" />
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="shortcut icon" href="icon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/multi.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8">
+    <style>
+      body {
+        padding:0;
+        margin:0;
+      }
+      canvas { pointer-events:none; width: 100%;}
+      #overlay{
+        position: absolute;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-98DP5VKS42"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-98DP5VKS42');
+    </script>
+  </head>
+  <body>
+    <div id="step-1">
+      <div id="global"></div>
+      <div id="title">
+      </div>
+      <div id="menucontainer">
+        <div id="menu">
+          <div id="start">Start</div>
+          <div id="s-controlType">Controls: Keyboard</div>
+          <div id="s-quality">Quality: High</div>
+          <div id="s-hud">HUD: On</div>
+          <div id="s-godmode" style="display: none">Godmode: Off</div>
+        </div>
+      </div>
+    </div>
+    <div id="step-2" style="display: none">
+      <div id="ctrl-help">Click/Touch to continue.</div>
+    </div>
+    <div id="step-3" style="display: none">
+      <div id="progressbar"></div>
+    </div>
+    <div id="step-4" style="display: none">
+      <div id="overlay"></div>
+      <div id="main"></div>
+    </div>
+    <div id="step-5" style="display: none">
+      <div id="time"></div>
+      <div id="ctrl-help">Click/Touch to continue.</div>
+    </div>
+
+    <div id="leapinfo" style="display: none"></div>
+
+    <script src="libs/leap-0.4.1.min.js"></script>
+    <script src="libs/Three.dev.js"></script>
+    <script src="libs/ShaderExtras.js"></script>
+    <script src="libs/postprocessing/EffectComposer.js"></script>
+    <script src="libs/postprocessing/RenderPass.js"></script>
+    <script src="libs/postprocessing/BloomPass.js"></script>
+    <script src="libs/postprocessing/ShaderPass.js"></script>
+    <script src="libs/postprocessing/MaskPass.js"></script>
+    <script src="libs/Detector.js"></script>
+    <script src="libs/Stats.js"></script>
+    <script src="libs/DAT.GUI.min.js"></script>
+    <script src="bkcore.coffee/controllers/TouchController.js"></script>
+    <script src="bkcore.coffee/controllers/OrientationController.js"></script>
+    <script src="bkcore.coffee/controllers/GamepadController.js"></script>
+    <script src="bkcore.coffee/Timer.js"></script>
+    <script src="bkcore.coffee/ImageData.js"></script>
+    <script src="bkcore.coffee/Utils.js"></script>
+    <script src="bkcore/threejs/RenderManager.js"></script>
+    <script src="bkcore/threejs/Shaders.js"></script>
+    <script src="bkcore/threejs/Particles.js"></script>
+    <script src="bkcore/threejs/Loader.js"></script>
+    <script src="bkcore/Audio.js"></script>
+    <script src="bkcore/hexgl/HUD.js"></script>
+    <script src="bkcore/hexgl/RaceData.js"></script>
+    <script src="bkcore/hexgl/ShipControls.js"></script>
+    <script src="bkcore/hexgl/ShipEffects.js"></script>
+    <script src="bkcore/hexgl/CameraChase.js"></script>
+    <script src="bkcore/hexgl/Gameplay.js"></script>
+    <script src="bkcore/hexgl/tracks/Cityscape.js"></script>
+    <script src="bkcore/hexgl/HexGL.js"></script>
+    <script src="launch.js"></script>
+  </body>
+</html>
