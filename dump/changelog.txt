@@ -6,6 +6,36 @@
 ░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░╚══════╝  ╚══════╝░╚════╝░░╚═════╝░
 
 Here is where I will post updates on when a new game is added or something changed. Besure to check back often for any sneakpeaks or other goodies! If I can I will try to setup a RSS feed for all of those who use that. Coming soon!
+
+NOTE: Make sure you refresh the page! Sometimes you will not get the lastest update!
+
+------------------------------------------------------------
+Feb, 24
+So yeah, today I brought my home computer to school. It is a gaming laptop but not that big. Hopefully my mom does not notice :)
++ Added Cubefield
++ Added Doodle Jump
++ Added HexGL
++ Added Flappy 2048 (hardest game ever)
+^ Updated cookie clicker from v2.021 to v2.031
+------------------------------------------------------------
+Feb, 23
++ Added Push your luck, suggestion by nicolasog12!
+------------------------------------------------------------
+Feb, 22
+Happy TWOsday! Haha
++ Added Vex 4 (thx Piplup! :) again)
++ Added Vex 3
+^ Add back tetris icon for project menu (thx u4pak!)
+------------------------------------------------------------
+Feb, 21
++ Added Cut the rope (thx Piplup! :)
++ Added Cut the rope: Time Travel
++ Added Zombs Royale
++ Added Vex 5
++ Added people.txt (https://3kh0.github.io/dump/people.txt)
+^ Revamp the comment box, will reenable soon-ish
+^ Fixed issue of Tetris not working.
+^ Updated green text (again)
 ------------------------------------------------------------
 Feb, 16
 + Added Tank Trouble 2

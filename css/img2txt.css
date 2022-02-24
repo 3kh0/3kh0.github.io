@@ -1,0 +1,32 @@
+a:visited {
+    color: blue;
+}
+.header {
+    border: 16px solid DodgerBlue;
+    border-radius: 16px;
+}
+.text1 {
+    font-size: 50px;
+}
+.line {
+    border-radius: 4px;
+    border: 4px solid DodgerBlue;
+}
+.img {
+    width: 225px;
+    height: 200px;
+}
+.img2 {
+    padding-left: 20%;
+    width: 225px;
+    height: 200px;
+}
+.img3 {
+    padding-left: 20%;
+    width: 225px;
+    height: 200px;
+}
+.text1 {
+    text-align: center;
+    padding-left: 2%;
+}

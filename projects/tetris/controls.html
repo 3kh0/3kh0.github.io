@@ -1,24 +1,18 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>TwitchTetris | 3kh0</title>
     <link href="//fonts.googleapis.com/css?family=VT323" rel="stylesheet" type="text/css" />
+    
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <link href="controlsStyles.css" rel="stylesheet" type="text/css" />
+
     <script src="jawsjs.js" type="text/javascript"></script>
     <script src="cookie.js" type="text/javascript"></script>
     <script src="input.js" type="text/javascript"></script>
     <script src="controls.js" type="text/javascript"></script>
   </head>
   <body onload="onControlsLoad();">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-98DP5VKS42"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-98DP5VKS42');
-</script>
     <table border="0" class="mainTable">
       <tr>
 	<td class="menuCell">
@@ -34,16 +28,13 @@
 	      <div class="menuItem selectedMenuItem">Controls Options</div>
 	    </a>
 	    <br/>
-	    <a href="highScores.html" class="bareLink">
-	      <div class="menuItem">High Scores</div>
+	    <a href="/" class="bareLink">
+	      <div class="menuItem" style="background-color:#9933cc; color:#FFFF00;" onMouseOver="this.style.color='#FF0000'"
+   onMouseOut="this.style.color='#FFFF00'">Homepage</div>
 	    </a>
 	    <br/>
-	    <a href="about.html" class="bareLink">
-	      <div class="menuItem">About TwitchTetris</div>
-	    </a>
-	    <br/>
-	    <a href="http://github.com/3kh0" class="bareLink">
-	      <div class="menuItem">The Developer</div>
+		<a href="http://github.com/3kh0" class="bareLink" target="_blank">
+	      <div class="menuItem">About the Developer</div>
 	    </a>
 	    <br/>
 
@@ -124,7 +115,12 @@
 
 	  </div>
 	</td>
+	<td width="20"> </td>
       </tr>
     </table>
+
+
+
+
   </body>
 </html>

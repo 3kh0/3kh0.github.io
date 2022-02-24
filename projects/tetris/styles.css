@@ -1,13 +1,11 @@
 /** PAGE ELEMENTS **/
-.menuCell
-{
+.menuCell {
     background-color: #001d00;
     vertical-align: top;
     height: 600px;
     color: #000000;
 }
-.instructions
-{
+.instructions {
     margin: 0 5;
     font-size: 15px;
     font-family: VT323;
@@ -18,21 +16,15 @@
     padding: 5px;
     width: 140;
 }
-
-.menu
-{
+.menu {
     width: 160;
 }
-
-.menuLogo
-{
+.menuLogo {
     width: 150px;
     margin: 5 5;
     text-align: center;
 }
-
-.menuItem
-{
+.menuItem {
     font-family: VT323;
     margin: 0 auto;
     border: 1px solid #008000;
@@ -43,14 +35,10 @@
     width: 140px;
     font-size: 18px;
 }
-
-.scoreArea
-{
+.scoreArea {
     width: 500px;
 }
-
-.playAgainButton
-{
+.playAgainButton {
     font-family: VT323;
     text-align: center;
     margin: 0 auto;
@@ -63,37 +51,30 @@
     font-size: 18px;
 }
 
-a.bareLink:link
-{
+a.bareLink:link {
     text-decoration: none;
 }
-a.bareLink:active
-{
+a.bareLink:active {
     text-decoration: none;
 }
-a.bareLink:visited
-{
+a.bareLink:visited {
     text-decoration: none;
 }
 
-.selectedMenuItem
-{
+.selectedMenuItem {
     color: #000d00;
     background-color: #008000;
 }
 
-.menuItem:hover
-{
-    color: #c0c0c0;    
+.menuItem:hover {
+    color: #c0c0c0;
 }
 
-body
-{
+body {
     background-color: #000000;
 }
 
-.aboutText
-{
+.aboutText {
     margin: 5 5;
     font-size: 16px;
     font-family: VT323;
@@ -105,55 +86,47 @@ body
     width: 580;
 }
 
-.contentCell
-{
+.contentCell {
     background-color: #001d00;
     color: #c0c0c0;
     font-family: VT323;
     vertical-align: top;
 }
 
-.applyNameHidden
-{
+.applyNameHidden {
     visibility: hidden;
     text-align: center;
 }
 
-.applyNameVisible
-{
+.applyNameVisible {
     visibility: visible;
     text-align: center;
 }
 
 /* Page table */
-.mainTable
-{
+.mainTable {
     margin: 0 auto;
     border-collapse: collapse;
     border: 1px solid #000000;
-
 }
 
 /* panel containing the game and controls */
-.gamePanel
-{
+.gamePanel {
     width: 601px;
     position: relative;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
 }
 
 /* controls table */
-.controlsTitle
-{
+.controlsTitle {
     text-align: center;
 }
-.controlsTableHeader
-{
+.controlsTableHeader {
     color: #c0c0c0;
     font-weight: bold;
 }
-.controlsTable
-{
+.controlsTable {
     margin: 0 auto;
     text-align: center;
     border-collapse: collapse;
@@ -161,24 +134,26 @@ body
     color: #008000;
     background-color: #000d00;
 }
-.controlsTable td
-{
+.controlsTable td {
     border-color: #008000;
 }
+/* right side tower ad */
+.towerAd {
+    width: 160;
+}
+.towerAdCell {
+    vertical-align: text-top;
+}
 
-
-.gameCanvas
-{
+.gameCanvas {
     border: 1px solid #008000;
 }
 
-.resTitle
-{
+.resTitle {
     font-size: 26px;
     text-align: center;
 }
-.resultsTable
-{
+.resultsTable {
     margin: 0 auto;
     font-size: 26px;
     border-collapse: collapse;
@@ -186,15 +161,13 @@ body
     color: #008000;
     background-color: #000d00;
 }
-.resultsTable td
-{
+.resultsTable td {
     border: 1px solid #008000;
     padding: 10px;
     width: 200px;
 }
 
-.highScoreTable
-{
+.highScoreTable {
     margin: 0 auto;
     font-size: 18px;
     border-collapse: collapse;
@@ -202,85 +175,80 @@ body
     color: #008000;
     background-color: #000d00;
 }
-.highScoreTable td
-{
+.highScoreTable td {
     border: 1px solid #008000;
     width: 200px;
 }
-.highScoreTableHeader
-{
+.highScoreTableHeader {
     color: #c0c0c0;
     font-weight: bold;
 }
 
-.resultsLeft
-{
+.resultsLeft {
     text-align: right;
 }
-.resultsRight
-{
+.resultsRight {
     text-align: left;
 }
 
 /** GAME ELEMENTS **/
-.gameElements
-{
+.gameElements {
     position: relative;
     height: 500px;
     width: 600px;
 }
 
-.gameCanvas
-{
+.gameCanvas {
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     z-index: 1;
 }
 
-.ttyOutput
-{
+.ttyOutput {
     font-family: VT323;
-    font-size:20px;
+    font-size: 20px;
     position: absolute;
-    height: 0px; width: 200px;
+    height: 0px;
+    width: 200px;
     color: #008800;
     line-height: 100%;
     z-index: 2;
 }
-.scoreOutput
-{
-    top: 140px; left: 20px;
+.scoreOutput {
+    top: 140px;
+    left: 20px;
 }
-.linesOutput
-{
-    top: 235px; left: 20px;
+.linesOutput {
+    top: 235px;
+    left: 20px;
 }
-.levelOutput
-{
-    top: 328; left: 20px;
+.levelOutput {
+    top: 328;
+    left: 20px;
 }
-.tickerOutput
-{
-    top: 372; left: 435;
+.tickerOutput {
+    top: 372;
+    left: 435;
 }
-
-.gameEndOutputHidden
-{
-    top: 60px; left: 195px;
-    width: 210px; height: 216px;
-    background-image: url('media/background/endconsole.png');
+.gameEndOutputHidden {
+    top: 60px;
+    left: 195px;
+    width: 210px;
+    height: 216px;
+    background-image: url("media/background/endconsole.png");
     visibility: hidden;
 }
-
-.gameEndOutputVisible
-{
+.gameEndOutputVisible {
     font-family: VT323;
-    font-size:20px;
+    font-size: 20px;
     position: absolute;
     color: #008800;
     line-height: 100%;
     z-index: 2;
-    top: 60px; left: 195px;
-    width: 210px; height: 216px;
-    background-image: url('media/background/endconsole.png');
+    top: 60px;
+    left: 195px;
+    width: 210px;
+    height: 216px;
+    background-image: url("media/background/endconsole.png");
 }

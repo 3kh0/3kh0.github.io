@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Doodle Jump | 3kh0</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <canvas id="canvas">Aww, your browser doesn't support HTML5!</canvas>
+      <div id="mainMenu">
+        <h1>doodle jump</h1>
+        <h3>using HTML5,</h3>
+        <h3>...by <a href="https://3kh0.github.io/" target="_blank">3kh0</a></h3>
+        <p class="info">use <span class="key left">←</span> <span class="key right">→</span> to move and space to (re) start...</p>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-98DP5VKS42"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-98DP5VKS42');
+        </script>
+        <a class="button" href="javascript:init()">Play</a>
+      </div>
+      <div id="gameOverMenu">
+        <h1>game over!</h1>
+        <h3 id="go_score">you scored 0 points</h3>
+        <a class="button" href="javascript:reset()">Restart</a>
+      </div>
+      <img id="sprite" src="sprites.png"/>
+      <div id="scoreBoard">
+        <p id="score">0</p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

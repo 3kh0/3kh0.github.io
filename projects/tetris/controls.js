@@ -188,13 +188,11 @@ function updateAutoRepeat() {
     document.getElementById('autoRepeatValue').innerHTML = newVal;
     createCookie('autoRepeat', newVal, 1000);
 }
-
 function updateThreshold() {
     var newVal = document.getElementById('thresholdRange').value;
     document.getElementById('thresholdValue').innerHTML = newVal;
     createCookie('threshold', newVal, 1000);
 }
-
 function resetAutoRepeat() {
     eraseCookie('autoRepeat');
     eraseCookie('threshold');
