@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Wheel of Fortune!</title>
+    <link rel="stylesheet" href="assets/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="assets/stylesheets/cover.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="assets/stylesheets/animate.css">
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="container">
+          <div class="masthead clearfix">
+            <div class="inner">
+            </div>
+          </div>
+          <div class="inner cover col-md-12 text-center animated fadeIn">
+            <h1 class="initial-page cover-heading">THE EVER FASTER WHEEL OF FORTUNE<h1>
+            <h3 class="initial-page">Pick a category:</h3>
+            <h4 class="initial-page" id="movieQuotes">Movie Quotes</h4>
+            <h4 class="initial-page" id="philosophers">Famous Philosophers</h4>
+            <h4 class="initial-page" id="chemistry">Chemistry-related questions</h4>
+            <div class="col-md-12 center-block">
+              <div class="" id="gameboard"></div>
+            </div>
+            <div class="wheel new-game">
+              <div id="wheel">
+                <canvas id="canvas" width="300" height="300"></canvas>
+              </div>
+              <br>
+              <button id="start-spin">Spin the wheel!</button>
+              <button id="spin">Stop!</button>
+            </div>
+            <form class="new-game" id="guessing-things">
+              <label for="guess">Guess</label>
+              <input type="text" name="guess" id="guess">
+              <button id="guessing">Guess</button>
+            </form>
+            <h3 id="point-value"></h3>
+            <h3 id="point-total">Total points: 0</h3>
+            <h3 id="lives">Lives Remaining: 5</h3>
+            <h3 class="guesses new-game" id="letter-guessed">Incorrect Letters: </h3>
+            <h3 class="guesses new-game" id="correctness"></h3>
+            <div class="new-game" id="solving-things">
+              <form >
+                <label for="solution">Solve the Puzzle?</label>
+                <input type="text" name="solution" id="solution">
+                <button id="solving">Solve the Puzzle</button>
+              </form>
+            </div>
+            <button class="play-again new-game">Play again?</button>
+            <button class="hint new-game">Hint</button>
+            <h3 id="hint"></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

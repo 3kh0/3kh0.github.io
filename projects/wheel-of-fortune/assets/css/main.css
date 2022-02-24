@@ -1,0 +1,325 @@
+.guesses, #lives, .play-again, form {
+  display: none; }
+
+.space {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  background-color: white; }
+
+.letter {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  background-color: black; }
+
+.not-letter {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  background-color: white; }
+
+#letter-0 {
+  display: inline-block; }
+
+#letter-1 {
+  display: inline-block; }
+
+#letter-2 {
+  display: inline-block; }
+
+#letter-3 {
+  display: inline-block; }
+
+#letter-4 {
+  display: inline-block; }
+
+#letter-5 {
+  display: inline-block; }
+
+#letter-6 {
+  display: inline-block; }
+
+#letter-7 {
+  display: inline-block; }
+
+#letter-8 {
+  display: inline-block; }
+
+#letter-9 {
+  display: inline-block; }
+
+#letter-10 {
+  display: inline-block; }
+
+#letter-11 {
+  display: inline-block; }
+
+#letter-12 {
+  display: inline-block; }
+
+#letter-13 {
+  display: inline-block; }
+
+#letter-14 {
+  display: inline-block; }
+
+#letter-15 {
+  display: inline-block; }
+
+#letter-16 {
+  display: inline-block; }
+
+#letter-17 {
+  display: inline-block; }
+
+#letter-18 {
+  display: inline-block; }
+
+#letter-19 {
+  display: inline-block; }
+
+#letter-20 {
+  display: inline-block; }
+
+#letter-21 {
+  display: inline-block; }
+
+#letter-22 {
+  display: inline-block; }
+
+#letter-23 {
+  display: inline-block; }
+
+#letter-24 {
+  display: inline-block; }
+
+#letter-25 {
+  display: inline-block; }
+
+#letter-26 {
+  display: inline-block; }
+
+#letter-27 {
+  display: inline-block; }
+
+#letter-28 {
+  display: inline-block; }
+
+#letter-29 {
+  display: inline-block; }
+
+#letter-30 {
+  display: inline-block; }
+
+#letter-31 {
+  display: inline-block; }
+
+#letter-32 {
+  display: inline-block; }
+
+#letter-33 {
+  display: inline-block; }
+
+#letter-34 {
+  display: inline-block; }
+
+#letter-35 {
+  display: inline-block; }
+
+#letter-36 {
+  display: inline-block; }
+
+#letter-37 {
+  display: inline-block; }
+
+#letter-38 {
+  display: inline-block; }
+
+#letter-39 {
+  display: inline-block; }
+
+#letter-40 {
+  display: inline-block; }
+
+#letter-41 {
+  display: inline-block; }
+
+#letter-42 {
+  display: inline-block; }
+
+#letter-43 {
+  display: inline-block; }
+
+#letter-44 {
+  display: inline-block; }
+
+#letter-45 {
+  display: inline-block; }
+
+#letter-46 {
+  display: inline-block; }
+
+#letter-47 {
+  display: inline-block; }
+
+#letter-48 {
+  display: inline-block; }
+
+#letter-49 {
+  display: inline-block; }
+
+#letter-50 {
+  display: inline-block; }
+
+#letter-51 {
+  display: inline-block; }
+
+#letter-52 {
+  display: inline-block; }
+
+#letter-53 {
+  display: inline-block; }
+
+#letter-54 {
+  display: inline-block; }
+
+#letter-55 {
+  display: inline-block; }
+
+#letter-56 {
+  display: inline-block; }
+
+#letter-57 {
+  display: inline-block; }
+
+#letter-58 {
+  display: inline-block; }
+
+#letter-59 {
+  display: inline-block; }
+
+#letter-60 {
+  display: inline-block; }
+
+#letter-61 {
+  display: inline-block; }
+
+#letter-62 {
+  display: inline-block; }
+
+#letter-63 {
+  display: inline-block; }
+
+#letter-64 {
+  display: inline-block; }
+
+#letter-65 {
+  display: inline-block; }
+
+#letter-66 {
+  display: inline-block; }
+
+#letter-67 {
+  display: inline-block; }
+
+#letter-68 {
+  display: inline-block; }
+
+#letter-69 {
+  display: inline-block; }
+
+#letter-70 {
+  display: inline-block; }
+
+#letter-71 {
+  display: inline-block; }
+
+#letter-72 {
+  display: inline-block; }
+
+#letter-73 {
+  display: inline-block; }
+
+#letter-74 {
+  display: inline-block; }
+
+#letter-75 {
+  display: inline-block; }
+
+#letter-76 {
+  display: inline-block; }
+
+#letter-77 {
+  display: inline-block; }
+
+#letter-78 {
+  display: inline-block; }
+
+#letter-79 {
+  display: inline-block; }
+
+#letter-80 {
+  display: inline-block; }
+
+#letter-81 {
+  display: inline-block; }
+
+#letter-82 {
+  display: inline-block; }
+
+#letter-83 {
+  display: inline-block; }
+
+#letter-84 {
+  display: inline-block; }
+
+#letter-85 {
+  display: inline-block; }
+
+#letter-86 {
+  display: inline-block; }
+
+#letter-87 {
+  display: inline-block; }
+
+#letter-88 {
+  display: inline-block; }
+
+#letter-89 {
+  display: inline-block; }
+
+#letter-90 {
+  display: inline-block; }
+
+#letter-91 {
+  display: inline-block; }
+
+#letter-92 {
+  display: inline-block; }
+
+#letter-93 {
+  display: inline-block; }
+
+#letter-94 {
+  display: inline-block; }
+
+#letter-95 {
+  display: inline-block; }
+
+#letter-96 {
+  display: inline-block; }
+
+#letter-97 {
+  display: inline-block; }
+
+#letter-98 {
+  display: inline-block; }
+
+#letter-99 {
+  display: inline-block; }
+
+#letter-100 {
+  display: inline-block; }
+
+/*# sourceMappingURL=main.css.map */

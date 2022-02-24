@@ -1,0 +1,44 @@
+@import 'bourbon/bourbon';
+
+html, body {
+  font-color: #faebd7;
+}
+
+button {
+  background-color: black;
+}
+
+input {
+  color: black;
+}
+
+.guesses, #lives, .play-again, form, .wheel, #point-total, #hint, .hint {
+  display: none;
+}
+
+.space {
+  height: 2em;
+  width: 2em;
+  margin: 0.5em;
+  opacity: 0;
+}
+
+.letter  {
+  height: 2em;
+  width: 2em;
+  margin: 0.5em;
+  background-color: black; 
+}
+
+.not-letter  {
+  height: 2em;
+  width: 2em;
+  margin: 0.5em;
+}
+
+#gameboard {
+}
+
+@for $i from 0 through 100 {
+  #letter-#{$i} {display: inline-block; color: black; vertical-align: baseline; float: none; font-size: 1em;}
+}
