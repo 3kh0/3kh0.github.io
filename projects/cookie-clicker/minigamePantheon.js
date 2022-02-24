@@ -1,1 +1,503 @@
-(M={}).parent=Game.Objects.Temple,M.parent.minigame=M,M.launch=function(){var e=this;e.name=e.parent.minigameName,e.init=function(t){e.gods={asceticism:{name:"Holobore, Spirit of Asceticism",icon:[21,18],desc1:"+15% base CpS.",desc2:"+10% base CpS.",desc3:"+5% base CpS.",descAfter:"If a golden cookie is clicked, this spirit is unslotted and all worship swaps will be used up.",quote:"An immortal life spent focusing on the inner self, away from the distractions of material wealth."},decadence:{name:"Vomitrax, Spirit of Decadence",icon:[22,18],desc1:"Golden and wrath cookie effect duration +7%, but buildings grant -7% CpS.",desc2:"Golden and wrath cookie effect duration +5%, but buildings grant -5% CpS.",desc3:"Golden and wrath cookie effect duration +2%, but buildings grant -2% CpS.",quote:"This sleazy spirit revels in the lust for quick easy gain and contempt for the value of steady work."},ruin:{name:"Godzamok, Spirit of Ruin",icon:[23,18],descBefore:"Selling buildings triggers a buff boosted by how many buildings were sold.",desc1:"Buff boosts clicks by +1% for every building sold for 10 seconds.",desc2:"Buff boosts clicks by +0.5% for every building sold for 10 seconds.",desc3:"Buff boosts clicks by +0.25% for every building sold for 10 seconds.",quote:"The embodiment of natural disasters. An impenetrable motive drives the devastation caused by this spirit."},ages:{name:"Cyclius, Spirit of Ages",icon:[24,18],activeDescFunc:function(){var e=Game.hasGod("ages"),t=1;return 1==e?t*=.15*Math.sin(Date.now()/1e3/10800*Math.PI*2):2==e?t*=.15*Math.sin(Date.now()/1e3/43200*Math.PI*2):3==e&&(t*=.15*Math.sin(Date.now()/1e3/86400*Math.PI*2)),"Current bonus : "+(t<0?"-":"+")+Beautify(100*Math.abs(t),2)+"%."},descBefore:"CpS bonus fluctuating between +15% and -15% over time.",desc1:"Effect cycles over 3 hours.",desc2:"Effect cycles over 12 hours.",desc3:"Effect cycles over 24 hours.",quote:"This spirit knows about everything you'll ever do, and enjoys dispensing a harsh judgement."},seasons:{name:"Selebrak, Spirit of Festivities",icon:[25,18],descBefore:"Some seasonal effects are boosted.",desc1:"Large boost. Switching seasons is 100% pricier.",desc2:"Medium boost. Switching seasons is 50% pricier.",desc3:"Small boost. Switching seasons is 25% pricier.",quote:"This is the spirit of merry getaways and regretful Monday mornings."},creation:{name:"Dotjeiess, Spirit of Creation",icon:[26,18],desc1:"Buildings are 7% cheaper, but heavenly chips have 30% less effect.",desc2:"Buildings are 5% cheaper, but heavenly chips have 20% less effect.",desc3:"Buildings are 2% cheaper, but heavenly chips have 10% less effect.",quote:"All things that be and ever will be were scripted long ago by this spirit's inscrutable tendrils."},labor:{name:"Muridal, Spirit of Labor",icon:[27,18],desc1:"Clicks are 15% more powerful, but buildings produce 3% less.",desc2:"Clicks are 10% more powerful, but buildings produce 2% less.",desc3:"Clicks are 5% more powerful, but buildings produce 1% less.",quote:"This spirit enjoys a good cheese after a day of hard work."},industry:{name:"Jeremy, Spirit of Industry",icon:[28,18],desc1:"Buildings produce 10% more cookies, but golden and wrath cookies appear 10% less.",desc2:"Buildings produce 6% more cookies, but golden and wrath cookies appear 6% less.",desc3:"Buildings produce 3% more cookies, but golden and wrath cookies appear 3% less.",quote:"While this spirit has many regrets, helping you rule the world through constant industrialization is not one of them."},mother:{name:"Mokalsium, Mother Spirit",icon:[29,18],desc1:"Milk is 10% more powerful, but golden and wrath cookies appear 15% less.",desc2:"Milk is 5% more powerful, but golden and wrath cookies appear 10% less.",desc3:"Milk is 3% more powerful, but golden and wrath cookies appear 5% less.",quote:"A caring spirit said to contain itself, inwards infinitely."},scorn:{name:"Skruuia, Spirit of Scorn",icon:[21,19],descBefore:"All golden cookies are wrath cookies with a greater chance of a negative effect.",desc1:"Wrinklers appear 150% faster and digest 15% more cookies.",desc2:"Wrinklers appear 100% faster and digest 10% more cookies.",desc3:"Wrinklers appear 50% faster and digest 5% more cookies.",quote:"This spirit enjoys poking foul beasts and watching them squirm, but has no love for its own family."},order:{name:"Rigidel, Spirit of Order",icon:[22,19],activeDescFunc:function(){return Game.BuildingsOwned%10==0?"Buildings owned : "+Beautify(Game.BuildingsOwned)+".<br>Effect is active.":"Buildings owned : "+Beautify(Game.BuildingsOwned)+".<br>Effect is inactive."},desc1:"Sugar lumps ripen an hour sooner.",desc2:"Sugar lumps ripen 40 minutes sooner.",desc3:"Sugar lumps ripen 20 minutes sooner.",descAfter:"Effect is only active when your total amount of buildings ends with 0.",quote:"You will find that life gets just a little bit sweeter if you can motivate this spirit with tidy numbers and properly-filled tax returns."}},e.godsById=[];var o=0;for(var i in e.gods)e.gods[i].id=o,e.gods[i].slot=-1,e.godsById[o]=e.gods[i],o++;e.slot=[],e.slot[0]=-1,e.slot[1]=-1,e.slot[2]=-1,e.slotNames=["Diamond","Ruby","Jade"],e.swaps=3,e.swapT=Date.now(),e.lastSwapT=0,e.godTooltip=function(t){return function(){var o=e.godsById[t];return o.icon=o.icon||[0,0],'<div style="padding:8px 4px;min-width:350px;"><div class="icon" style="float:left;margin-left:-8px;margin-top:-8px;background-position:'+48*-o.icon[0]+"px "+48*-o.icon[1]+'px;"></div><div class="name">'+o.name+'</div><div class="line"></div><div class="description"><div style="margin:6px 0px;font-weight:bold;">Effects :</div>'+(o.descBefore?'<div class="templeEffect">'+o.descBefore+"</div>":"")+(o.desc1?'<div class="templeEffect templeEffect1"><div class="usesIcon shadowFilter templeGem templeGem1"></div>'+o.desc1+"</div>":"")+(o.desc2?'<div class="templeEffect templeEffect2"><div class="usesIcon shadowFilter templeGem templeGem2"></div>'+o.desc2+"</div>":"")+(o.desc3?'<div class="templeEffect templeEffect3"><div class="usesIcon shadowFilter templeGem templeGem3"></div>'+o.desc3+"</div>":"")+(o.descAfter?'<div class="templeEffect">'+o.descAfter+"</div>":"")+(o.quote?"<q>"+o.quote+"</q>":"")+"</div></div>"}},e.slotTooltip=function(t){return function(){if(-1!=e.slot[t]){var o=e.godsById[e.slot[t]];o.icon=o.icon||[0,0]}return'<div style="padding:8px 4px;min-width:350px;">'+(-1!=e.slot[t]?'<div class="name templeEffect" style="margin-bottom:12px;"><div class="usesIcon shadowFilter templeGem templeGem'+(parseInt(t)+1)+'"></div>'+e.slotNames[t]+' slot</div><div class="icon" style="float:left;margin-left:-8px;margin-top:-8px;background-position:'+48*-o.icon[0]+"px "+48*-o.icon[1]+'px;"></div><div class="name">'+o.name+'</div><div class="line"></div><div class="description"><div style="margin:6px 0px;font-weight:bold;">Effects :</div>'+(o.activeDescFunc?'<div class="templeEffect templeEffectOn" style="padding:8px 4px;text-align:center;">'+o.activeDescFunc()+"</div>":"")+(o.descBefore?'<div class="templeEffect">'+o.descBefore+"</div>":"")+(o.desc1?'<div class="templeEffect templeEffect1'+(0==o.slot?" templeEffectOn":"")+'"><div class="usesIcon shadowFilter templeGem templeGem1"></div>'+o.desc1+"</div>":"")+(o.desc2?'<div class="templeEffect templeEffect2'+(1==o.slot?" templeEffectOn":"")+'"><div class="usesIcon shadowFilter templeGem templeGem2"></div>'+o.desc2+"</div>":"")+(o.desc3?'<div class="templeEffect templeEffect3'+(2==o.slot?" templeEffectOn":"")+'"><div class="usesIcon shadowFilter templeGem templeGem3"></div>'+o.desc3+"</div>":"")+(o.descAfter?'<div class="templeEffect">'+o.descAfter+"</div>":"")+(o.quote?"<q>"+o.quote+"</q>":"")+"</div>":'<div class="name templeEffect"><div class="usesIcon shadowFilter templeGem templeGem'+(parseInt(t)+1)+'"></div>'+e.slotNames[t]+' slot (empty)</div><div class="line"></div><div class="description">'+(e.slotHovered==t&&e.dragging?"Release to assign <b>"+e.dragging.name+"</b> to this slot.":"Drag a spirit onto this slot to assign it.")+"</div>")+"</div>"}},e.useSwap=function(t){e.swapT=Date.now(),e.swaps-=t,e.swaps<0&&(e.swaps=0)},e.slotGod=function(t,o){if(o==t.slot)return!1;-1!=o&&-1!=e.slot[o]?(e.godsById[e.slot[o]].slot=t.slot,e.slot[t.slot]=e.slot[o]):-1!=t.slot&&(e.slot[t.slot]=-1),-1!=o&&(e.slot[o]=t.id),t.slot=o,Game.recalculateGains=!0},e.dragging=!1,e.dragGod=function(t){e.dragging=t;var o=l("templeGod"+t.id),i=o.getBoundingClientRect(),s=l("templeDrag").getBoundingClientRect();o.className="ready templeGod titleFont templeDragged",l("templeDrag").appendChild(o);var a=i.left-s.left,n=i.top-s.top;o.style.transform="translate("+a+"px,"+n+"px)",l("templeGodPlaceholder"+e.dragging.id).style.display="inline-block",PlaySound("snd/tick.mp3")},e.dropGod=function(){if(e.dragging){var t=l("templeGod"+e.dragging.id);if(t.className="ready templeGod titleFont",t.style.transform="none",-1==e.slotHovered||0!=e.swaps&&e.dragging.slot!=e.slotHovered)if(-1!=e.slotHovered){e.useSwap(1),e.lastSwapT=0;var o=e.slot[e.slotHovered];if(-1!=o){o=e.godsById[o];var i=l("templeGod"+o.id);if(-1!=e.dragging.slot)l("templeSlot"+e.dragging.slot).appendChild(i);else(a=l("templeGodPlaceholder"+o.id)).parentNode.insertBefore(i,a)}l("templeSlot"+e.slotHovered).appendChild(t),e.slotGod(e.dragging,e.slotHovered),PlaySound("snd/tick.mp3"),PlaySound("snd/spirit.mp3",.5);var s=t.getBoundingClientRect();Game.SparkleAt((s.left+s.right)/2,(s.top+s.bottom)/2-24)}else{var a;(a=l("templeGodPlaceholder"+e.dragging.id)).parentNode.insertBefore(t,a),a.style.display="none",e.slotGod(e.dragging,-1),PlaySound("snd/sell1.mp3",.75)}else-1!=e.dragging.slot?l("templeSlot"+e.dragging.slot).appendChild(t):l("templeGodPlaceholder"+e.dragging.id).parentNode.insertBefore(t,l("templeGodPlaceholder"+e.dragging.id)),PlaySound("snd/sell1.mp3",.75);e.dragging=!1}},e.slotHovered=-1,e.hoverSlot=function(t){e.slotHovered=t,e.dragging&&(-1==e.slotHovered?l("templeGodPlaceholder"+e.dragging.id).style.display="inline-block":l("templeGodPlaceholder"+e.dragging.id).style.display="none",PlaySound("snd/clickb"+Math.floor(7*Math.random()+1)+".mp3",.75))},Game.hasGod=function(t){for(var o=e.gods[t],i=0;i<3;i++)if(e.slot[i]==o.id)return i+1;return!1},Game.forceUnslotGod=function(t){if(-1==(t=e.gods[t]).slot)return!1;var o=l("templeGod"+t.id),i=l("templeGodPlaceholder"+t.id);return i.parentNode.insertBefore(o,i),i.style.display="none",e.slotGod(t,-1),!0},Game.useSwap=e.useSwap;var s="";for(var i in s+="<style>#templeBG{background:url(img/shadedBorders.png),url(img/pantheonBG.png);background-size:100% 100%,auto;position:absolute;left:0px;right:0px;top:0px;bottom:16px;}#templeContent{position:relative;box-sizing:border-box;padding:4px 24px;text-align:center;}#templeGods{text-align:center;width:100%;padding:8px;box-sizing:border-box;}.templeIcon{pointer-events:none;margin:12px 6px 0px 6px;width:48px;height:48px;opacity:0.8;position:relative;}.templeSlot .templeIcon{margin:2px 6px 0px 6px;}.templeGod{box-shadow:4px 4px 4px #000;cursor:pointer;position:relative;color:#f33;opacity:0.8;text-shadow:0px 0px 4px #000,0px 0px 6px #000;font-weight:bold;font-size:12px;display:inline-block;width:60px;height:74px;background:url(img/spellBG.png);}.templeGod.ready{color:rgba(255,255,255,0.8);opacity:1;}.templeGod.ready:hover{color:#fff;}.templeGod:hover,.templeDragged{box-shadow:6px 6px 6px 2px #000;z-index:1000000001;top:-1px;}.templeGod:active{top:1px;}.templeGod.ready .templeIcon{opacity:1;}.templeGod:hover{background-position:0px -74px;} .templeGod:active{background-position:0px 74px;}.templeGod1{background-position:-60px 0px;} .templeGod1:hover{background-position:-60px -74px;} .templeGod1:active{background-position:-60px 74px;}.templeGod2{background-position:-120px 0px;} .templeGod2:hover{background-position:-120px -74px;} .templeGod2:active{background-position:-120px 74px;}.templeGod3{background-position:-180px 0px;} .templeGod3:hover{background-position:-180px -74px;} .templeGod3:active{background-position:-180px 74px;}.templeGod:hover .templeIcon{top:-1px;}.templeGod.ready:hover .templeIcon{animation-name:bounce;animation-iteration-count:infinite;animation-duration:0.8s;}.templeGem{z-index:100;width:24px;height:24px;}.templeEffect{font-weight:bold;font-size:11px;position:relative;margin:0px -12px;padding:4px;padding-left:28px;}.description .templeEffect{border-top:1px solid rgba(255,255,255,0.15);background:linear-gradient(to top,rgba(255,255,255,0.1),rgba(255,255,255,0));}.templeEffect .templeGem{position:absolute;left:0px;top:0px;}.templeEffectOn{text-shadow:0px 0px 6px rgba(255,255,255,0.75);color:#fff;}.templeGod .templeGem{position:absolute;left:18px;bottom:8px;pointer-events:none;}.templeGem1{background-position:-1104px -720px;}.templeGem2{background-position:-1128px -720px;}.templeGem3{background-position:-1104px -744px;}.templeSlot .templeGod,.templeSlot .templeGod:hover,.templeSlot .templeGod:active{background:none;}.templeSlotDrag{position:absolute;left:0px;top:0px;right:0px;bottom:0px;background:#999;opacity:0;cursor:pointer;}#templeDrag{position:absolute;left:0px;top:0px;z-index:1000000000000;}.templeGod{transition:transform 0.1s;}#templeDrag .templeGod{position:absolute;left:0px;top:0px;}.templeDragged{pointer-events:none;}.templeGodPlaceholder{background:red;opacity:0;display:none;width:60px;height:74px;}#templeSlots{margin:4px auto;text-align:center;}#templeSlot0{top:-4px;}#templeSlot1{top:0px;}#templeSlot2{top:4px;}#templeLumpRefill{cursor:pointer;width:48px;height:48px;position:absolute;left:-6px;top:-10px;transform:scale(0.5);z-index:1000;transition:transform 0.05s;}#templeLumpRefill:hover{transform:scale(1);}#templeLumpRefill:active{transform:scale(0.4);}#templeInfo{position:relative;display:inline-block;margin:8px auto 0px auto;padding:8px 16px;padding-left:32px;text-align:center;font-size:11px;color:rgba(255,255,255,0.75);text-shadow:-1px 1px 0px #000;background:rgba(0,0,0,0.75);border-radius:16px;}</style>",s+='<div id="templeBG"></div>',s+='<div id="templeContent">',s+='<div id="templeDrag"></div>',s+='<div id="templeSlots">',e.slot){var a=e.slot[i];s+='<div class="ready templeGod templeGod'+i%4+' templeSlot titleFont" id="templeSlot'+i+'" '+Game.getDynamicTooltip("Game.ObjectsById["+e.parent.id+"].minigame.slotTooltip("+i+")","this")+'><div class="usesIcon shadowFilter templeGem templeGem'+(parseInt(i)+1)+'"></div></div>'}s+="</div>";var n=[29,14];for(var i in s+='<div id="templeInfo"><div '+Game.getTooltip('<div style="padding:8px;width:300px;font-size:11px;text-align:center;">Click to refill all your worship swaps for <span class="price lump">1 sugar lump</span>.</div>')+' id="templeLumpRefill" class="usesIcon shadowFilter" style="background-position:'+48*-n[0]+"px "+48*-n[1]+'px;"></div><div id="templeSwaps" '+Game.getTooltip('<div style="padding:8px;width:350px;font-size:11px;text-align:center;">Each time you slot a spirit, you use up one worship swap.<div class="line"></div>If you have 0 swaps left, you will get one after 16 hours.<br>If you have 1 swap left, the next one will refill after 4 hours.<br>If you have 2 swaps left, the next one will refill after 1 hour.<div class="line"></div>Unslotting a spirit costs no swaps.</div>')+">-</div></div>",s+='<div id="templeGods">',e.gods){n=(a=e.gods[i]).icon||[0,0];s+='<div class="ready templeGod templeGod'+a.id%4+' titleFont" id="templeGod'+a.id+'" '+Game.getDynamicTooltip("Game.ObjectsById["+e.parent.id+"].minigame.godTooltip("+a.id+")","this")+'><div class="usesIcon shadowFilter templeIcon" style="background-position:'+48*-n[0]+"px "+48*-n[1]+'px;"></div><div class="templeSlotDrag" id="templeGodDrag'+a.id+'"></div></div>',s+='<div class="templeGodPlaceholder" id="templeGodPlaceholder'+a.id+'"></div>'}for(var i in s+="</div>",s+="</div>",t.innerHTML=s,e.swapsL=l("templeSwaps"),e.lumpRefill=l("templeLumpRefill"),e.gods){a=e.gods[i];AddEvent(l("templeGodDrag"+a.id),"mousedown",function(t){return function(){e.dragGod(t)}}(a)),AddEvent(l("templeGodDrag"+a.id),"mouseup",function(t){return function(){e.dropGod(t)}}(a))}for(var i in e.slot){a=e.slot[i];AddEvent(l("templeSlot"+i),"mouseover",function(t){return function(){e.hoverSlot(t)}}(i)),AddEvent(l("templeSlot"+i),"mouseout",(function(){e.hoverSlot(-1)}))}AddEvent(document,"mouseup",e.dropGod),AddEvent(e.lumpRefill,"click",(function(){Game.lumps>=1&&e.swaps<3&&(e.swaps=3,e.swapT=Date.now(),Game.lumps-=1,PlaySound("snd/pop"+Math.floor(3*Math.random()+1)+".mp3",.75))}))},e.save=function(){var t="";for(var o in e.slot)t+=parseFloat(e.slot[o])+"/";return t=t.slice(0,-1),t+=" "+parseFloat(e.swaps)+" "+parseFloat(e.swapT)},e.load=function(t){if(!t)return!1;var o=0,i=t.split(" "),s=i[o++].split("/")||[];for(var a in e.slot)if(-1!=parseFloat(s[a])){var n=e.godsById[parseFloat(s[a])];e.slotGod(n,a),l("templeSlot"+n.slot).appendChild(l("templeGod"+n.id))}e.swaps=parseFloat(i[o++]||3),e.swapT=parseFloat(i[o++]||Date.now())},e.reset=function(){for(var t in e.swaps=3,e.swapT=Date.now(),e.slot)e.slot[t]=-1;for(var t in e.gods){var o=e.gods[t];o.slot=-1;var i=l("templeGodPlaceholder"+o.id);i.parentNode.insertBefore(l("templeGod"+o.id),i),i.style.display="none"}},e.logic=function(){var t=36e5;0==e.swaps?t=576e5:1==e.swaps&&(t=144e5),e.swapT+t-Date.now()<=0&&e.swaps<3&&(e.swaps++,e.swapT=Date.now()),e.lastSwapT++},e.draw=function(){if(e.dragging){var t=l("templeDrag").getBoundingClientRect(),o=Game.mouseX-t.left-30,i=Game.mouseY-t.top;if(-1!=e.slotHovered){var s=l("templeSlot"+e.slotHovered).getBoundingClientRect();o=s.left-t.left,i=s.top-t.top}l("templeGod"+e.dragging.id).style.transform="translate("+o+"px,"+i+"px)"}var a=36e5;0==e.swaps?a=576e5:1==e.swaps&&(a=144e5);var n=e.swapT+a-Date.now();e.swapsL.innerHTML='Worship swaps : <span class="titleFont" style="color:'+(e.swaps>0?"#fff":"#c00")+';">'+e.swaps+"/3</span>"+(e.swaps<3?" (next in "+Game.sayTime((n/1e3+1)*Game.fps,-1)+")":"")},e.init(l("rowSpecial"+e.parent.id))};var M=0;
+﻿var M={};
+M.parent=Game.Objects['Temple'];
+M.parent.minigame=M;
+M.launch=function()
+{
+	var M=this;
+	M.name=M.parent.minigameName;
+	M.init=function(div)
+	{
+		//populate div with html and initialize values
+				
+		M.gods={
+			'asceticism':{
+				name:'Holobore, Spirit of Asceticism',
+				icon:[21,18],
+				desc1:'<span class="green">+15% base CpS.</span>',
+				desc2:'<span class="green">+10% base CpS.</span>',
+				desc3:'<span class="green">+5% base CpS.</span>',
+				descAfter:'<span class="red">If a golden cookie is clicked, this spirit is unslotted and all worship swaps will be used up.</span>',
+				quote:'An immortal life spent focusing on the inner self, away from the distractions of material wealth.',
+			},
+			'decadence':{
+				name:'Vomitrax, Spirit of Decadence',
+				icon:[22,18],
+				desc1:'<span class="green">Golden and wrath cookie effect duration +7%,</span> <span class="red">but buildings grant -7% CpS.</span>',
+				desc2:'<span class="green">Golden and wrath cookie effect duration +5%,</span> <span class="red">but buildings grant -5% CpS.</span>',
+				desc3:'<span class="green">Golden and wrath cookie effect duration +2%,</span> <span class="red">but buildings grant -2% CpS.</span>',
+				quote:'This sleazy spirit revels in the lust for quick easy gain and contempt for the value of steady work.',
+			},
+			'ruin':{
+				name:'Godzamok, Spirit of Ruin',
+				icon:[23,18],
+				descBefore:'<span class="green">Selling buildings triggers a buff boosted by how many buildings were sold.</span>',
+				desc1:'<span class="green">Buff boosts clicks by +1% for every building sold for 10 seconds.</span>',
+				desc2:'<span class="green">Buff boosts clicks by +0.5% for every building sold for 10 seconds.</span>',
+				desc3:'<span class="green">Buff boosts clicks by +0.25% for every building sold for 10 seconds.</span>',
+				quote:'The embodiment of natural disasters. An impenetrable motive drives the devastation caused by this spirit.',
+			},
+			'ages':{
+				name:'Cyclius, Spirit of Ages',
+				icon:[24,18],
+				activeDescFunc:function()
+				{
+					var godLvl=Game.hasGod('ages');
+					var mult=1;
+					if (godLvl==1) mult*=0.15*Math.sin((Date.now()/1000/(60*60*3))*Math.PI*2);
+					else if (godLvl==2) mult*=0.15*Math.sin((Date.now()/1000/(60*60*12))*Math.PI*2);
+					else if (godLvl==3) mult*=0.15*Math.sin((Date.now()/1000/(60*60*24))*Math.PI*2);
+					return 'Current bonus : '+(mult<0?'-':'+')+Beautify(Math.abs(mult)*100,2)+'%.';
+				},
+				descBefore:'CpS bonus fluctuating between <span class="green">+15%</span> and <span class="red">-15%</span> over time.',
+				desc1:'Effect cycles over 3 hours.',
+				desc2:'Effect cycles over 12 hours.',
+				desc3:'Effect cycles over 24 hours.',
+				quote:'This spirit knows about everything you\'ll ever do, and enjoys dispensing a harsh judgement.',
+			},
+			'seasons':{
+				name:'Selebrak, Spirit of Festivities',
+				icon:[25,18],
+				descBefore:'<span class="green">Some seasonal effects are boosted.</span>',
+				desc1:'<span class="green">Large boost.</span> <span class="red">Switching seasons is 100% pricier.</span>',
+				desc2:'<span class="green">Medium boost.</span> <span class="red">Switching seasons is 50% pricier.</span>',
+				desc3:'<span class="green">Small boost.</span> <span class="red">Switching seasons is 25% pricier.</span>',
+				quote:'This is the spirit of merry getaways and regretful Monday mornings.',
+			},
+			'creation':{
+				name:'Dotjeiess, Spirit of Creation',
+				icon:[26,18],
+				desc1:'<span class="green">Buildings are 7% cheaper,</span> <span class="red">but heavenly chips have 30% less effect.</span>',
+				desc2:'<span class="green">Buildings are 5% cheaper,</span> <span class="red">but heavenly chips have 20% less effect.</span>',
+				desc3:'<span class="green">Buildings are 2% cheaper,</span> <span class="red">but heavenly chips have 10% less effect.</span>',
+				quote:'All things that be and ever will be were scripted long ago by this spirit\'s inscrutable tendrils.',
+			},
+			'labor':{
+				name:'Muridal, Spirit of Labor',
+				icon:[27,18],
+				desc1:'<span class="green">Clicks are 15% more powerful,</span> <span class="red">but buildings produce 3% less.</span>',
+				desc2:'<span class="green">Clicks are 10% more powerful,</span> <span class="red">but buildings produce 2% less.</span>',
+				desc3:'<span class="green">Clicks are 5% more powerful,</span> <span class="red">but buildings produce 1% less.</span>',
+				quote:'This spirit enjoys a good cheese after a day of hard work.',
+			},
+			'industry':{
+				name:'Jeremy, Spirit of Industry',
+				icon:[28,18],
+				desc1:'<span class="green">Buildings produce 10% more cookies,</span> <span class="red">but golden and wrath cookies appear 10% less.</span>',
+				desc2:'<span class="green">Buildings produce 6% more cookies,</span> <span class="red">but golden and wrath cookies appear 6% less.</span>',
+				desc3:'<span class="green">Buildings produce 3% more cookies,</span> <span class="red">but golden and wrath cookies appear 3% less.</span>',
+				quote:'While this spirit has many regrets, helping you rule the world through constant industrialization is not one of them.',
+			},
+			'mother':{
+				name:'Mokalsium, Mother Spirit',
+				icon:[29,18],
+				desc1:'<span class="green">Milk is 10% more powerful,</span> <span class="red">but golden and wrath cookies appear 15% less.</span>',
+				desc2:'<span class="green">Milk is 5% more powerful,</span> <span class="red">but golden and wrath cookies appear 10% less.</span>',
+				desc3:'<span class="green">Milk is 3% more powerful,</span> <span class="red">but golden and wrath cookies appear 5% less.</span>',
+				quote:'A caring spirit said to contain itself, inwards infinitely.',
+			},
+			'scorn':{
+				name:'Skruuia, Spirit of Scorn',
+				icon:[21,19],
+				descBefore:'<span class="red">All golden cookies are wrath cookies with a greater chance of a negative effect.</span>',
+				desc1:'<span class="green">Wrinklers appear 150% faster and digest 15% more cookies.</span>',
+				desc2:'<span class="green">Wrinklers appear 100% faster and digest 10% more cookies.</span>',
+				desc3:'<span class="green">Wrinklers appear 50% faster and digest 5% more cookies.</span>',
+				quote:'This spirit enjoys poking foul beasts and watching them squirm, but has no love for its own family.',
+			},
+			'order':{
+				name:'Rigidel, Spirit of Order',
+				icon:[22,19],
+				activeDescFunc:function()
+				{
+					if (Game.BuildingsOwned%10==0) return 'Buildings owned : '+Beautify(Game.BuildingsOwned)+'.<br>Effect is active.';
+					else return 'Buildings owned : '+Beautify(Game.BuildingsOwned)+'.<br>Effect is inactive.';
+				},
+				desc1:'<span class="green">Sugar lumps ripen an hour sooner.</span>',
+				desc2:'<span class="green">Sugar lumps ripen 40 minutes sooner.</span>',
+				desc3:'<span class="green">Sugar lumps ripen 20 minutes sooner.</span>',
+				descAfter:'<span class="red">Effect is only active when your total amount of buildings ends with 0.</span>',
+				quote:'You will find that life gets just a little bit sweeter if you can motivate this spirit with tidy numbers and properly-filled tax returns.',
+			},
+		};
+		M.godsById=[];var n=0;
+		for (var i in M.gods){M.gods[i].id=n;M.gods[i].slot=-1;M.godsById[n]=M.gods[i];n++;}
+		
+		
+		M.slot=[];
+		M.slot[0]=-1;//diamond socket
+		M.slot[1]=-1;//ruby socket
+		M.slot[2]=-1;//jade socket
+		
+		M.slotNames=[
+			'Diamond','Ruby','Jade'
+		];
+		
+		M.swaps=3;//swaps left
+		M.swapT=Date.now();//the last time we swapped
+		
+		M.lastSwapT=0;//frames since last swap
+		
+		M.godTooltip=function(id)
+		{
+			return function(){
+				var me=M.godsById[id];
+				me.icon=me.icon||[0,0];
+				var str='<div style="padding:8px 4px;min-width:350px;">'+
+				'<div class="icon" style="float:left;margin-left:-8px;margin-top:-8px;background-position:'+(-me.icon[0]*48)+'px '+(-me.icon[1]*48)+'px;"></div>'+
+				'<div class="name">'+me.name+'</div>'+
+				'<div class="line"></div><div class="description"><div style="margin:6px 0px;font-weight:bold;">Effects :</div>'+
+					(me.descBefore?('<div class="templeEffect">'+me.descBefore+'</div>'):'')+
+					(me.desc1?('<div class="templeEffect templeEffect1"><div class="usesIcon shadowFilter templeGem templeGem1"></div>'+me.desc1+'</div>'):'')+
+					(me.desc2?('<div class="templeEffect templeEffect2"><div class="usesIcon shadowFilter templeGem templeGem2"></div>'+me.desc2+'</div>'):'')+
+					(me.desc3?('<div class="templeEffect templeEffect3"><div class="usesIcon shadowFilter templeGem templeGem3"></div>'+me.desc3+'</div>'):'')+
+					(me.descAfter?('<div class="templeEffect">'+me.descAfter+'</div>'):'')+
+					(me.quote?('<q>'+me.quote+'</q>'):'')+
+				'</div></div>';
+				return str;
+			};
+		}
+		
+		M.slotTooltip=function(id)
+		{
+			return function(){
+				if (M.slot[id]!=-1)
+				{
+					var me=M.godsById[M.slot[id]];
+					me.icon=me.icon||[0,0];
+				}
+				var str='<div style="padding:8px 4px;min-width:350px;">'+
+				(M.slot[id]!=-1?(
+					'<div class="name templeEffect" style="margin-bottom:12px;"><div class="usesIcon shadowFilter templeGem templeGem'+(parseInt(id)+1)+'"></div>'+M.slotNames[id]+' slot</div>'+
+					'<div class="icon" style="float:left;margin-left:-8px;margin-top:-8px;background-position:'+(-me.icon[0]*48)+'px '+(-me.icon[1]*48)+'px;"></div>'+
+					'<div class="name">'+me.name+'</div>'+
+					'<div class="line"></div><div class="description"><div style="margin:6px 0px;font-weight:bold;">Effects :</div>'+
+						(me.activeDescFunc?('<div class="templeEffect templeEffectOn" style="padding:8px 4px;text-align:center;">'+me.activeDescFunc()+'</div>'):'')+
+						(me.descBefore?('<div class="templeEffect">'+me.descBefore+'</div>'):'')+
+						(me.desc1?('<div class="templeEffect templeEffect1'+(me.slot==0?' templeEffectOn':'')+'"><div class="usesIcon shadowFilter templeGem templeGem1"></div>'+me.desc1+'</div>'):'')+
+						(me.desc2?('<div class="templeEffect templeEffect2'+(me.slot==1?' templeEffectOn':'')+'"><div class="usesIcon shadowFilter templeGem templeGem2"></div>'+me.desc2+'</div>'):'')+
+						(me.desc3?('<div class="templeEffect templeEffect3'+(me.slot==2?' templeEffectOn':'')+'"><div class="usesIcon shadowFilter templeGem templeGem3"></div>'+me.desc3+'</div>'):'')+
+						(me.descAfter?('<div class="templeEffect">'+me.descAfter+'</div>'):'')+
+						(me.quote?('<q>'+me.quote+'</q>'):'')+
+					'</div>'
+				):
+				('<div class="name templeEffect"><div class="usesIcon shadowFilter templeGem templeGem'+(parseInt(id)+1)+'"></div>'+M.slotNames[id]+' slot (empty)</div><div class="line"></div><div class="description">'+
+				((M.slotHovered==id && M.dragging)?'Release to assign <b>'+M.dragging.name+'</b> to this slot.':'Drag a spirit onto this slot to assign it.')+
+				'</div>')
+				)+
+				'</div>';
+				return str;
+			};
+		}
+		
+		M.useSwap=function(n)
+		{
+			M.swapT=Date.now();
+			M.swaps-=n;
+			if (M.swaps<0) M.swaps=0;
+		}
+		
+		M.slotGod=function(god,slot)
+		{
+			if (slot==god.slot) return false;
+			if (slot!=-1 && M.slot[slot]!=-1)
+			{
+				M.godsById[M.slot[slot]].slot=god.slot;//swap
+				M.slot[god.slot]=M.slot[slot];
+			}
+			else if (god.slot!=-1) M.slot[god.slot]=-1;
+			if (slot!=-1) M.slot[slot]=god.id;
+			god.slot=slot;
+			Game.recalculateGains=true;
+		}
+		
+		M.dragging=false;
+		M.dragGod=function(what)
+		{
+			M.dragging=what;
+			var div=l('templeGod'+what.id);
+			var box=div.getBoundingClientRect();
+			var box2=l('templeDrag').getBoundingClientRect();
+			div.className='ready templeGod titleFont templeDragged';
+			l('templeDrag').appendChild(div);
+			var x=box.left-box2.left;
+			var y=box.top-box2.top;
+			div.style.transform='translate('+(x)+'px,'+(y)+'px)';
+			l('templeGodPlaceholder'+M.dragging.id).style.display='inline-block';
+			PlaySound('snd/tick.mp3');
+		}
+		M.dropGod=function()
+		{
+			if (!M.dragging) return;
+			var div=l('templeGod'+M.dragging.id);
+			div.className='ready templeGod titleFont';
+			div.style.transform='none';
+			if (M.slotHovered!=-1 && (M.swaps==0 || M.dragging.slot==M.slotHovered))//dropping on a slot but no swaps left, or slot is the same as the original
+			{
+				if (M.dragging.slot!=-1) l('templeSlot'+M.dragging.slot).appendChild(div);
+				else l('templeGodPlaceholder'+(M.dragging.id)).parentNode.insertBefore(div,l('templeGodPlaceholder'+(M.dragging.id)));
+				PlaySound('snd/sell1.mp3',0.75);
+			}
+			else if (M.slotHovered!=-1)//dropping on a slot
+			{
+				M.useSwap(1);
+				M.lastSwapT=0;
+				
+				var prev=M.slot[M.slotHovered];//id of the god already in the slot
+				if (prev!=-1)
+				{
+					prev=M.godsById[prev];
+					var prevDiv=l('templeGod'+prev.id);
+					if (M.dragging.slot!=-1)//swap with god's previous slot
+					{
+						l('templeSlot'+M.dragging.slot).appendChild(prevDiv);
+					}
+					else//swap back to roster
+					{
+						var other=l('templeGodPlaceholder'+(prev.id));
+						other.parentNode.insertBefore(prevDiv,other);
+					}
+				}
+				l('templeSlot'+M.slotHovered).appendChild(div);
+				M.slotGod(M.dragging,M.slotHovered);
+				
+				PlaySound('snd/tick.mp3');
+				PlaySound('snd/spirit.mp3',0.5);
+				
+				var rect=div.getBoundingClientRect();
+				Game.SparkleAt((rect.left+rect.right)/2,(rect.top+rect.bottom)/2-24);
+			}
+			else//dropping back to roster
+			{
+				var other=l('templeGodPlaceholder'+(M.dragging.id));
+				other.parentNode.insertBefore(div,other);
+				other.style.display='none';
+				M.slotGod(M.dragging,-1);
+				PlaySound('snd/sell1.mp3',0.75);
+			}
+			M.dragging=false;
+		}
+		
+		M.slotHovered=-1;
+		M.hoverSlot=function(what)
+		{
+			M.slotHovered=what;
+			if (M.dragging)
+			{
+				if (M.slotHovered==-1) l('templeGodPlaceholder'+M.dragging.id).style.display='inline-block';
+				else l('templeGodPlaceholder'+M.dragging.id).style.display='none';
+				PlaySound('snd/clickb'+Math.floor(Math.random()*7+1)+'.mp3',0.75);
+			}
+		}
+		
+		//external
+		Game.hasGod=function(what)
+		{
+			var god=M.gods[what];
+			for (var i=0;i<3;i++)
+			{
+				if (M.slot[i]==god.id) return (i+1);
+			}
+			return false;
+		}
+		Game.forceUnslotGod=function(god)
+		{
+			var god=M.gods[god];
+			if (god.slot==-1) return false;
+			var div=l('templeGod'+god.id);
+			var other=l('templeGodPlaceholder'+(god.id));
+			other.parentNode.insertBefore(div,other);
+			other.style.display='none';
+			M.slotGod(god,-1);
+			return true;
+		}
+		Game.useSwap=M.useSwap;
+		
+		
+		var str='';
+		str+='<style>'+
+		'#templeBG{background:url(img/shadedBorders.png),url(img/BGpantheon.jpg);background-size:100% 100%,auto;position:absolute;left:0px;right:0px;top:0px;bottom:16px;}'+
+		'#templeContent{position:relative;box-sizing:border-box;padding:4px 24px;text-align:center;}'+
+		'#templeGods{text-align:center;width:100%;padding:8px;box-sizing:border-box;}'+
+		'.templeIcon{pointer-events:none;margin:12px 6px 0px 6px;width:48px;height:48px;opacity:0.8;position:relative;}'+
+		'.templeSlot .templeIcon{margin:2px 6px 0px 6px;}'+
+		'.templeGod{box-shadow:4px 4px 4px #000;cursor:pointer;position:relative;color:#f33;opacity:0.8;text-shadow:0px 0px 4px #000,0px 0px 6px #000;font-weight:bold;font-size:12px;display:inline-block;width:60px;height:74px;background:url(img/spellBG.png);}'+
+		'.templeGod.ready{color:rgba(255,255,255,0.8);opacity:1;}'+
+		'.templeGod.ready:hover{color:#fff;}'+
+		'.templeGod:hover,.templeDragged{box-shadow:6px 6px 6px 2px #000;z-index:1000000001;top:-1px;}'+
+		'.templeGod:active{top:1px;}'+
+		'.templeGod.ready .templeIcon{opacity:1;}'+
+		'.templeGod:hover{background-position:0px -74px;} .templeGod:active{background-position:0px 74px;}'+
+		'.templeGod1{background-position:-60px 0px;} .templeGod1:hover{background-position:-60px -74px;} .templeGod1:active{background-position:-60px 74px;}'+
+		'.templeGod2{background-position:-120px 0px;} .templeGod2:hover{background-position:-120px -74px;} .templeGod2:active{background-position:-120px 74px;}'+
+		'.templeGod3{background-position:-180px 0px;} .templeGod3:hover{background-position:-180px -74px;} .templeGod3:active{background-position:-180px 74px;}'+
+		
+		'.templeGod:hover .templeIcon{top:-1px;}'+
+		'.templeGod.ready:hover .templeIcon{animation-name:bounce;animation-iteration-count:infinite;animation-duration:0.8s;}'+
+		'.noFancy .templeGod.ready:hover .templeIcon{animation:none;}'+
+		
+		'.templeGem{z-index:100;width:24px;height:24px;}'+
+		'.templeEffect{font-weight:bold;font-size:11px;position:relative;margin:0px -12px;padding:4px;padding-left:28px;}'+
+		'.description .templeEffect{border-top:1px solid rgba(255,255,255,0.15);background:linear-gradient(to top,rgba(255,255,255,0.1),rgba(255,255,255,0));}'+
+		'.templeEffect .templeGem{position:absolute;left:0px;top:0px;}'+
+		'.templeEffectOn{text-shadow:0px 0px 6px rgba(255,255,255,0.75);color:#fff;}'+
+		'.templeGod .templeGem{position:absolute;left:18px;bottom:8px;pointer-events:none;}'+
+		'.templeGem1{background-position:-1104px -720px;}'+
+		'.templeGem2{background-position:-1128px -720px;}'+
+		'.templeGem3{background-position:-1104px -744px;}'+
+		
+		'.templeSlot .templeGod,.templeSlot .templeGod:hover,.templeSlot .templeGod:active{background:none;}'+
+		
+		'.templeSlotDrag{position:absolute;left:0px;top:0px;right:0px;bottom:0px;background:#999;opacity:0;cursor:pointer;}'+
+		
+		'#templeDrag{position:absolute;left:0px;top:0px;z-index:1000000000000;}'+
+		'.templeGod{transition:transform 0.1s;}'+
+		'#templeDrag .templeGod{position:absolute;left:0px;top:0px;}'+
+		'.templeDragged{pointer-events:none;}'+
+		
+		'.templeGodPlaceholder{background:red;opacity:0;display:none;width:60px;height:74px;}'+
+		
+		'#templeSlots{margin:4px auto;text-align:center;}'+
+		'#templeSlot0{top:-4px;}'+
+		'#templeSlot1{top:0px;}'+
+		'#templeSlot2{top:4px;}'+
+		
+		'#templeInfo{position:relative;display:inline-block;margin:8px auto 0px auto;padding:8px 16px;padding-left:32px;text-align:center;font-size:11px;color:rgba(255,255,255,0.75);text-shadow:-1px 1px 0px #000;background:rgba(0,0,0,0.75);border-radius:16px;}'+
+		'</style>';
+		str+='<div id="templeBG"></div>';
+		str+='<div id="templeContent">';
+			str+='<div id="templeDrag"></div>';
+			str+='<div id="templeSlots">';
+			for (var i in M.slot)
+			{
+				var me=M.slot[i];
+				str+='<div class="ready templeGod templeGod'+(i%4)+' templeSlot titleFont" id="templeSlot'+i+'" '+Game.getDynamicTooltip('Game.ObjectsById['+M.parent.id+'].minigame.slotTooltip('+i+')','this')+'><div class="usesIcon shadowFilter templeGem templeGem'+(parseInt(i)+1)+'"></div></div>';
+			}
+			str+='</div>';
+			str+='<div id="templeInfo"><div '+Game.getDynamicTooltip('Game.ObjectsById['+M.parent.id+'].minigame.refillTooltip','this')+' id="templeLumpRefill" class="usesIcon shadowFilter lumpRefill" style="left:-6px;top:-10px;background-position:'+(-29*48)+'px '+(-14*48)+'px;"></div><div id="templeSwaps" '+Game.getTooltip('<div style="padding:8px;width:350px;font-size:11px;text-align:center;">Each time you slot a spirit, you use up one worship swap.<div class="line"></div>If you have 2 swaps left, the next one will refill after 1 hour.<br>If you have 1 swap left, the next one will refill after 4 hours.<br>If you have 0 swaps left, you will get one after 16 hours.<div class="line"></div>Unslotting a spirit costs no swaps.</div>')+'>-</div></div>';
+			str+='<div id="templeGods">';
+			for (var i in M.gods)
+			{
+				var me=M.gods[i];
+				var icon=me.icon||[0,0];
+				str+='<div class="ready templeGod templeGod'+(me.id%4)+' titleFont" id="templeGod'+me.id+'" '+Game.getDynamicTooltip('Game.ObjectsById['+M.parent.id+'].minigame.godTooltip('+me.id+')','this')+'><div class="usesIcon shadowFilter templeIcon" style="background-position:'+(-icon[0]*48)+'px '+(-icon[1]*48)+'px;"></div><div class="templeSlotDrag" id="templeGodDrag'+me.id+'"></div></div>';
+				str+='<div class="templeGodPlaceholder" id="templeGodPlaceholder'+me.id+'"></div>';
+			}//<div class="usesIcon shadowFilter templeGem templeGem'+(me.id%3+1)+'"></div>
+			str+='</div>';
+		str+='</div>';
+		div.innerHTML=str;
+		M.swapsL=l('templeSwaps');
+		M.lumpRefill=l('templeLumpRefill');
+		
+		for (var i in M.gods)
+		{
+			var me=M.gods[i];
+			AddEvent(l('templeGodDrag'+me.id),'mousedown',function(what){return function(e){if (e.button==0){M.dragGod(what);}}}(me));
+			AddEvent(l('templeGodDrag'+me.id),'mouseup',function(what){return function(e){if (e.button==0){M.dropGod(what);}}}(me));
+		}
+		for (var i in M.slot)
+		{
+			var me=M.slot[i];
+			AddEvent(l('templeSlot'+i),'mouseover',function(what){return function(){M.hoverSlot(what);}}(i));
+			AddEvent(l('templeSlot'+i),'mouseout',function(what){return function(e){if (e.button==0){M.hoverSlot(-1);}}}(i));
+		}
+		
+		AddEvent(document,'mouseup',M.dropGod);
+		
+		
+		M.refillTooltip=function(){
+			return '<div style="padding:8px;width:300px;font-size:11px;text-align:center;">Click to refill all your worship swaps for <span class="price lump">1 sugar lump</span>.'+
+				(Game.canRefillLump()?'<br><small>(can be done once every '+Game.sayTime(Game.getLumpRefillMax(),-1)+')</small>':('<br><small class="red">(usable again in '+Game.sayTime(Game.getLumpRefillRemaining()+Game.fps,-1)+')</small>'))+
+			'</div>';
+		};
+		AddEvent(M.lumpRefill,'click',function(){
+			if (M.swaps<3)
+			{Game.refillLump(1,function(){
+				M.swaps=3;
+				M.swapT=Date.now();
+				PlaySound('snd/pop'+Math.floor(Math.random()*3+1)+'.mp3',0.75);
+			});}
+		});
+		
+		//M.parent.switchMinigame(1);
+	}
+	M.save=function()
+	{
+		//output cannot use ",", ";" or "|"
+		var str='';
+		for (var i in M.slot)
+		{str+=parseFloat(M.slot[i])+'/';}
+		str=str.slice(0,-1);
+		str+=' '+parseFloat(M.swaps)+' '+parseFloat(M.swapT);
+		str+=' '+parseInt(M.parent.onMinigame?'1':'0');
+		return str;
+	}
+	M.load=function(str)
+	{
+		//interpret str; called after .init
+		//note : not actually called in the Game's load; see "minigameSave" in main.js
+		if (!str) return false;
+		var i=0;
+		var spl=str.split(' ');
+			var bit=spl[i++].split('/')||[];
+			for (var ii in M.slot)
+			{
+				if (parseFloat(bit[ii])!=-1)
+				{
+					var god=M.godsById[parseFloat(bit[ii])];
+					M.slotGod(god,ii);
+					l('templeSlot'+god.slot).appendChild(l('templeGod'+god.id));
+				}
+			}
+		M.swaps=parseFloat(spl[i++]||3);
+		M.swapT=parseFloat(spl[i++]||Date.now());
+		var on=parseInt(spl[i++]||0);if (on && Game.ascensionMode!=1) M.parent.switchMinigame(1);
+	}
+	M.reset=function()
+	{
+		M.swaps=3;
+		M.swapT=Date.now();
+		for (var i in M.slot) {M.slot[i]=-1;}
+		for (var i in M.gods)
+		{
+			var me=M.gods[i];
+			me.slot=-1;
+			var other=l('templeGodPlaceholder'+(me.id));
+			other.parentNode.insertBefore(l('templeGod'+me.id),other);
+			other.style.display='none';
+		}
+	}
+	M.logic=function()
+	{
+		//run each frame
+		var t=1000*60*60;
+		if (M.swaps==0) t=1000*60*60*16;
+		else if (M.swaps==1) t=1000*60*60*4;
+		var t2=M.swapT+t-Date.now();
+		if (t2<=0 && M.swaps<3) {M.swaps++;M.swapT=Date.now();}
+		M.lastSwapT++;
+	}
+	M.draw=function()
+	{
+		//run each draw frame
+		if (M.dragging)
+		{
+			var box=l('templeDrag').getBoundingClientRect();
+			var x=Game.mouseX-box.left-60/2;
+			var y=Game.mouseY-box.top;
+			if (M.slotHovered!=-1)//snap to slots
+			{
+				var box2=l('templeSlot'+M.slotHovered).getBoundingClientRect();
+				x=box2.left-box.left;
+				y=box2.top-box.top;
+			}
+			l('templeGod'+M.dragging.id).style.transform='translate('+(x)+'px,'+(y)+'px)';
+		}
+		var t=1000*60*60;
+		if (M.swaps==0) t=1000*60*60*16;
+		else if (M.swaps==1) t=1000*60*60*4;
+		var t2=M.swapT+t-Date.now();
+		M.swapsL.innerHTML='Worship swaps : <span class="titleFont" style="color:'+(M.swaps>0?'#fff':'#c00')+';">'+M.swaps+'/'+(3)+'</span>'+((M.swaps<3)?' (next in '+Game.sayTime((t2/1000+1)*Game.fps,-1)+')':'');
+	}
+	M.init(l('rowSpecial'+M.parent.id));
+}
+var M=0;

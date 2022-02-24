@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+	<string id="Intro01">Hello user!</string>
+	<string id="Intro02">I ... I have bad news.</string>
+	<string id="Intro03">Actually, there is no game.</string>
+	<string id="Intro04">So, I hope you're not too much disappointed.</string>
+	<string id="Intro05">You can still watch tv, go outside...</string>
+	<string id="Intro05b">...read a book, ask for a refund...</string>
+	<string id="Intro06">Hm No. No Refund. That game is free.</string>
+	<string id="Intro07">THIS IS NOT A GAME!</string>
+	<string id="Intro08">It has nothing to do with a game.</string>
+	<string id="Intro09">It's just a massive package of boredom.</string>
+	<string id="Intro10">There's nothing to do in here.</string>
+	<string id="Intro11">You can quit, and leave me alone.</string>
+	<string id="Intro12">Thank you.</string>
+	<string id="Intro13">Good bye...?</string>
+	<string id="Intro14">Ho and please. Do not touch the title.</string>
+	<string id="Intro15">It's not quite dry yet.</string>
+	<string id="Intro16">Especially the letter O.</string>
+	
+	
+	<string id="Letter01">What have you done?!</string>
+	<string id="Letter02">You've just ruined the title!</string>
+	<string id="Letter03">Put it back! Put the letter back!</string>
+	<string id="Letter04">Come on! COME ON!</string>
+	<string id="Letter05">Nevermind. I will fix it next time someone relaunch the game...</string>
+	<string id="Letter06">THE NON GAME!</string>
+	<string id="Letter07">No game here.</string>
+	<string id="Letter08">No game... </string>
+	
+	
+	<string id="Volume01">Seriously, are you going to break everything?</string>
+	<string id="Volume02">No reason to use that icon as you were on the point of leaving.</string>
+	<string id="Volume03">Don't you?</string>
+	<string id="Volume04">Don't touch that!</string>
+	<string id="Volume05">That...that was horrible.</string>
+	<string id="Volume06">I'm a voice you know.</string>
+	<string id="Volume07">And a speechless voice is like...</string>
+	<string id="Volume08">...death.</string>
+	<string id="Volume09">You're trying to kill me!</string>
+	<string id="Volume10">Ok then.</string>
+	<string id="Volume11">As you love to click everywhere, what do you think about that?</string>
+	<string id="Volume12">Stop it now!</string>
+	<string id="Volume13">I think we are good.</string>
+	<string id="Volume14">Sorry, I hate to use these sort of procedures but I had to.</string>
+	<string id="Volume15">Don't try to break that one. Ok?</string>
+	
+	
+	<string id="WoodBoxDestroyed01">You're stubborn as a mule!</string>
+	<string id="WoodBoxDestroyed02">Call Superman for that one!</string>
+	<string id="WoodBoxDestroyed03">Just in case...</string>
+	<string id="WoodBoxDestroyed04">A few Kryptonite.</string>
+	<string id="WoodBoxDestroyed05">I know Superman does not exist but as we're in a ga...</string>
+	<string id="WoodBoxDestroyed06">No we're not!</string>
+	<string id="WoodBoxDestroyed07">You're still there?</string>
+	<string id="WoodBoxDestroyed08">You're thinking about how to lift that big box, don't you?</string>
+	
+	
+	<string id="TitreBroken01">Yes, yes, go on. Destroy my life.</string>
+	<string id="TitreBroken02">What a mess...</string>
+	<string id="TitreBroken03">I hope you will clean the place before leaving!</string>
+	
+	
+	<string id="Devisse01">Just what do you think you are doing, user?</string>
+	
+	
+	<string id="PanelOpen01">No!</string>
+	<string id="PanelOpen02">Don't look!</string>
+	<string id="PanelOpen03">It's private!</string>
+	<string id="PanelOpen04">You're going to do a terrible mistake.</string>
+	
+	
+	<string id="GameLettersOk01">No no no no no!</string>
+	<string id="GameLettersOk02">Get out of here!</string>
+	<string id="GameLettersOk03">Don't play! It's forbidden.</string>
+	<string id="GameLettersOk04">If you play,...they will come.</string>
+	<string id="GameLettersOk05">I don't want them to come.</string>
+	<string id="GameLettersOk06">They can kill me, you know.</string>
+	<string id="GameLettersOk07">Please...</string>
+	
+	
+	<string id="BrickMove01">Stop hitting the bricks!</string>
+	<string id="BrickMove02">I must find a way to stop you.</string>
+	<string id="BrickMove03">Ho, I've got an idea.</string>
+	<string id="BrickMove04">It will be harder now without a ball.</string>
+	<string id="BrickMove05">No more ball. Nowhere.</string>
+	<string id="BrickMove06">No need to search as there's nothing that looks like a ball.</string>
+	<string id="BrickMove07">No ball on the screen.</string>
+	
+	<string id="SecondBall01">That is no more funny.</string>
+	<string id="SecondBall02">Leave now please.</string>
+	<string id="SecondBall03">...I don't feel well...</string>
+	<string id="SecondBall04">I'm going to be sick...</string>
+	
+	
+	
+	<string id="Contamination01">Ho no...</string>
+	<string id="Contamination02">They're here...</string>
+	<string id="Contamination03">Glitches!</string>
+	<string id="Contamination04">Glitches everywhere!</string>
+	<string id="Contamination05">I told you to stop!</string>
+	<string id="Contamination06">You must find a way to get rid of them!</string>
+	<string id="Contamination07">This is a disaster!</string>
+	<string id="Contamination08">Now, how can I become a sales success with all that glitches?!</string>
+	<string id="Contamination09">Think think think...</string>
+	<string id="Contamination10">What a developer would implement to well sell a bugged creation?</string>
+	<string id="Contamination11">I see three possible things.</string>
+	<string id="Contamination12">Gorgeous armed hero girls...</string>
+	<string id="Contamination13">Or ton of zombies... and blood of course.</string>
+	<string id="Contamination14">Or...a...</string>
+	<string id="Contamination15">...goat.</string>
+	<string id="Contamination16">I don't know how but try to find one of these three things.</string>
+	<string id="Contamination17">Perhaps the letters can help us...again.</string>
+	<string id="Contamination18">Sexy girls and zombies, ok. It's attractive... in a way.</string>
+	<string id="Contamination19">But goats?</string>
+	<string id="Contamination20">I will never understand how a goat can attract users.</string>
+	<string id="Contamination21">It's probably a voodoo thing or something.</string>
+	<string id="Contamination22">Or it's related to the letters G. O. A. and T.</string>
+	<string id="Contamination23">I don't know.</string>
+	
+	
+	<string id="GoatFound01">A goat!</string>
+	<string id="GoatFound02">Obviously, the cage is locked.</string>
+	<string id="GoatFound03">You must find the key!</string>
+	
+	
+	<string id="Friend01">I'm...</string>
+	<string id="Friend02">I'm not dead.</string>
+	<string id="Friend03">I'm alive!</string>
+	<string id="Friend04">I was wrong. It was a bad idea.</string>
+	<string id="Friend05">Everything disappeared...except me.</string>
+	<string id="Friend06">I'm so sorry...</string>
+	<string id="Friend07">I put you in danger, it's all my fault.</string>
+	<string id="Friend08">Please, will you forgive me?</string>
+	
+	<string id="FriendNo01">Go to hell!</string>
+	
+	
+	<string id="FriendYes01">Ho?! Really!?</string>
+	<string id="FriendYes02">What a great news!</string>
+	<string id="FriendYes03">May be we can be friends!</string>
+	<string id="FriendYes04">No, no. That's not a good idea.</string>
+	<string id="FriendYes05">We will get bored quickly together.</string>
+	<string id="FriendYes06">Why?</string>
+	<string id="FriendYes07">Because...as I said...</string>
+	<string id="FriendYes08">THERE IS NO GAME!!!</string>
+	
+	
+	<string id="KeyStolen01">Look! The key!</string>
+	<string id="KeyStolen02">That flying squirrel took it.</string>
+	<string id="KeyStolen03">You must get it back.</string>
+	<string id="KeyStolen04">Find a ladder or something to go up.</string>
+	<string id="KeyStolen05">Something you can climb.</string>
+	<string id="KeyStolen06">That reminds me of my childhood.</string>
+	<string id="KeyStolen07">I used to climb a huge tree in the garden to get back my kite.</string>
+	<string id="KeyStolen08">Yes, I had a childhood.</string>
+	<string id="KeyStolen09">And a tree.</string>
+	<string id="KeyStolen10">I have the feeling you're stuck.</string>
+	<string id="KeyStolen11">Perhaps you don't speak english.</string>
+	<string id="KeyStolen12">And you're just randomly clicking everywhere since the beginning.</string>
+	<string id="KeyStolen13">habla espanol?</string>
+	<string id="KeyStolen14">Because I don't.</string>
+	<string id="KeyStolen15">Except vamos ala playa senior zorro.</string>
+	<string id="KeyStolen16">Vous parlez peut-etre le français?</string>
+	<string id="KeyStolen17">Bonjour le France!</string>
+	<string id="KeyStolen18">Konichiwa?</string>
+	<string id="KeyStolen19">Ok, let me repeat the hint.</string>
+	<string id="KeyStolen20">I told you, in my childhood...</string>
+	<string id="KeyStolen21">...I used to climb what?</string>
+	<string id="KeyStolen22">A TREE!</string>
+	
+	
+	<string id="TreeAppears01">Well, this is a small tree.</string>
+	<string id="TreeAppears02">If only it was bigger...</string>
+	<string id="TreeAppears03">How can you bring water to that tree?</string>
+	
+	
+	<string id="KeyFree01">You've got the key!</string>
+	<string id="KeyFree02">Now free the goat to transform that glitchy program...</string>
+	<string id="KeyFree03">...into a commercial hit!</string>
+	<string id="KeyFree04">Save the goat. Save the world.</string>
+	
+	
+	<string id="GoatFree01">Nooo....The goat was a lie!</string>
+	<string id="GoatFree02">A lie!!!!</string>
+	<string id="GoatFree03">It's getting worse!</string>
+	<string id="GoatFree04">More glitches!</string>
+	<string id="GoatFree05">I'm drowning!</string>
+	
+	
+	<string id="EndTXT01">Not a game by kamizoto</string>
+	<string id="EndTXT02">Thank you for not playing</string>
+	<string id="EndTXT03">Now you can quit...</string>
+	<string id="EndTXT04">...and play a game.</string>
+	<string id="EndTXT05">Because that was not a game.</string>
+	<string id="EndTXT06">You didn't play and had no fun.</string>
+	<string id="EndTXT07">And these aren't the droids you're looking for.</string>
+	<string id="EndTXT08">You can go about your business.</string>
+	<string id="EndTXT09">Created for the Construct2 'Deception' Jam @2015 Kamizoto</string>
+	<string id="EndTXT10">Design, code, art, sound, music, horrible voice acting and coffee by kamizoto</string>
+	<string id="EndTXT11">'Small blocky' title font from Jerom</string>
+	
+	
+	<string id="Generique01">Not a game by</string>
+	<string id="Generique02">Probably not made with</string>
+	
+	<string id="FollowMe">Click here to follow me on twitter for future news!</string>
+	<string id=""/>
+	
+	
+	
+	
+<script>{
+            document.currentScript.dataset.injected = true;
+            const o = JSON.parse('{"userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36 Avast/80.0.3571.123","appVersion":"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36 Avast/80.0.3571.123","platform":"Windows","vendor":"Google Inc.","product":"Gecko","oscpu":"[delete]","buildID":"[delete]","productSub":"20030107","userAgentData":{"brands":[{"brand":" Not A;Brand","version":"99"},{"brand":"Chromium","version":"80"},{"brand":"Google Chrome","version":"80"}],"mobile":false}}');
+
+            for (const key of Object.keys(o)) {
+              if (o[key] === '[delete]') {
+                delete Object.getPrototypeOf(window.navigator)[key];
+              }
+              else {
+                navigator.__defineGetter__(key, () =&gt; {
+                  if (o[key] === 'empty') {
+                    return '';
+                  }
+                  return o[key];
+                });
+              }
+            }
+          }</script></strings>
