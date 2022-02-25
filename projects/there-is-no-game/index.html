@@ -11,7 +11,14 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 	<meta name="HandheldFriendly" content="true" />
-	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-98DP5VKS42"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-98DP5VKS42');
+</script>
     <!-- All margins and padding must be zero for the canvas to fill the screen. -->
 	<style type="text/css">
 		* {
@@ -37,24 +44,15 @@
 </head> 
  
 <body>
-	<!-- The canvas must be inside a div called c2canvasdiv -->
 	<div id="c2canvasdiv">
-	
-		<!-- The canvas the project will render to.  If you change its ID, don't forget to change the
-		ID the runtime looks for in the jQuery ready event (above). -->
 		<canvas id="c2canvas" width="320" height="180">
-			<!-- This text is displayed if the visitor's browser does not support HTML5.
-			You can change it, but it is a good idea to link to a description of a browser
-			and provide some links to download some popular HTML5-compatible browsers. -->
 			Your browser does not appear to support HTML5.  Try upgrading your browser to the latest version.  <a href="http://www.whatbrowser.org">What is a browser?</a>
 			<br/><br/>
 			<a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a><br/>
 			<a href="http://www.google.com/chrome/">Google Chrome</a><br/>
 			<a href="http://www.apple.com/safari/download/">Apple Safari</a><br/>
 		</canvas>
-		
 	</div>
-	
 	<script src="js/jquery-2.1.1.min.js"></script>
 	<script src="js/c2runtime.js"></script>
     <script src="js/c2webappstart.js"></script>

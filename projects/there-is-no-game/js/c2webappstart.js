@@ -9,7 +9,6 @@ jQuery(document).ready(function ()
 function onVisibilityChanged() {
 	if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
 		cr_setSuspended(true);
-		var screen = "98DP5VKS42";
 	else
 		cr_setSuspended(false);
 };
