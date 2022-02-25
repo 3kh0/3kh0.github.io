@@ -7,7 +7,7 @@
 <body>
 <div class="container">
 <div class="box">
-<input type="text" id="searchbar" onkeyup="document.querySelectorAll('#glist>a').forEach(l=>l.style.display=l.textContent.toUpperCase().includes(this.value.toUpperCase().replace(/ /g,''))?'block':'none')" autocomplete="off" spellcheck="false" placeholder="Search" />
+<input type="text" id="searchbar" onkeyup="document.querySelectorAll('#list>a').forEach(l=>l.style.display=l.textContent.toUpperCase().includes(this.value.toUpperCase().replace(/ /g,''))?'block':'none')" autocomplete="off" spellcheck="false" placeholder="Search" />
 <div id="list">
 <h2>All Projects</h2>
 <a href="/projects/1">1</a>
