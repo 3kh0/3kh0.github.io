@@ -123,7 +123,7 @@ bkcore.hexgl.HexGL.prototype.reset = function()
 bkcore.hexgl.HexGL.prototype.restart = function()
 {
 	try{ this.document.getElementById('finish').style.display = 'none'; }
-	catch(e){};
+	catch(e){}
 	this.reset();
 }
 
