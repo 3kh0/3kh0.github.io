@@ -1,6 +1,6 @@
 body {
     background: #000;
-    margin: 0px 0px 0px 0px; /* the extra 1px allows the iOS inner/outer check to work */
+    margin: 0; /* the extra 1px allows the iOS inner/outer check to work */
 }
 
 #sbc_orientation {
