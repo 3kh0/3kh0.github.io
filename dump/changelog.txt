@@ -17,6 +17,7 @@ So yeah, today I brought my home computer to school. It is a gaming laptop but n
 + Added HexGL
 + Added Flappy 2048 (hardest game ever)
 + Added There is no game
++ Added Stack
 ^ Updated cookie clicker from v2.021 to v2.031
 ------------------------------------------------------------
 Feb, 23
