@@ -572,3 +572,99 @@ a.svg:after {
     position: relative;
     z-index: 2;
 }
+  .hcb-comment-body {
+                color: white;
+            }
+            .closebtn {
+                margin-left: 15px;
+                color: white;
+                font-weight: bold;
+                float: right;
+                font-size: 22px;
+                line-height: 20px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            .closebtn:hover {
+                color: #000000;
+            }
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                border-radius: 10px;
+                background-color: #2b2b2b;
+                text-align: center;
+                font-family: arial;
+            }
+            a {
+                text-decoration: none;
+                font-size: 22px;
+                color: black;
+            }
+            .header {
+                border: 16px solid DodgerBlue;
+                border-radius: 16px;
+            }
+            .text1 {
+                font-size: 50px;
+            }
+            .line {
+                border-radius: 4px;
+                border: 4px solid DodgerBlue;
+            }
+            .white {
+                color: white;
+            }
+            .black {
+                color: black;
+            }
+            .desc {
+                color: gray;
+                font-size: 16px;
+                padding: 5px;
+            }
+            button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                border-radius: 10px;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+            }
+            .flex-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                align-content: center;
+            }
+            .flex-container > div {
+                margin: 1px;
+                padding: 3px;
+            }
+            .hcb-comment-body {
+                color: white;
+                font-family: 'Montserrat';
+            }
+            .thumb {
+                border-radius: 10px;
+            }
+            button:hover,
+            a:hover {
+                opacity: 0.7;
+            }
+            .center {
+                margin: auto;
+                width: 60%;
+                border: 0px solid #73ad21;
+                padding: 10px;
+            }
+            .centertxt {
+                text-align: center;
+                border: 0px solid green;
+            }
