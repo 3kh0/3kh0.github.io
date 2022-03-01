@@ -1,28 +1,25 @@
 #hcb_settings {
   color: #ffffff;
   font-size: 16px;
-  display: none;
 }
 .hcb-icon hcb-door-out {
   width: 28px;
   filter: invert(100%) sepia(6%) saturate(22%) hue-rotate(106deg) brightness(104%) contrast(106%);
-  display: none;
 }
 .btn-secondary {
   border-radius: 10px;
-  display: none;
 }
 #hcb_submit {
   border-radius: 10px;
-  display: none;
 }
 #hcb_form_content {
   border-radius: 10px;
-  display: none;
 }
 #hcb_form_name {
   border-radius: 10px;
-  display: none;
+}
+#hcb_form_email {
+  border-radius: 10px;
 }
 a:link {
   color: #006eff;

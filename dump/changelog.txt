@@ -10,6 +10,9 @@ Here is where I will post updates on when a new game is added or something chang
 NOTE: Make sure you refresh the page! Sometimes you will not get the lastest update!
 
 ------------------------------------------------------------
+Mar, 1
++ Added back comment box! (please do not abuse it)
+------------------------------------------------------------
 Feb, 28
 + Added Google snake!
 ^ Fixed Error with HexGL not working.
