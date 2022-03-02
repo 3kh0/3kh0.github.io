@@ -1,0 +1,135 @@
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+.solitaire,
+.size-limit {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.solitaire {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: green;
+    position: relative;
+    overflow: hidden; /* important for win effect */
+    touch-action: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    --card-width: 71px;
+    --card-height: 96px;
+}
+
+.size-limit {
+    --max-width: 1200px;
+    max-width: var(--max-width);
+    margin-left: max(calc(50vw - var(--max-width) / 2), 0px);
+}
+
+.card {
+    width: var(--card-width);
+    height: var(--card-height);
+    background-image: url("./spritesheet.png");
+    position: absolute;
+    left: 0;
+    top: 0;
+    user-select: none;
+}
+.card--back {
+    background-position: var(--background-position-facing-down);
+}
+.card--front {
+    cursor: pointer;
+    background-position: var(--background-position-facing-up);
+}
+.card--moving {
+    position: fixed;
+    z-index: 1;
+}
+
+.deck__pile {
+    flex-shrink: 0; /* for small viewport */
+    position: relative;
+    width: var(--card-width);
+    height: var(--card-height);
+    cursor: pointer;
+    background-image: url("./spritesheet.png");
+    background-position: calc(var(--card-width) * -1) calc(var(--card-height) * -5);
+}
+.deck__pile .card + .card {
+    margin-top: 1px;
+    margin-left: 2px;
+}
+.deck__pile .card + .card + .card {
+    margin-left: 4px;
+    margin-top: 2px;
+}
+.deck__deal {
+    position: relative;
+}
+.deck__deal .card:last-child:not(:first-child) {
+    left: 28px;
+    top: 2px;
+}
+.deck__deal .card:nth-last-child(2):not(:first-child) {
+    left: 14px;
+    top: 1px;
+}
+.deck__deal .card:first-child + .card:last-child {
+    left: 14px;
+    top: 1px;
+}
+
+.finish-deck {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+}
+
+.upper {
+    display: flex;
+    padding-top: 5px;
+    justify-content: space-evenly;
+}
+.upper__spacer {
+    width: var(--card-width);
+}
+.board-deck {
+    display: flex;
+    padding-top: 6px;
+    justify-content: space-evenly;
+}
+.board-deck .card--front > .card--front {
+    top: 15px;
+}
+.board-deck .card--back > .card--front,
+.board-deck .card--back > .card--back {
+    top: 3px;
+}
+
+/* card cells */
+.seven,
+.aces {
+    position: relative;
+    width: var(--card-width);
+    height: var(--card-height);
+    background-image: url("./spritesheet.png");
+    background-position: calc(var(--card-width) * -0) calc(var(--card-height) * -4);
+}
+
+.finish-dest {
+    box-shadow: 0 0 0 1px #03ffff;
+    border-radius: 4px;
+}

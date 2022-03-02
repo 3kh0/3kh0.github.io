@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="lib/os-gui/layout.css" rel="stylesheet" type="text/css">
+    <link href="lib/os-gui/windows-98.css" rel="stylesheet" type="text/css">
+    <link href="src/solitaire.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/solitaire-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="img/solitaire-32x32.png" sizes="32x32" type="image/png">
+    <title>Solitaire | 3kh0</title>
+</head>
+<body>
+    <div class="solitaire inset-deep" id="js-solitaire">
+        <div class="size-limit">
+            <div class="upper" id="js-upper">
+                <div id="js-deck-pile" class="deck__pile upper__spacer"></div>
+                <div id="js-deck-deal" class="deck__deal upper__spacer"></div>
+                <div class="upper__spacer"></div>
+            </div>
+            <div id="js-board" class="board-deck"></div>
+        </div>
+    </div>
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/os-gui/MenuBar.js"></script>
+    <script src="lib/os-gui/$Window.js"></script>
+    <script src="src/msgbox.js"></script>
+    <script>defaultMessageBoxTitle = "Solitaire";</script>
+    <script src="src/menus.js"></script>
+    <script src="src/index.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-98DP5VKS42"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-98DP5VKS42');
+</script>
+</body>
+</html>
