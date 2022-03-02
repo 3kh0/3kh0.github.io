@@ -46,10 +46,10 @@ bkcore.threejs = bkcore.threejs || {};
 (function(w){
 	var perfNow;
 	var perfNowNames = ['now', 'webkitNow', 'msNow', 'mozNow'];
-	if(!!w['performance']) for(var i = 0; i < perfNowNames.length; ++i)
+	if(w['performance']) for(var i = 0; i < perfNowNames.length; ++i)
 	{
 		var n = perfNowNames[i];
-		if(!!w['performance'][n])
+		if(w['performance'][n])
 		{
 			perfNow = function(){return w['performance'][n]()};
 			break;

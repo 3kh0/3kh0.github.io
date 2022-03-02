@@ -47,7 +47,7 @@ pgli.App = gamecore.Base.extend("App",
 				self.console.scrollTop(
 			        self.console[0].scrollHeight - self.console.height()
 			    );
-			};
+			}
 		}
 
 		window.clearTrace = function()

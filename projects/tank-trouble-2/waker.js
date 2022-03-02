@@ -10,7 +10,7 @@ function startTimer()
 	
 	timer_running = true;
 	timer_id = setInterval(tick, 16);
-};
+}
 
 function stopTimer()
 {
@@ -20,7 +20,7 @@ function stopTimer()
 	timer_running = false;
 	clearInterval(timer_id);
 	timer_id = -1;
-};
+}
 
 function tick()
 {
@@ -28,7 +28,7 @@ function tick()
 		return;
 	
 	self.postMessage("tick");
-};
+}
 
 self.addEventListener("message", function (e)
 {
