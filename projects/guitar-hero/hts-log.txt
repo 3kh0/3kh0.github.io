@@ -1,0 +1,18 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 07 Mar 2022 10:21:47 at https://fgh.space/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://fgh.space/ -O1 "C:\My Web Sites\ghero" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:22:27	Error: 	"Not Found" (404) at link https://fgh.space/$1/ (from ulogin.ru/js/ulogin.js)
+10:22:27	Error: 	"Not Found" (404) at link https://fgh.space/AppleWebKit/ (from ulogin.ru/js/ulogin.js)
+10:22:27	Error: 	"Not Found" (404) at link https://fgh.space/+uLogin.ids[b].hovered_sprite+ (from ulogin.ru/js/ulogin.js)
+10:22:27	Error: 	"Not Found" (404) at link https://fgh.space/version/3.0/html/weight_set.html (from ulogin.ru/js/ulogin.js)
+10:22:27	Error: 	"Not Found" (404) at link https://fgh.space/auth.php (from ulogin.ru/js/ulogin.js)
+10:22:27	Error: 	"Not Found" (404) at link https://fgh.space/url.php (from ulogin.ru/js/ulogin.js)
+10:22:27	Error: 	"Not Found" (404) at link https://fgh.space/version/3.0/html/buttons_receiver.html (from ulogin.ru/js/ulogin.js)
+
+HTTrack Website Copier/3.49-2 mirror complete in 40 seconds : 58 links scanned, 50 files written (3601496 bytes overall) [3100526 bytes received at 77513 bytes/sec], 785005 bytes transferred using HTTP compression in 22 files, ratio 33%, 6.5 requests per connection
+(7 errors, 0 warnings, 0 messages)
