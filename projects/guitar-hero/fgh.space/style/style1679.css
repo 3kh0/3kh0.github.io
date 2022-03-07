@@ -120,16 +120,16 @@ iframe#pw{
 	color: #FFCE1D;
 	text-transform: uppercase;
 	font: 26px Roboto Condensed;
-	text-shadow: 0px 2px 4px #000;
+	text-shadow: 0 2px 4px #000;
 	padding:5px;
 	margin:0;
 }
 #signin h3{
 	color: #aaa;
 	font: 21px 'Lobster', cursive;
-	text-shadow: 0px 2px 4px #000;
-	margin:0px 50px;
-	padding:5px 0 10px 0;
+	text-shadow: 0 2px 4px #000;
+	margin:0 50px;
+	padding:5px 0 10px;
 	font-weight:100;
 	border-top:solid #bd1622 1px;
 }
@@ -138,7 +138,7 @@ iframe#pw{
 	color: #fff;
 }
 #signin p{
-	margin:20px 0 5px 0;
+	margin:20px 0 5px;
     height:26px;
 }
 #signin .button{
@@ -222,7 +222,7 @@ iframe#pw{
 	width:25px;
 	height:25px;
 	float:left;
-	margin:30px 5px 0 5px;
+	margin:30px 5px 0;
 	opacity:0.5;
 	cursor:pointer;
 }
