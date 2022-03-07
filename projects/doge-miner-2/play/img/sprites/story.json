@@ -1,0 +1,148 @@
+{"frames": {
+
+"story/blueprints":
+{
+	"frame": {"x":3,"y":741,"w":244,"h":226},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":244,"h":226},
+	"sourceSize": {"w":243,"h":225}
+},
+"story/cateminer_kittens":
+{
+	"frame": {"x":735,"y":411,"w":262,"h":198},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":4,"w":262,"h":198},
+	"sourceSize": {"w":270,"h":202}
+},
+"story/cloud_miner":
+{
+	"frame": {"x":393,"y":231,"w":376,"h":146},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":376,"h":146},
+	"sourceSize": {"w":375,"h":146}
+},
+"story/dia":
+{
+	"frame": {"x":3,"y":537,"w":292,"h":200},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":292,"h":200},
+	"sourceSize": {"w":291,"h":200}
+},
+"story/diamonds":
+{
+	"frame": {"x":299,"y":597,"w":140,"h":96},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":58,"y":40,"w":140,"h":96},
+	"sourceSize": {"w":256,"h":179}
+},
+"story/diaturn":
+{
+	"frame": {"x":815,"y":3,"w":176,"h":200},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":176,"h":200},
+	"sourceSize": {"w":175,"h":200}
+},
+"story/diaturn2":
+{
+	"frame": {"x":815,"y":207,"w":176,"h":200},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":176,"h":200},
+	"sourceSize": {"w":175,"h":200}
+},
+"story/hitsong":
+{
+	"frame": {"x":499,"y":597,"w":222,"h":184},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":8,"w":222,"h":184},
+	"sourceSize": {"w":250,"h":200}
+},
+"story/jupiter_rocket":
+{
+	"frame": {"x":499,"y":785,"w":236,"h":200},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":236,"h":200},
+	"sourceSize": {"w":236,"h":199}
+},
+"story/map_crude":
+{
+	"frame": {"x":251,"y":741,"w":244,"h":226},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":244,"h":226},
+	"sourceSize": {"w":243,"h":225}
+},
+"story/map_red_dot":
+{
+	"frame": {"x":739,"y":773,"w":244,"h":226},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":244,"h":226},
+	"sourceSize": {"w":243,"h":225}
+},
+"story/mars_party":
+{
+	"frame": {"x":3,"y":379,"w":374,"h":154},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":374,"h":154},
+	"sourceSize": {"w":373,"h":153}
+},
+"story/moonbase":
+{
+	"frame": {"x":3,"y":3,"w":414,"h":174},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":414,"h":174},
+	"sourceSize": {"w":414,"h":174}
+},
+"story/oceans_on_mars":
+{
+	"frame": {"x":3,"y":181,"w":386,"h":194},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":386,"h":194},
+	"sourceSize": {"w":386,"h":193}
+},
+"story/titan1":
+{
+	"frame": {"x":739,"y":613,"w":252,"h":156},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":6,"w":252,"h":156},
+	"sourceSize": {"w":256,"h":179}
+},
+"story/to_the_moon":
+{
+	"frame": {"x":381,"y":381,"w":350,"h":212},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":350,"h":212},
+	"sourceSize": {"w":350,"h":212}
+},
+"story/vibrations_jupiter":
+{
+	"frame": {"x":421,"y":3,"w":390,"h":224},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":390,"h":224},
+	"sourceSize": {"w":430,"h":223}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "story.png",
+	"format": "RGBA5555",
+	"size": {"w":1000,"h":1002},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:396c3d316dd20b4c3be132d3a5c0e4c1:faed3b6a022b22a70a76bfe89b7988cc:96ac3bf7467ef134f431b4c4840b362b$"
+}
+}

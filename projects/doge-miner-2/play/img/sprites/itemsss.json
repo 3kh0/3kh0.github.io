@@ -1,0 +1,732 @@
+{"frames": {
+
+"items/pickaxes/ancientaxe":
+{
+	"frame": {"x":4,"y":1214,"w":250,"h":280},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":250,"h":280},
+	"sourceSize": {"w":250,"h":280}
+},
+"items/pickaxes/axe":
+{
+	"frame": {"x":1148,"y":1742,"w":114,"h":300},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":114,"h":300},
+	"sourceSize": {"w":200,"h":300}
+},
+"items/pickaxes/barbell_empty":
+{
+	"frame": {"x":1876,"y":1170,"w":24,"h":312},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":0,"w":24,"h":312},
+	"sourceSize": {"w":31,"h":312}
+},
+"items/pickaxes/barbell_halfweights":
+{
+	"frame": {"x":1628,"y":1034,"w":114,"h":310},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":114,"h":310},
+	"sourceSize": {"w":114,"h":310}
+},
+"items/pickaxes/barbell_weights":
+{
+	"frame": {"x":1560,"y":698,"w":108,"h":330},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":330},
+	"sourceSize": {"w":108,"h":330}
+},
+"items/pickaxes/basketpickaxe":
+{
+	"frame": {"x":256,"y":908,"w":220,"h":300},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":220,"h":300},
+	"sourceSize": {"w":220,"h":300}
+},
+"items/pickaxes/bigaxe":
+{
+	"frame": {"x":1420,"y":1714,"w":120,"h":312},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":312},
+	"sourceSize": {"w":119,"h":312}
+},
+"items/pickaxes/bigaxe2":
+{
+	"frame": {"x":1470,"y":1388,"w":120,"h":312},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":312},
+	"sourceSize": {"w":119,"h":312}
+},
+"items/pickaxes/bigboot":
+{
+	"frame": {"x":4,"y":602,"w":254,"h":300},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":254,"h":300},
+	"sourceSize": {"w":254,"h":300}
+},
+"items/pickaxes/bighammer":
+{
+	"frame": {"x":1148,"y":256,"w":136,"h":316},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":316},
+	"sourceSize": {"w":136,"h":315}
+},
+"items/pickaxes/bighammer2":
+{
+	"frame": {"x":1290,"y":254,"w":136,"h":316},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":136,"h":316},
+	"sourceSize": {"w":136,"h":315}
+},
+"items/pickaxes/blueglowstick":
+{
+	"frame": {"x":1822,"y":896,"w":40,"h":264},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":40,"h":264},
+	"sourceSize": {"w":40,"h":263}
+},
+"items/pickaxes/bluepick":
+{
+	"frame": {"x":444,"y":1786,"w":180,"h":248},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":248},
+	"sourceSize": {"w":179,"h":247}
+},
+"items/pickaxes/boneaxe":
+{
+	"frame": {"x":496,"y":308,"w":166,"h":276},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":2,"w":166,"h":276},
+	"sourceSize": {"w":168,"h":280}
+},
+"items/pickaxes/brokencoin":
+{
+	"frame": {"x":486,"y":598,"w":178,"h":280},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":0,"w":178,"h":280},
+	"sourceSize": {"w":180,"h":280}
+},
+"items/pickaxes/bunnypickaxe":
+{
+	"frame": {"x":1580,"y":4,"w":90,"h":300},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":90,"h":300},
+	"sourceSize": {"w":89,"h":300}
+},
+"items/pickaxes/cactus":
+{
+	"frame": {"x":1562,"y":352,"w":94,"h":300},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":94,"h":300},
+	"sourceSize": {"w":93,"h":300}
+},
+"items/pickaxes/candlepick":
+{
+	"frame": {"x":1876,"y":864,"w":26,"h":300},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":26,"h":300},
+	"sourceSize": {"w":25,"h":300}
+},
+"items/pickaxes/cleaver":
+{
+	"frame": {"x":118,"y":1812,"w":68,"h":192},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":68,"h":192},
+	"sourceSize": {"w":100,"h":192}
+},
+"items/pickaxes/cleavergold":
+{
+	"frame": {"x":192,"y":1812,"w":68,"h":192},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":68,"h":192},
+	"sourceSize": {"w":100,"h":192}
+},
+"items/pickaxes/cod-use":
+{
+	"frame": {"x":1432,"y":352,"w":124,"h":340},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":124,"h":340},
+	"sourceSize": {"w":123,"h":340}
+},
+"items/pickaxes/cod":
+{
+	"frame": {"x":1546,"y":1706,"w":122,"h":338},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":122,"h":338},
+	"sourceSize": {"w":122,"h":339}
+},
+"items/pickaxes/cruderocket-use":
+{
+	"frame": {"x":482,"y":908,"w":194,"h":276},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":2,"w":194,"h":276},
+	"sourceSize": {"w":212,"h":280}
+},
+"items/pickaxes/cruderocket":
+{
+	"frame": {"x":868,"y":846,"w":154,"h":276},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":18,"y":2,"w":154,"h":276},
+	"sourceSize": {"w":212,"h":280}
+},
+"items/pickaxes/dagger":
+{
+	"frame": {"x":1236,"y":578,"w":50,"h":162},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":162},
+	"sourceSize": {"w":49,"h":161}
+},
+"items/pickaxes/diasword":
+{
+	"frame": {"x":1506,"y":1050,"w":116,"h":310},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":116,"h":310},
+	"sourceSize": {"w":116,"h":309}
+},
+"items/pickaxes/eguitar":
+{
+	"frame": {"x":4,"y":908,"w":246,"h":300},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":246,"h":300},
+	"sourceSize": {"w":246,"h":300}
+},
+"items/pickaxes/felps-use":
+{
+	"frame": {"x":1028,"y":832,"w":124,"h":280},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":124,"h":280},
+	"sourceSize": {"w":123,"h":280}
+},
+"items/pickaxes/felps":
+{
+	"frame": {"x":1144,"y":1118,"w":124,"h":274},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":6,"w":124,"h":274},
+	"sourceSize": {"w":123,"h":280}
+},
+"items/pickaxes/fireaxe":
+{
+	"frame": {"x":1676,"y":4,"w":80,"h":288},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":288},
+	"sourceSize": {"w":79,"h":287}
+},
+"items/pickaxes/fireaxegold":
+{
+	"frame": {"x":1674,"y":616,"w":80,"h":288},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":80,"h":288},
+	"sourceSize": {"w":79,"h":287}
+},
+"items/pickaxes/fryingpan":
+{
+	"frame": {"x":1662,"y":310,"w":78,"h":300},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":300},
+	"sourceSize": {"w":77,"h":300}
+},
+"items/pickaxes/golden":
+{
+	"frame": {"x":266,"y":1798,"w":172,"h":240},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":172,"h":240},
+	"sourceSize": {"w":171,"h":240}
+},
+"items/pickaxes/goldenbone":
+{
+	"frame": {"x":520,"y":4,"w":166,"h":276},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":2,"w":166,"h":276},
+	"sourceSize": {"w":168,"h":280}
+},
+"items/pickaxes/goldendrill":
+{
+	"frame": {"x":1748,"y":910,"w":68,"h":300},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":68,"h":300},
+	"sourceSize": {"w":67,"h":300}
+},
+"items/pickaxes/goldenhammer":
+{
+	"frame": {"x":848,"y":1434,"w":186,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":186,"h":320},
+	"sourceSize": {"w":186,"h":320}
+},
+"items/pickaxes/goldenrecord":
+{
+	"frame": {"x":834,"y":280,"w":158,"h":276},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":4,"w":158,"h":276},
+	"sourceSize": {"w":179,"h":279}
+},
+"items/pickaxes/goldsword":
+{
+	"frame": {"x":1596,"y":1366,"w":116,"h":310},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":116,"h":310},
+	"sourceSize": {"w":116,"h":309}
+},
+"items/pickaxes/gpu":
+{
+	"frame": {"x":284,"y":316,"w":206,"h":276},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":206,"h":276},
+	"sourceSize": {"w":206,"h":275}
+},
+"items/pickaxes/gpurocket-use":
+{
+	"frame": {"x":4,"y":4,"w":288,"h":306},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":46,"y":0,"w":288,"h":306},
+	"sourceSize": {"w":333,"h":305}
+},
+"items/pickaxes/gpurocket":
+{
+	"frame": {"x":4,"y":1500,"w":210,"h":306},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":46,"y":0,"w":210,"h":306},
+	"sourceSize": {"w":333,"h":305}
+},
+"items/pickaxes/greenglowstick":
+{
+	"frame": {"x":1838,"y":594,"w":40,"h":264},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":40,"h":264},
+	"sourceSize": {"w":40,"h":263}
+},
+"items/pickaxes/hardenedcloud":
+{
+	"frame": {"x":816,"y":1774,"w":174,"h":270},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":174,"h":270},
+	"sourceSize": {"w":173,"h":270}
+},
+"items/pickaxes/hugedrill":
+{
+	"frame": {"x":1820,"y":288,"w":68,"h":300},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":68,"h":300},
+	"sourceSize": {"w":67,"h":300}
+},
+"items/pickaxes/islandstatue":
+{
+	"frame": {"x":668,"y":286,"w":160,"h":300},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":160,"h":300},
+	"sourceSize": {"w":159,"h":300}
+},
+"items/pickaxes/knife":
+{
+	"frame": {"x":1308,"y":4,"w":42,"h":168},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":42,"h":168},
+	"sourceSize": {"w":42,"h":167}
+},
+"items/pickaxes/lightaxe":
+{
+	"frame": {"x":1718,"y":1350,"w":106,"h":320},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":106,"h":320},
+	"sourceSize": {"w":186,"h":320}
+},
+"items/pickaxes/lollipaxe":
+{
+	"frame": {"x":1040,"y":1416,"w":146,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":146,"h":320},
+	"sourceSize": {"w":146,"h":320}
+},
+"items/pickaxes/lollipaxe_green":
+{
+	"frame": {"x":1192,"y":1398,"w":146,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":146,"h":320},
+	"sourceSize": {"w":146,"h":320}
+},
+"items/pickaxes/lollipaxe_red":
+{
+	"frame": {"x":1268,"y":1724,"w":146,"h":320},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":146,"h":320},
+	"sourceSize": {"w":146,"h":320}
+},
+"items/pickaxes/m4-use":
+{
+	"frame": {"x":1000,"y":4,"w":126,"h":258},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":12,"y":0,"w":126,"h":258},
+	"sourceSize": {"w":189,"h":270}
+},
+"items/pickaxes/m4":
+{
+	"frame": {"x":4,"y":1812,"w":108,"h":222},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":36,"w":108,"h":222},
+	"sourceSize": {"w":189,"h":270}
+},
+"items/pickaxes/magicstaff":
+{
+	"frame": {"x":1344,"y":1388,"w":120,"h":320},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":320},
+	"sourceSize": {"w":119,"h":320}
+},
+"items/pickaxes/magmastick":
+{
+	"frame": {"x":1830,"y":1166,"w":40,"h":264},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":40,"h":264},
+	"sourceSize": {"w":40,"h":263}
+},
+"items/pickaxes/marspick":
+{
+	"frame": {"x":630,"y":1786,"w":180,"h":248},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":248},
+	"sourceSize": {"w":179,"h":247}
+},
+"items/pickaxes/modernaxe":
+{
+	"frame": {"x":4,"y":316,"w":274,"h":280},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":274,"h":280},
+	"sourceSize": {"w":273,"h":280}
+},
+"items/pickaxes/moonrock":
+{
+	"frame": {"x":692,"y":4,"w":168,"h":270},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":168,"h":270},
+	"sourceSize": {"w":169,"h":269}
+},
+"items/pickaxes/nuke":
+{
+	"frame": {"x":1268,"y":746,"w":162,"h":346},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":162,"h":346},
+	"sourceSize": {"w":161,"h":345}
+},
+"items/pickaxes/partypickaxe-use":
+{
+	"frame": {"x":1432,"y":4,"w":142,"h":342},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":142,"h":342},
+	"sourceSize": {"w":141,"h":341}
+},
+"items/pickaxes/partypickaxe":
+{
+	"frame": {"x":866,"y":4,"w":128,"h":264},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":78,"w":128,"h":264},
+	"sourceSize": {"w":141,"h":341}
+},
+"items/pickaxes/paw":
+{
+	"frame": {"x":1356,"y":4,"w":58,"h":114},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":114},
+	"sourceSize": {"w":57,"h":229}
+},
+"items/pickaxes/pickaxerick-use":
+{
+	"frame": {"x":298,"y":4,"w":216,"h":298},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":2,"w":216,"h":298},
+	"sourceSize": {"w":216,"h":300}
+},
+"items/pickaxes/pickaxerick":
+{
+	"frame": {"x":264,"y":602,"w":216,"h":300},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":216,"h":300},
+	"sourceSize": {"w":216,"h":300}
+},
+"items/pickaxes/pinkcane":
+{
+	"frame": {"x":1274,"y":1098,"w":110,"h":284},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":76,"y":0,"w":110,"h":284},
+	"sourceSize": {"w":186,"h":284}
+},
+"items/pickaxes/poolnoodle":
+{
+	"frame": {"x":998,"y":1128,"w":140,"h":282},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":140,"h":282},
+	"sourceSize": {"w":200,"h":282}
+},
+"items/pickaxes/record":
+{
+	"frame": {"x":836,"y":1152,"w":156,"h":276},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":4,"w":156,"h":276},
+	"sourceSize": {"w":179,"h":279}
+},
+"items/pickaxes/redcane":
+{
+	"frame": {"x":1390,"y":1098,"w":110,"h":284},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":76,"y":0,"w":110,"h":284},
+	"sourceSize": {"w":186,"h":284}
+},
+"items/pickaxes/rocket":
+{
+	"frame": {"x":1436,"y":698,"w":118,"h":346},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":118,"h":346},
+	"sourceSize": {"w":117,"h":345}
+},
+"items/pickaxes/rocketaxe-use":
+{
+	"frame": {"x":644,"y":1468,"w":198,"h":300},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":198,"h":300},
+	"sourceSize": {"w":200,"h":300}
+},
+"items/pickaxes/rocketaxe":
+{
+	"frame": {"x":670,"y":592,"w":156,"h":300},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":156,"h":300},
+	"sourceSize": {"w":200,"h":300}
+},
+"items/pickaxes/sawaxe":
+{
+	"frame": {"x":1840,"y":4,"w":70,"h":266},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":70,"h":266},
+	"sourceSize": {"w":69,"h":265}
+},
+"items/pickaxes/sawaxe2":
+{
+	"frame": {"x":1762,"y":4,"w":72,"h":278},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":72,"h":278},
+	"sourceSize": {"w":72,"h":277}
+},
+"items/pickaxes/sawaxe3":
+{
+	"frame": {"x":1760,"y":612,"w":72,"h":278},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":72,"h":278},
+	"sourceSize": {"w":72,"h":277}
+},
+"items/pickaxes/shotgun-use":
+{
+	"frame": {"x":1158,"y":830,"w":104,"h":266},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":266},
+	"sourceSize": {"w":104,"h":266}
+},
+"items/pickaxes/shotgun":
+{
+	"frame": {"x":1132,"y":580,"w":98,"h":244},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":22,"w":98,"h":244},
+	"sourceSize": {"w":104,"h":266}
+},
+"items/pickaxes/sligpu":
+{
+	"frame": {"x":220,"y":1500,"w":206,"h":292},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":8,"w":206,"h":292},
+	"sourceSize": {"w":206,"h":300}
+},
+"items/pickaxes/sligpu_oc":
+{
+	"frame": {"x":432,"y":1488,"w":206,"h":292},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":8,"w":206,"h":292},
+	"sourceSize": {"w":206,"h":300}
+},
+"items/pickaxes/smalldrill":
+{
+	"frame": {"x":996,"y":1760,"w":146,"h":280},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":146,"h":280},
+	"sourceSize": {"w":145,"h":280}
+},
+"items/pickaxes/standard":
+{
+	"frame": {"x":470,"y":1214,"w":180,"h":248},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":248},
+	"sourceSize": {"w":180,"h":247}
+},
+"items/pickaxes/sticks":
+{
+	"frame": {"x":260,"y":1214,"w":204,"h":268},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":2,"w":204,"h":268},
+	"sourceSize": {"w":205,"h":271}
+},
+"items/pickaxes/stronger":
+{
+	"frame": {"x":682,"y":898,"w":180,"h":248},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":248},
+	"sourceSize": {"w":179,"h":247}
+},
+"items/pickaxes/sunscepter":
+{
+	"frame": {"x":1796,"y":1676,"w":104,"h":300},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":104,"h":300},
+	"sourceSize": {"w":104,"h":300}
+},
+"items/pickaxes/supersword":
+{
+	"frame": {"x":1674,"y":1682,"w":116,"h":310},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":116,"h":310},
+	"sourceSize": {"w":116,"h":309}
+},
+"items/pickaxes/tarpis":
+{
+	"frame": {"x":656,"y":1190,"w":174,"h":270},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":174,"h":270},
+	"sourceSize": {"w":173,"h":269}
+},
+"items/pickaxes/usedrocket":
+{
+	"frame": {"x":1018,"y":580,"w":108,"h":246},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":108,"h":246},
+	"sourceSize": {"w":108,"h":246}
+},
+"items/pickaxes/wand":
+{
+	"frame": {"x":1262,"y":4,"w":40,"h":244},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":40,"h":244},
+	"sourceSize": {"w":40,"h":244}
+},
+"items/pickaxes/wand_bat":
+{
+	"frame": {"x":1132,"y":4,"w":124,"h":246},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":124,"h":246},
+	"sourceSize": {"w":123,"h":245}
+},
+"items/pickaxes/witchbroom":
+{
+	"frame": {"x":1746,"y":298,"w":68,"h":308},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":68,"h":308},
+	"sourceSize": {"w":67,"h":308}
+},
+"items/pickaxes/xmastree":
+{
+	"frame": {"x":998,"y":274,"w":144,"h":300},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":144,"h":300},
+	"sourceSize": {"w":144,"h":300}
+},
+"items/pickaxes/yellowbronze":
+{
+	"frame": {"x":832,"y":592,"w":180,"h":248},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":180,"h":248},
+	"sourceSize": {"w":179,"h":247}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "itemsss.png",
+	"format": "RGBA5555",
+	"size": {"w":1914,"h":2048},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:d9ae218ba647a36e3d08e7d1a065f3a3:77efd31a427324a351fe0fa01d0d1bc7:d937476dc9cab90af7ab0692521f2579$"
+}
+}
