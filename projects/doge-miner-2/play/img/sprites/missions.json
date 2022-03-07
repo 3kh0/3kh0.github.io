@@ -1,0 +1,92 @@
+{"frames": {
+
+"missions/city":
+{
+	"frame": {"x":2,"y":2,"w":400,"h":146},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":400,"h":146},
+	"sourceSize": {"w":400,"h":146}
+},
+"missions/crowd":
+{
+	"frame": {"x":2,"y":1491,"w":260,"h":174},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":260,"h":174},
+	"sourceSize": {"w":260,"h":174}
+},
+"missions/kitler":
+{
+	"frame": {"x":298,"y":151,"w":110,"h":250},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":110,"h":250},
+	"sourceSize": {"w":110,"h":250}
+},
+"missions/kitler2":
+{
+	"frame": {"x":298,"y":404,"w":110,"h":250},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":110,"h":250},
+	"sourceSize": {"w":110,"h":250}
+},
+"missions/kitler_cower":
+{
+	"frame": {"x":298,"y":657,"w":110,"h":250},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":110,"h":250},
+	"sourceSize": {"w":110,"h":250}
+},
+"missions/lightning/ln1":
+{
+	"frame": {"x":2,"y":151,"w":293,"h":265},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":293,"h":265},
+	"sourceSize": {"w":293,"h":265}
+},
+"missions/lightning/ln2":
+{
+	"frame": {"x":2,"y":419,"w":293,"h":265},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":293,"h":265},
+	"sourceSize": {"w":293,"h":265}
+},
+"missions/lightning/ln3":
+{
+	"frame": {"x":2,"y":687,"w":293,"h":265},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":293,"h":265},
+	"sourceSize": {"w":293,"h":265}
+},
+"missions/lightning/ln4":
+{
+	"frame": {"x":2,"y":955,"w":293,"h":265},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":293,"h":265},
+	"sourceSize": {"w":293,"h":265}
+},
+"missions/lightning/ln5":
+{
+	"frame": {"x":2,"y":1223,"w":293,"h":265},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":293,"h":265},
+	"sourceSize": {"w":293,"h":265}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "missions.png",
+	"format": "RGBA5555",
+	"size": {"w":410,"h":1667},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:01ab694856100abb7bc4adb344bc604d:291c8db4f7e6077b90934445d9dce133:74461e2d2707cea0ae710d17b3209223$"
+}
+}
