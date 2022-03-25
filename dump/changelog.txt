@@ -10,6 +10,9 @@ Here is where I will post updates on when a new game is added or something chang
 NOTE: Make sure you refresh the page! Sometimes you will not get the lastest update!
 
 All the changes with the pengin emoji (🐧) are changes by Piplup7575
+-----------------------------------------------------------
+Mar, 25
++ Added Heroku website deployment method 🐧
 ------------------------------------------------------------
 Mar, 23
 + Added Factory Balls Forever 🐧
@@ -23,8 +26,7 @@ Mar, 22
 ------------------------------------------------------------
 Mar, 21
 + Added Deal or No Deal (flash game, thank ruffle!)
-+ Added ability to deploy using Glitch.com or Replit (Check main Readme.md file) 🐧
-^ Remove replit because the repo is to big.
++ Added ability to deploy using Glitch.com (Check main Readme.md file) 🐧
 ^ Fixed issue where when you opened a feature request it did not assign the label.
 ------------------------------------------------------------
 Mar, 18
