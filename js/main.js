@@ -5,27 +5,24 @@
 console.warn(
   "%cNote!",
   "color: purple; font-weight: 600; background: yellow; padding: 0 5px; border-radius: 5px",
-  "This script mostly helps all of the games run, DO NOT REMOVE IT! If you want to add my games to your site, please reach out at my email: echo-the-coder@tuta.io"
+  "This script mostly helps all of the games run, DO NOT REMOVE IT! If you want to add my games to your site, please reach out at my email: echo-the-coder@tuta.io\nDo not just add them without asking me first!"
 );
 function log(text) {
-  console.log("%cSite script", "color: red; font-weight: 600; padding: 0 5px; border-radius: 5px", text);
+  console.log("%cSite script", "color: red; font-weight: 600; background: black; padding: 0 5px; border-radius: 5px", text);
 }
 function tab(text) {
-  console.log("%cTab Cloak", "color: green; font-weight: 600; padding: 0 5px; border-radius: 5px", text);
+  console.log("%cTab Cloak", "color: green; font-weight: 600; background: black; padding: 0 5px; border-radius: 5px", text);
 }
 function script(text) {
-  console.log("%cScript Injection", "color: cyan; font-weight: 600; padding: 0 5px; border-radius: 5px", text);
-}
-function tms(text) {
-  console.log("%cTMS", "color: purple; font-weight: 600; padding: 0 5px; border-radius: 5px", text);
+  console.log("%cScript Injection", "color: cyan; font-weight: 600; background: black; padding: 0 5px; border-radius: 5px", text);
 }
 // ====================================
 // TAB CLOAK
 // ====================================
 
 log("Starting Tab cloak engine!");
-console.groupCollapsed("Tab Cloak");
-
+console.groupCollapsed("Click to view Tab Cloak operations!");
+tab("Loading Tab Cloak...");
 //Declare variables for cloak here
 const local_title = localStorage.getItem("title");
 const local_icon = localStorage.getItem("icon");
@@ -44,6 +41,7 @@ if (window.localStorage.hasOwnProperty("icon")) {
 } else {
   tab("Icon not set :(");
 }
+tab("Tab cloak settings can be found in localStorage! If you want to change them, you can go tab cloak page.");
 console.groupEnd();
 log("Tab cloak engine finished!");
 
@@ -52,7 +50,9 @@ log("Tab cloak engine finished!");
 // ====================================
 
 log("Preparing script injections!");
-console.groupCollapsed("Script Injections");
+console.groupCollapsed("Click to view Script Injection operations!");
+script("Preparing 1 script to be injected...");
+
 const gascript = document.createElement("script");
 gascript.setAttribute("async", "");
 gascript.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=G-98DP5VKS42");
@@ -62,7 +62,12 @@ inlinegascript.innerHTML = `window.dataLayer = window.dataLayer || [];
   gtag('js', new Date());
   gtag('config', 'G-98DP5VKS42');`;
 document.head.append(gascript, inlinegascript);
-script("Injected Google Analytics script");
+script("Injected script 1/1");
+
+const gascript2 = document.createElement("script");
+
+
+
 console.groupEnd();
 log("Script injections finished!");
 

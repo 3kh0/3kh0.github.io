@@ -11,11 +11,15 @@ NOTE: Make sure you refresh the page! Sometimes you will not get the lastest upd
 
 All the changes with the pengin emoji (🐧) are changes by Piplup7575
 -----------------------------------------------------------
+Mar, 26
++ Added Getaway Shootout
+-----------------------------------------------------------
 Mar, 25
 + Added Heroku website deployment method 🐧
 ------------------------------------------------------------
 Mar, 23
 + Added Factory Balls Forever 🐧
++ Added Madalin Stunt Cars 3
 ------------------------------------------------------------
 Mar, 22
 + Added Duck Life 4

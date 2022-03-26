@@ -75,8 +75,8 @@ input {
   /*background: #422;*/
   /*width: 600px;*/
   max-width: 600px;
-  margin: 14px auto 0 auto;
-  padding: 8px 10px 30px 10px;
+  margin: 14px auto 0;
+  padding: 8px 10px 30px;
 }
 
 .uibox .logo {
@@ -116,7 +116,7 @@ input {
   display: flex;
   justify-content: center;
   font-size: 18px;
-  text-shadow: 0px 0px 2px #000000;
+  text-shadow: 0 0 2px #000000;
   white-space: nowrap;
   color: #fff;
   /*position: absolute;
@@ -215,7 +215,7 @@ button {
   border-bottom: 6px solid;
   font-size: 35px;
   letter-spacing: 1px;
-  padding: 0px 15px;
+  padding: 0 15px;
   margin: 5px;
   cursor: pointer;
 }
@@ -339,7 +339,7 @@ button.disabled:active {
     top: 0;
     transform: none;
     padding: 0;
-    border-radius: 0px;
+    border-radius: 0;
   }
 
   .modal_box {
@@ -368,8 +368,8 @@ button.disabled:active {
   position: absolute;
   text-align: center;
   display: none;
-  bottom: 0px;
-  right: 0px;
+  bottom: 0;
+  right: 0;
   color: #202020;
   z-index: 2;
   background-color: white;
@@ -418,7 +418,7 @@ a:visited {
 
 #lng li {
   display: inline;
-  padding: 4px 4px;
+  padding: 4px;
   background: #fff;
   cursor: pointer;
 }
