@@ -1,0 +1,332 @@
+/* General elements */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+    color: #fafafa;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+header {
+    height: 49px;
+    overflow: hidden;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+section {
+    clear: both;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* General animations */
+
+.hoverable {
+    opacity: .84;
+    -moz-transition: 140ms opacity;
+    -o-transition: 140ms opacity;
+    -webkit-transition: 140ms opacity;
+    transition: 140ms opacity;
+}
+
+    .hoverable:hover {
+        opacity: 1;
+    }
+
+
+/* Header */
+
+#header-right {
+    position: absolute;
+    top: 0;
+    right: 3px;
+    opacity: 1;
+    -moz-transition: 280ms opacity;
+    -o-transition: 280ms opacity;
+    -webkit-transition: 280ms opacity;
+    transition: 280ms opacity;
+}
+
+@media(max-width: 819px) {
+    #header-right {
+        opacity: 0;
+    }
+}
+
+
+/* Game section */
+
+section#game {
+    min-height: 464px;
+}
+
+    section#game .EightBitter {
+        margin: auto;
+    }
+
+
+
+/* Control section */
+
+#controls {
+    text-align: center;
+}
+
+    #controls .control {
+        position: relative;
+        display: inline-block;
+        margin-top: 0;
+        height: 35px;
+        width: 256px;
+        border: 3px solid black;
+        border-radius: 7px;
+        box-shadow: 0 3px 7px black inset;
+        background: black;
+        font-family: 'Press Start';
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow: hidden;
+        -moz-transition: 70ms all;
+        -o-transition: 70ms all;
+        -webkit-transition: 70ms all;
+        transition: 70ms all;
+    }
+
+    #controls.length-4 .control {
+        min-width: 25%;
+    }
+
+    #controls.length-5 .control {
+        min-width: 20%;
+    }
+
+    #controls .control:hover {
+        margin-top: -322px;
+        height: 350px; /* 322px + 28px */
+        border-color: #99ffcc;
+        background: #009966;
+        z-index: 70;
+    }
+
+    #controls .control h4 {
+        position: absolute;
+        right: 0;
+        bottom: 7px;
+        left: 0;
+        margin: 0;
+    }
+
+    #controls .control-inner {
+        margin-top: 28px;
+        padding: 7px 3px;
+        opacity: 0;
+        -moz-transition: 35ms opacity;
+        -o-transition: 35ms opacity;
+        -webkit-transition: 35ms opacity;
+        transition: 35ms opacity;
+    }
+
+    #controls .control:hover .control-inner {
+        display: block;
+        margin-top: 0;
+        opacity: 1;
+    }
+
+    #controls .select-options {
+        position: relative;
+        max-height: 308px; /* 322 - 14*/
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    #controls .select-option-title {
+        padding: 7px;
+    }
+
+    #controls .select-option {
+        margin: 1px 3px;
+        display: inline-block;
+        background: #ffcc33;
+        border: 3px outset;
+        cursor: pointer;
+        color: black;
+        font-size: 14px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+        #controls .select-option.option-enabled {
+            background: #ffcc33;
+        }
+
+        #controls .select-option.option-disabled {
+            background: #ccaa33;
+        }
+
+        #controls .select-option.select-option-inset {
+            border: 3px inset;
+        }
+
+        #controls .select-option.select-option-large {
+            padding: 14px 0;
+            font-size: 15px;
+            line-height: 140%;
+        }
+
+    #controls .disabled {
+        opacity: .49 !important;
+        cursor: default !important;
+        -ms-user-select: none !important;
+        -moz-user-select: none !important;
+        -webkit-user-select: none !important;
+        user-select: none !important;
+    }
+
+
+    /* Controls - option buttons */
+
+    #controls .options-button-option {
+        position: relative;
+        display: block;
+        left: 0;
+        right: 0;
+        padding: 4px 0;
+        /* width: 70px; */
+    }
+
+    #controls input[type=number] {
+        display: inline;
+        margin-left: -3px;
+        padding-left: 17px;
+        /* font-size: 1em; */
+        font-family: "Press Start";
+    }
+
+    #controls select {
+        /* font-size: 1em; */
+        font-family: "Press Start";
+    }
+
+
+    /* Controls - options */
+
+    #controls #control-Options .select-options td {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+
+    /* Controls - option keys */
+
+    #controls .options-label-Keys {
+        padding-left: 14px;
+    }
+
+    #controls .options-cell-Keys {
+        padding: 7px 0;
+    }
+
+    #controls .options-key-option {
+        display: block;
+    }
+
+        #controls .options-key-option:not(:last-of-type):after {
+            content: ", ";
+        }
+
+
+    /* Controls - tables */
+
+    #controls table {
+        width: 100%;
+        border-spacing: 1px;
+        padding: 0 2px;
+    }
+
+        #controls table input {
+            max-width: 70px;
+        }
+
+    #controls .maps-grid-option {
+        display: table-cell;
+        padding: 3px;
+    }
+
+    #controls .maps-grid-option-extra {
+        display: block;
+        margin: 7px 2px 3px 1px;
+        padding: 14px 3px;
+    }
+
+    #controls .maps-grid-input {
+        margin: 0 2px 0 1px;
+        width: 98%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-family: 'Press Start';
+        text-align: center;
+    }
+
+
+    /* Controls - uploader */
+
+    #controls .select-upload {
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    #controls .select-upload-input {
+        display: none;
+    }
+
+
+    /* Controls - built-in maps */
+
+    #controls .select-options-editor-maps-holder {
+        width: 100%;
+    }
+
+
+/* Text sections */
+
+section.section-text {
+    margin: auto;
+    padding: 21px 70px;
+    max-width: 910px;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.link-github {
+    color: #cfc;
+}
+
+.link-facebook {
+    color: #ccf;
+}
+
+.link-twitter {
+    color: #cff;
+}
+
+@media(max-width: 350px) {
+    section.section-text {
+        padding: 14px 7px;
+    }
+}

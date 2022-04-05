@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Bloxors | 3kh0</title>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.RufflePlayer.config = {
+        "publicPath": undefined,
+        "polyfills": true,
+        "autoplay": "auto",
+        "unmuteOverlay": "visible",
+        "backgroundColor": "black",
+        "letterbox": "fullscreen",
+        "warnOnUnsupportedContent": true,
+        "contextMenu": true,
+        "showSwfDownload": false,
+        "upgradeToHttps": window.location.protocol === "https:",
+        "maxExecutionDuration": {"secs": 15, "nanos": 0},
+        "logLevel": "error",
+        "base": null,
+        "menu": true,
+        "salign": "",
+        "scale": "showAll",
+        "quality": "high",
+      };
+    </script>
+  </head>
+  <body style="background-color:black;">
+    <center>
+      <img src="title.png" style="padding:5px;width:300px;">
+      <div id="container" style="border: #ccc 3px solid;height:600px;width:937px;"></div>
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.addEventListener("load", (event) => {
+          const ruffle = window.RufflePlayer.newest();
+          const player = ruffle.createPlayer();
+          const container = document.getElementById("container");
+          container.appendChild(player);
+          player.style.height = "600px";
+          player.style.width = "937px";
+          player.load("bloxors.swf");
+      });
+    </script>
+    <script src="ruffle/ruffle.js"></script>
+    </center>
+  </body>
+</html>

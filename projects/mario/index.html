@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <title>Full Screen Mario</title>
+    <meta name="keywords" content="fullscreenmario, full, screen, mario, javascript, html5, gaming, online, online game, fun, distraction" />
+    <meta name="description" content="FullScreenMario is a free HTML5 remake of Nintendo's original Super Mario Bros. Play it here!" />
+
+    <!-- build:css index.min.css -->
+    <link href="index.css" rel="stylesheet" />
+    <!-- /build -->
+
+    <link rel="shortcut icon" href="Theme/Mario.gif">
+</head>
+
+<body>
+    <section id="game">
+        <!-- FSM.UserWrapper will fill out this section... -->
+    </section>
+
+    <section id="controls">
+        <!-- FSM.UserWrapper will fill out this section... -->
+    </section>
+
+    <!-- build:template
+    <script src="FullScreenMario-<%= version %>.min.js"></script>
+    /build -->
+    <!-- build:remove -->
+    <script src="References/AreaSpawnr-0.2.0.js" type="text/javascript"></script>
+    <script src="References/AudioPlayr-0.2.1.js" type="text/javascript"></script>
+    <script src="References/ChangeLinr-0.2.0.js" type="text/javascript"></script>
+    <script src="References/DeviceLayr-0.2.0.js" type="text/javascript"></script>
+    <script src="References/EightBittr-0.2.0.js" type="text/javascript"></script>
+    <script src="References/FPSAnalyzr-0.2.1.js" type="text/javascript"></script>
+    <script src="References/GamesRunnr-0.2.0.js" type="text/javascript"></script>
+    <script src="References/GameStartr-0.2.0.js" type="text/javascript"></script>
+    <script src="References/GroupHoldr-0.2.1.js" type="text/javascript"></script>
+    <script src="References/InputWritr-0.2.0.js" type="text/javascript"></script>
+    <script src="References/ItemsHoldr-0.2.1.js" type="text/javascript"></script>
+    <script src="References/LevelEditr-0.2.0.js" type="text/javascript"></script>
+    <script src="References/MapsCreatr-0.2.1.js" type="text/javascript"></script>
+    <script src="References/MapScreenr-0.2.1.js" type="text/javascript"></script>
+    <script src="References/MathDecidr-0.2.0.js" type="text/javascript"></script>
+    <script src="References/ModAttachr-0.2.2.js" type="text/javascript"></script>
+    <script src="References/NumberMakr-0.2.2.js" type="text/javascript"></script>
+    <script src="References/ObjectMakr-0.2.2.js" type="text/javascript"></script>
+    <script src="References/PixelDrawr-0.2.0.js" type="text/javascript"></script>
+    <script src="References/PixelRendr-0.2.0.js" type="text/javascript"></script>
+    <script src="References/QuadsKeepr-0.2.1.js" type="text/javascript"></script>
+    <script src="References/ScenePlayr-0.2.0.js" type="text/javascript"></script>
+    <script src="References/StringFilr-0.2.1.js" type="text/javascript"></script>
+    <script src="References/ThingHittr-0.2.0.js" type="text/javascript"></script>
+    <script src="References/TimeHandlr-0.2.0.js" type="text/javascript"></script>
+    <script src="References/TouchPassr-0.2.0.js" type="text/javascript"></script>
+    <script src="References/UsageHelpr-0.2.0.js" type="text/javascript"></script>
+    <script src="References/UserWrappr-0.2.0.js" type="text/javascript"></script>
+    <script src="References/WorldSeedr-0.2.0.js" type="text/javascript"></script>
+    <script src="References/js_beautify.js" type="text/javascript"></script>
+    <script src="FullScreenMario.js" type="text/javascript"></script>
+    <script src="settings/audio.js" type="text/javascript"></script>
+    <script src="settings/collisions.js" type="text/javascript"></script>
+    <script src="settings/devices.js" type="text/javascript"></script>
+    <script src="settings/editor.js" type="text/javascript"></script>
+    <script src="settings/generator.js" type="text/javascript"></script>
+    <script src="settings/groups.js" type="text/javascript"></script>
+    <script src="settings/events.js" type="text/javascript"></script>
+    <script src="settings/help.js" type="text/javascript"></script>
+    <script src="settings/input.js" type="text/javascript"></script>
+    <script src="settings/items.js" type="text/javascript"></script>
+    <script src="settings/maps.js" type="text/javascript"></script>
+    <script src="settings/maps/1-1.js" type="text/javascript"></script>
+    <script src="settings/maps/1-2.js" type="text/javascript"></script>
+    <script src="settings/maps/1-3.js" type="text/javascript"></script>
+    <script src="settings/maps/1-4.js" type="text/javascript"></script>
+    <script src="settings/maps/2-1.js" type="text/javascript"></script>
+    <script src="settings/maps/2-2.js" type="text/javascript"></script>
+    <script src="settings/maps/2-3.js" type="text/javascript"></script>
+    <script src="settings/maps/2-4.js" type="text/javascript"></script>
+    <script src="settings/maps/3-1.js" type="text/javascript"></script>
+    <script src="settings/maps/3-2.js" type="text/javascript"></script>
+    <script src="settings/maps/3-3.js" type="text/javascript"></script>
+    <script src="settings/maps/3-4.js" type="text/javascript"></script>
+    <script src="settings/maps/4-1.js" type="text/javascript"></script>
+    <script src="settings/maps/4-2.js" type="text/javascript"></script>
+    <script src="settings/maps/4-3.js" type="text/javascript"></script>
+    <script src="settings/maps/4-4.js" type="text/javascript"></script>
+    <script src="settings/maps/5-1.js" type="text/javascript"></script>
+    <script src="settings/maps/5-2.js" type="text/javascript"></script>
+    <script src="settings/maps/5-3.js" type="text/javascript"></script>
+    <script src="settings/maps/5-4.js" type="text/javascript"></script>
+    <script src="settings/maps/6-1.js" type="text/javascript"></script>
+    <script src="settings/maps/6-2.js" type="text/javascript"></script>
+    <script src="settings/maps/6-3.js" type="text/javascript"></script>
+    <script src="settings/maps/6-4.js" type="text/javascript"></script>
+    <script src="settings/maps/7-1.js" type="text/javascript"></script>
+    <script src="settings/maps/7-2.js" type="text/javascript"></script>
+    <script src="settings/maps/7-3.js" type="text/javascript"></script>
+    <script src="settings/maps/7-4.js" type="text/javascript"></script>
+    <script src="settings/maps/8-1.js" type="text/javascript"></script>
+    <script src="settings/maps/8-2.js" type="text/javascript"></script>
+    <script src="settings/maps/8-3.js" type="text/javascript"></script>
+    <script src="settings/maps/8-4.js" type="text/javascript"></script>
+    <script src="settings/maps/Random.js" type="text/javascript"></script>
+    <script src="settings/math.js" type="text/javascript"></script>
+    <script src="settings/mods.js" type="text/javascript"></script>
+    <script src="settings/objects.js" type="text/javascript"></script>
+    <script src="settings/quadrants.js" type="text/javascript"></script>
+    <script src="settings/renderer.js" type="text/javascript"></script>
+    <script src="settings/runner.js" type="text/javascript"></script>
+    <script src="settings/scenes.js" type="text/javascript"></script>
+    <script src="settings/sprites.js" type="text/javascript"></script>
+    <script src="settings/touch.js" type="text/javascript"></script>
+    <script src="settings/ui.js" type="text/javascript"></script>
+    <!-- /build -->
+    <!-- build:js index.min.js -->
+    <script src="index.js" type="text/javascript"></script>
+    <!-- /build -->
+</body>
+</html>

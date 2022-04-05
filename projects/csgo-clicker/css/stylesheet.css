@@ -1,0 +1,1428 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+/*=============================BEGIN CSS=================================*/
+
+html, body {
+  height: 100%;
+	width: 100%;
+  font-family: "Open Sans";
+	touch-action: manipulation;
+	cursor: default;
+}
+
+.navbar {
+	position: absolute;
+	top: 0;
+	height: 49px;
+	background: #101619;
+	width: 100%;
+	border-bottom: 1px #186144 solid;
+	z-index: 2;
+}
+
+.navbar ul li a {
+	color: #fff;
+	text-decoration: none;
+	margin-right: 50px;
+	line-height: 50px;
+	float: left;
+}
+
+.headerLogo {
+	width: 178px;
+	height: 31px;
+	margin-left: 20px;
+	margin-top: 9px;
+	float: left;
+	background: url(https://i.imgur.com/zoKOaEY.png) no-repeat;
+}
+
+.about {
+	color: #fff;
+	text-decoration: none;
+	margin-right: 50px;
+	line-height: 50px;
+	float: right;
+	cursor: pointer;
+}
+
+.aboutContainer {
+	position: relative;
+	top: 50px;
+	height: 300px;
+	overflow: hidden;
+}
+
+.aboutInfo {
+	color: #fff;
+	text-align: center;
+}
+
+.aboutHeader {
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 30px;
+	margin-top: 20px;
+}
+
+.aboutBody {
+	width: 70%;
+	margin: 10px auto;
+}
+
+.aboutDevelopers {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	width: 800px;
+	margin: 0 auto;
+}
+
+.aboutDev {
+	width: 350px;
+	float: left;
+}
+
+.aboutDevName {
+	display: block;
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 20px;
+	color: #186144;
+	width: 150px;
+	margin: 20px auto 5px;
+	border-bottom: 1px #1E2C36 solid;
+	text-decoration: none;
+}
+
+.aboutDevDesc {
+	font-size: 14px;
+}
+
+.left {
+	position: absolute;
+	display: inline-block;
+	width: 70%;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+}
+
+.display {
+	position: relative;
+  height: 100%;
+  width: 100%;
+	background: #1E2C36;
+}
+
+.unboxing {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+}
+
+.tooltipAnchor {
+	display: none;
+	position: absolute;
+	text-align: center;
+	font-size: 10px;
+	height: 25px;
+	line-height: 25px;
+	background-color: rgba(24, 97, 68, 0.9);
+	border-radius: 3px;
+	color: #fff;
+	width: 200px;
+	z-index: 20;
+}
+
+.tooltipAnchor:before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 5px rgba(24, 97, 68, 0.9) solid;
+	border-left: 5px transparent solid;
+	border-right: 5px transparent solid;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 25px;
+}
+
+.backgroundImage {
+	height: 100%;
+	width: 100%;
+}
+
+.backgroundImage:before {
+	content: "";
+	position: relative;
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(rgba(0, 23, 40, 0.6),rgba(0, 23, 40, 0.6)), url("../images/sunburst.png");
+	background-position: center;
+	animation: infRotate 25s linear infinite;
+}
+
+.caseDisplay {
+	height: 182px;
+	width: 240px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	transition: .2s;
+	cursor: pointer;
+	padding-top: 10px;
+}
+
+.caseDisplay:active {
+	padding-top: 0;
+}
+
+.caseInfoContainer {
+	position: absolute;
+	right: 0;
+	left: -45%;
+	bottom: -50px;
+	text-align: center;
+	width: 450px;
+}
+
+.caseName {
+	font-size: 22px;
+	color: #fff;
+}
+
+.priceContainer {
+	font-weight: 200;
+	color: #fff;
+	margin-top: 5px;
+}
+
+.casePrice {
+	display: inline-block;
+}
+
+.keyPrice {
+	display: inline-block;
+}
+
+.jackpot {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	background: #111715;
+	/*background: linear-gradient(rgba(0, 40, 1, 0.6),rgba(0, 40, 1, 0.6)), url("../images/sunburst.png");
+	background-position: center;
+	animation: infRotate 25s linear infinite;*/
+}
+
+.jackpotDifficultyContainer {
+	display: flex;
+	justify-content: space-around;
+	height: 30px;
+	width: 100%;
+}
+
+.jackpotDifficultyContainer div {
+	font-family: 'Rajdhani', sans-serif;
+  color: #273135;
+	line-height: 30px;
+	float: left;
+	width: 33.3%;
+	background: #090D10;
+	text-align: center;
+	border: 1px #186144 solid;
+	border-left: 1px transparent;
+	cursor: pointer;
+}
+
+.jackpotDifficultyContainer div.active {
+	background: #25793B;
+	color: #59BB32;
+}
+
+.jackpotStats {
+	height: 125px;
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 75px;
+}
+
+.jackpotCurrentWorth {
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	margin-top: 4px;
+}
+
+.jackpotPercentOfTickets {
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	margin-top: 4px;
+}
+
+.canvasContainer {
+	width: 100%;
+}
+
+#canvasCircle {
+	display: block;
+	margin: 0 auto;
+}
+
+.jackpotTopContainer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 395px;
+	width: 100%;
+}
+
+.jackpotTop {
+	height: 100%;
+	width: 100%;
+	background: #101619;
+	border-bottom: 1px #186144 solid;
+	background: linear-gradient(rgba(16, 22, 25, .5), rgba(16, 22, 25, 1)), url(http://i.imgur.com/vakyLA5.png);
+	background-size: cover;
+}
+
+.jackpotCountDown {
+	text-align: center;
+	color: #fff;
+	font-size: 25px;
+}
+
+.jackpotCountDownLabel {
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	margin-top: 4px;
+}
+
+.winnerIs {
+	text-align: center;
+	color: #fff;
+	font-size: 25px;
+}
+
+.depositorItemsLabel {
+	float: right;
+	margin-right: 300px;
+}
+
+.depositorPriceLabel {
+	float: left;
+	margin-left: 304px;
+}
+
+.depositorNameLabel {
+	float: left;
+	margin-left: 85px;
+}
+
+.depositorLabel {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	background: #0E0E0E;
+	border-top: 1px #272727 solid;
+}
+
+.jackpotRightContainer {
+	display: none;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.jackpotRightToBet {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	bottom: 80px;
+	width: 100%;
+	left: 0;
+	right: 0;
+	height: 85px;
+	background: #101619;
+}
+
+.jackpotRightPlayer {
+	position: absolute;
+  top: 50px;
+	bottom: 185px;
+	width: 100%;
+	background: #101619;
+	overflow-y: auto;
+	border-bottom: 1px #186144 solid;
+}
+
+.inventoryTagContainer {
+	font-family: 'Rajdhani', sans-serif;
+	color: #354146;
+	float: left;
+	height: 20px;
+	line-height: 24px;
+	width: 100%;
+	margin-top: 1px;
+}
+
+.inventoryTag {
+	margin-left: 7px;
+}
+
+.inventoryValue {
+	margin-right: 7px;
+	float: right;
+}
+
+.jackpotRightSTBTag {
+	position: absolute;
+  bottom: 165px;
+	font-family: 'Rajdhani', sans-serif;
+	color: #273135;
+	float: left;
+	height: 20px;
+	line-height: 24px;
+	padding-left: 6px;
+	width: 100%;
+	margin-top: 1px;
+}
+
+.inventorySwapItem {
+	position: relative;
+	width: 70px;
+	height: 70px;
+	border: 1px #1B2329 solid;
+	margin: 6.5px 0 0 6.5px;
+	float: left;
+	cursor: pointer;
+}
+
+.jackpotRightInfo {
+	position: absolute;
+	width: 100%;
+	height: 80px;
+	background: #0D1113;
+	color: #fff;
+	bottom: 0;
+	border-top: 1px #186144 solid;
+}
+
+.jackpotRightStartButton {
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: center;
+	height: 100%;
+	width: 150px;
+	line-height: 80px;
+	background: #186144;
+	cursor: pointer;
+}
+
+.jackpotRightStartButton:hover {
+	background: #095839;
+}
+
+.jackpotRightSkins {
+	margin-left: 8px;
+	font-size: 25px;
+	float: left;
+	width: 300px;
+}
+
+.swappedItem {
+	position: relative;
+	width: 70px;
+	height: 70px;
+	border: 1px #1B2329 solid;
+	margin: 5px 0 0 7px;
+	float: left;
+	cursor: pointer;
+}
+
+.spanTag {
+	font-size: 20px;
+	color: #186144;
+}
+
+.jackpotRightValue {
+	margin: 8px;
+	font-size: 25px;
+	float: left;
+	width: 300px;
+}
+
+.jackpotBottomContainer {
+	position: absolute;
+	bottom: 0;
+	height: 395px;
+	width: 100%;
+	background: #151515;
+	border-top: 1px #25793B solid;
+}
+
+.depositorContainer {
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+}
+
+.jackpotDepositor {
+	height: 80px;
+	margin: 5px 5px 0;
+	background: #0E0E0E;
+	overflow: hidden;
+}
+
+.jackpotDepositor.winner {
+	background: #38340A;
+	transition: .2s;
+}
+
+.depositorInfo {
+	position: relative;
+	color: #FFFFFF;
+	font-size: 20px;
+	line-height: 80px;
+	height: 100%;
+	width: 100%;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+.depositorProPic {
+	height: 64px;
+	width: 64px;
+	float: left;
+	margin: 8px;
+	outline: 1px #25793B solid;
+}
+
+.depositorName {
+	float: left;
+	width: 200px;
+}
+
+.depositorValue {
+	float: left;
+	margin-left: 150px;
+}
+
+.depositorSkinContainer {
+	height: 80px;
+	float: right;
+}
+
+.depositorSkin {
+	position: relative;
+	width: 70px;
+	height: 70px;
+	border: 1px #1B2329 solid;
+	margin: 4px;
+	float: right;
+}
+
+.depositorSkin img {
+	height: 70px;
+	width: 70px;
+}
+
+.modalWindow {
+	display: none;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 10;
+}
+
+.modalMain.unbox {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	height: 600px;
+	width: 700px;
+	background: #101619;
+	border: 1px #186144 solid;
+}
+
+.modalMain.winner {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	height: 500px;
+	width: 900px;
+	text-align: center;
+	background: #101916;
+	border: 1px #186144 solid;
+	box-shadow: 0 0 125px rgba(24, 109, 63, 0.87);
+}
+
+.modalSkinName {
+	font-size: 25px;
+	color: #fff;
+	text-align: center;
+}
+
+.modalMain img {
+	display: block;
+	height: 450px;
+	width: 450px;
+	margin: 0 auto;
+}
+
+.winnerAmount {
+  color: #186144;
+}
+
+.winnerModalSkinContainer {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+
+.winnerModalHeader {
+	margin: 20px;
+	font-size: 40px;
+	color: #fff;
+}
+
+.winnerModalMessage {
+	font-size: 30px;
+	color: #fff;
+	margin: 20px;
+}
+
+.winnerModalWarnMessage {
+  color: #903434;
+}
+
+.modalClose {
+	position: absolute;
+	right: 0;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	color: #2D9E71;
+	background: #186144;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.modalClose:hover {
+	color: #186144;
+	background: #2D9E71;
+}
+
+/*
+.modalClose {
+	position: absolute;
+	right: 0;
+	left: 0;
+  bottom: 30px;
+	font-size: 20px;
+	font-family: 'Rajdhani', sans-serif;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	margin: 0 auto;
+	width: 150px;
+	height: 40px;
+	background: linear-gradient(#1d7751, #0e382c);
+	border: 2px #25793b solid;
+	border-radius: 5px;
+	text-shadow: 0 0 10px rgba(255,255,255,0.3);
+	transition: .1s;
+	transform: scale(1);
+	cursor: pointer;
+	-webkit-user-select: none;
+	box-shadow: 0 0 25px rgba(0,117,9,0.5);
+	overflow: hidden;
+}
+*/
+.modalClose.unbox {
+	position: absolute;
+	right: 0;
+	left: 0;
+  bottom: 30px;
+	font-size: 20px;
+	font-family: 'Rajdhani', sans-serif;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	margin: 0 auto;
+	width: 150px;
+	height: 40px;
+	background: linear-gradient(#1d7751, #0e382c);
+	border: 2px #25793b solid;
+	border-radius: 5px;
+	text-shadow: 0 0 10px rgba(255,255,255,0.3);
+	transition: .1s;
+	transform: scale(1);
+	cursor: pointer;
+	-webkit-user-select: none;
+	box-shadow: 0 0 25px rgba(0,117,9,0.5);
+	overflow: hidden;
+}
+
+.right {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 575px;
+	background: #090D10;
+	border-left: 1px #186144 solid;
+}
+
+.rightMain {
+	width: 100%;
+	background: #101619;
+	position: absolute;
+	top: 82px;
+	bottom: 135px;
+	right: 0;
+	left: 0;
+}
+
+.upgradeContainer {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.stackingUpgradeContainer {
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 125px;
+	top: 0;
+}
+
+.permUpgradeContainer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 125px;
+	border-top: 1px #186144 solid;
+	/*display: flex;*/
+	display: none;
+	justify-content: space-around;
+	background: #0F843F;
+}
+
+.permUpgrade {
+	position: relative;
+	height: 125px;
+  width: 25%;
+	background: #0F843F;
+	box-shadow: inset 0 0 0 2px #0A5D2C, inset 0 0 0 6px #0A7134, inset 0 0 0 8px #068C3D;
+	text-align: center;
+	color: #0A5D2C;
+	overflow: hidden;
+}
+
+.permUpgrade.locked {
+	background: #4A4A4A;
+	box-shadow: inset 0 0 0 2px #5D5D5D, inset 0 0 0 6px #4A4A4A, inset 0 0 0 8px #525252;
+	color: #585858;
+}
+
+.permUpgrade i {
+	display: block;
+	margin-top: 38px;
+}
+
+.permUpgradeLabel {
+}
+
+.inventoryContainer {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.inventoryItemContainer {
+	position: absolute;
+	display: block;
+	width: 100%;
+	float: left;
+	top: 25px;
+	bottom: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.upgrade.cantAfford {
+	background: #150C0C;
+	/*color: #080808;*/
+}
+
+.upgrade {
+	position: relative;
+	color: #fff;
+	height: 100px;
+	width: 570px;
+	background: #090D10;
+	margin: 2px auto;
+	overflow: auto;
+	border-radius: 3px;
+	cursor: pointer;
+	box-shadow: inset 0 0 0 2px #090D10, inset 0 0 0 6px #101619, inset 0 0 0 8px #0B1015;
+}
+
+.upgradePicture {
+	height: 76px;
+	width: 76px;
+	float: left;
+	margin: 10px;
+	border: 2px #186144 solid;
+}
+
+.upgradePicture img {
+	height: 100%;
+	width: 100%;
+}
+
+.upgradeInfo {
+	margin-top: 10px;
+}
+
+.upgradePriceLabel {
+	position: absolute;
+	top: 0;
+	right: 0;
+	float: right;
+	margin: 10px;
+}
+
+.upgradeAmountLabel {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	float: right;
+	margin: 10px;
+}
+
+.upgradeDesc {
+	margin-top: 10px;
+}
+
+.upgradeName {
+  font-weight: 600;
+}
+
+.tradeButtonContainer {
+	height: 135px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	border-top: 1px #186144 solid;
+}
+
+.container {
+  height: 100%;
+	width: 100%;
+	background: #0F1317;
+}
+
+.main {
+	overflow: hidden;
+	top: 50px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transition: 1s;
+}
+
+.main.small {
+	top: 350px;
+	border-top: 1px #186144 solid;
+}
+
+.button:hover {
+  text-shadow: 0 0 10px rgba(255,255,255,0.5);
+  transform: scale(1.05);
+}
+
+.button:active {
+  background: linear-gradient(#1f8258, #114435);
+  text-shadow: 0 0 10px rgba(255,255,255,0.5);
+  transform: scale(1);
+  box-shadow: 0 0 35px rgba(43,137,68,0.5);
+}
+
+.tabContainer {
+	margin-top: 2px;
+	float: left;
+	width: 100%;
+	height: 50px;
+	overflow: hidden;
+}
+
+.tab {
+	background: red;
+	float: left;
+	height: 50px;
+	width: 95px;
+	background: #0D1113;
+	margin-right: 1px;
+	color: #2F2F2F;
+	text-align: center;
+	line-height: 50px;
+	border-bottom: 1px #090D10 solid;
+	cursor: pointer;
+}
+
+.tab.active {
+	color: #fff;
+	background: #101619;
+	border-bottom: 1px #101619 solid;
+}
+
+.caseContainer {
+	display: none;
+	height: 100%;
+	width: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.case {
+	position: relative;
+	color: #fff;
+	height: 100px;
+	width: 570px;
+	background: #090D10;
+	margin: 2px auto;
+	overflow: auto;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.caseInfo {
+  margin-top: 10px;
+}
+
+.caseTitle {
+	font-weight: 600;
+}
+
+.caseValue {
+	margin-top: 10px;
+}
+
+.casePicture {
+	height: 76px;
+	width: 76px;
+	float: left;
+	margin: 9px;
+	border: 2px #BA7729 solid;
+}
+
+.casePicture img {
+	margin-top: 7px;
+	height: 80%;
+	width: 100%;
+}
+
+.mainInfo {
+	position: relative;
+	overflow: hidden;
+	color: #fff;
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px #186144 solid;
+}
+
+.mainInfoLabel {
+	color: #186144;
+	margin: 0 10px;
+	height: 100%;
+	line-height: 30px;
+}
+
+.mainInfoLabelWarning {
+	position: relative;
+	display: none;
+	font-size: 1.1em;
+	color: #A02020;
+	cursor: pointer;
+}
+/*
+.mainInfoLabelWarning:before {
+	top: 2px;
+	left: 30px;
+	content: "";
+	display: block;
+	position: absolute;
+	text-align: center;
+	font-size: 10px;
+	height: 25px;
+	line-height: 25px;
+	background-color: rgba(0, 0, 0, 1);
+	border-radius: 3px;
+	color: #fff;
+	width: 200px;
+	z-index: 20;
+}
+*/
+.mainInfoLabel.wallet {
+	float: right;
+}
+
+.mainInfoLabel.inv {
+	float: left;
+}
+
+.mainInfoLabel span {
+	color: #fff;
+}
+
+.money {
+
+}
+
+.inventorySpace {
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+.itemPrice {
+	font-size: 13px;
+	position: absolute;
+	bottom: 0;
+	height: 15px;
+	text-align: center;
+	background: #080808;
+	width: 100%;
+	line-height: 15px;
+	color: #fff;
+}
+
+.inventoryItem {
+	position: relative;
+	width: 70px;
+	height: 70px;
+	border: 1px #1B2329 solid;
+	margin: 6.5px 0 0 6.5px;
+	float: left;
+	cursor: pointer;
+}
+
+.inventoryItem img {
+	width: 100%;
+	height: 100%;
+}
+
+div.consumer {
+	border: 1px #B0C3D9 solid;
+}
+
+div.industrial {
+	border: 1px #5E98D9 solid;
+}
+
+div.milspec {
+	border: 1px #4B69FF solid;
+}
+
+div.restricted {
+	border: 1px #8847FF solid;
+}
+
+div.classified {
+	border: 1px #D32CE6 solid;
+}
+
+div.covert {
+	border: 1px #C12222 solid;
+}
+
+div.knife {
+	border: 1px #FFD700 solid;
+}
+
+.notification.hidden {
+	top: -50px;
+}
+
+.notification {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 7px;
+	width: 800px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	background: #186144;
+	color: #fff;
+	margin: 0 auto;
+	z-index: 10;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.settings {
+	float: right;
+	height: 49px;
+	width: 50px;
+	border-left: 1px #186144 solid;
+	background-image: url(https://i.imgur.com/Pw82Pa6.png);
+	background-repeat: no-repeat;
+	background-size: 70% 70%;
+	background-position: center;
+	transition: .1s;
+}
+
+.settings:hover {
+	background-color: #1A2929;
+}
+
+.settingsList {
+	color: #fff;
+	position: absolute;
+	right: 0;
+	top: 50px;
+	width: 575px;
+	background: #1A2929;
+	border-bottom: 1px #186144 solid;
+	z-index: 1;
+	transition: .5s;
+}
+
+.settingsList li {
+	list-style: none;
+	margin: 10px 20px;
+}
+
+.settingsList li h1 {
+	font-size: 25px;
+	margin-bottom: 25px;
+}
+
+.settingsList.hidden {
+	top: -155px;
+}
+
+#canvas {
+  background: #fff;
+}
+
+#drawing {
+	z-index: 1;
+}
+
+.inventory {
+	font-size: 20px;
+	font-family: 'Rajdhani', sans-serif;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	margin: 0 auto;
+	width: 150px;
+	height: 40px;
+	background: linear-gradient(#1d7751, #0e382c);
+	border: 2px #25793b solid;
+	border-radius: 5px;
+	text-shadow: 0 0 10px rgba(255,255,255,0.3);
+	transition: .1s;
+	transform: scale(1);
+	cursor: pointer;
+	-webkit-user-select: none;
+	box-shadow: 0 0 25px rgba(0,117,9,0.5);
+	overflow: hidden;
+}
+
+.shop {
+	font-size: 20px;
+	font-family: 'Rajdhani', sans-serif;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	margin: 0 auto;
+	width: 150px;
+	height: 40px;
+	background: linear-gradient(#1d7751, #0e382c);
+	border: 2px #25793b solid;
+	border-radius: 5px;
+	text-shadow: 0 0 10px rgba(255,255,255,0.3);
+	transition: .1s;
+	transform: scale(1);
+	cursor: pointer;
+	-webkit-user-select: none;
+	box-shadow: 0 0 25px rgba(0,117,9,0.5);
+	overflow: hidden;
+}
+
+.tradeButton {
+  font-size: 60px;
+  font-family: 'Rajdhani', sans-serif;
+  text-align: center;
+  line-height: 85px;
+  color: #fff;
+  margin: 20px auto;
+  width: 350px;
+  height: 85px;
+  background: linear-gradient(#1d7751, #0e382c);
+  border: 3px #25793b solid;
+  border-radius: 5px;
+  text-shadow: 0 0 20px rgba(255,255,255,0.3);
+  transition: .1s;
+  transform: scale(1);
+  cursor: pointer;
+  -webkit-user-select: none;
+  box-shadow: 0 0 25px rgba(0,117,9,0.5);
+  overflow: hidden;
+}
+
+.tradeButton:hover {
+  text-shadow: 0 0 20px rgba(255,255,255,0.5);
+  transform: scale(1.05);
+}
+
+.tradeButton:active {
+  background: linear-gradient(#1f8258, #114435);
+  text-shadow: 0 0 20px rgba(255,255,255,0.5);
+  transform: scale(1);
+  box-shadow: 0 0 30px rgba(43,137,68,0.5);
+}
+
+.tradeButton:after {
+  content: "";
+  position: relative;
+  top: -120px;
+  left: -90px;
+  display: block;
+  width: 35px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.5);
+  transform: rotate(35deg);
+  -webkit-filter: blur(20px);
+  transition: none;
+}
+
+.tradeButton:hover:after {
+  left: 400px;
+  transition: .3s ease-in-out;
+}
+
+.clearGameState {
+	font-size: 17px;
+	font-family: 'Rajdhani', sans-serif;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	margin: 50px 0 25px 20px;
+	width: 150px;
+	height: 40px;
+	background: linear-gradient(#1d7751, #0e382c);
+	border: 2px #25793b solid;
+	border-radius: 5px;
+	text-shadow: 0 0 10px rgba(255,255,255,0.3);
+	transition: .1s;
+	transform: scale(1);
+	cursor: pointer;
+	-webkit-user-select: none;
+	box-shadow: 0 0 25px rgba(0,117,9,0.5);
+	overflow: hidden;
+}
+
+
+::-webkit-scrollbar {
+	width: 17px;
+}
+
+::-webkit-scrollbar-track {
+   background-color: #101619;
+}
+
+::-webkit-scrollbar-thumb {
+   background-color: #25793B;
+}
+
+/*===============HELPERS===================*/
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*===============MEDIA QUERIES=================*/
+@media only screen and (max-width: 1660px) {
+	.depositorSkinContainer {
+		left: 0;
+    bottom: 0;
+    position: absolute;
+    height: 80px;
+		background: rgba(10,10,10,.8);
+		width: 100%;
+	}
+
+	.jackpotDepositor {
+		height: 160px;
+	}
+
+	.modalMain.unbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    height: 300px;
+    width: 500px;
+    background: #101619;
+    border: 1px #186144 solid;
+	}
+
+	.modalMain.winner {
+		transform: scale(.75);
+	}
+
+	.modalClose.unbox {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 15px;
+    font-size: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    margin: 0 auto;
+    width: 150px;
+    height: 40px;
+    background: linear-gradient(#1d7751, #0e382c);
+    border: 2px #25793b solid;
+    border-radius: 5px;
+    text-shadow: 0 0 10px rgba(255,255,255,0.3);
+    transition: .1s;
+    transform: scale(1);
+    cursor: pointer;
+    -webkit-user-select: none;
+    box-shadow: 0 0 25px rgba(0,117,9,0.5);
+    overflow: hidden;
+	}
+
+	.modalMain > img {
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+	}
+
+	.jackpotStats {
+    height: 125px;
+    position: absolute;
+    right: 0;
+    left: 0;
+	}
+
+}
+
+
+/*===============KEYFRAMES=================*/
+
+@keyframes infRotate {
+	from {
+		-ms-transform: rotate(0deg) scale(1.75);
+    -moz-transform: rotate(0deg) scale(1.75);
+    -webkit-transform: rotate(0deg) scale(1.75);
+    -o-transform: rotate(0deg) scale(1.75);
+    transform: rotate(0deg) scale(1.75);
+	} to {
+		-ms-transform: rotate(360deg) scale(1.75);
+    -moz-transform: rotate(360deg) scale(1.75);
+    -webkit-transform: rotate(360deg) scale(1.75);
+    -o-transform: rotate(360deg) scale(1.75);
+    transform: rotate(360deg) scale(1.75);
+	}
+}
