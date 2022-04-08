@@ -5,25 +5,48 @@
 ╚█████╔╝██║░░██║██║░░██║██║░╚███║╚██████╔╝███████╗  ███████╗╚█████╔╝╚██████╔╝
 ░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░╚══════╝  ╚══════╝░╚════╝░░╚═════╝░
 
+(btw if you can not read what is says above, it is just saying changelog!)
+
 Here is where I will post updates on when a new game is added or something changed. Besure to check back often for any sneakpeaks or other goodies! If I can I will try to setup a RSS feed for all of those who use that. Coming soon!
+
+Besure to also join the discord: https://discord.gg/6d2MNXWVmV
 
 NOTE: Make sure you refresh the page! Sometimes you will not get the lastest update!
 
-All the changes with the pengin emoji (🐧) are changes by Piplup7575, cat emoji (🐱) by u4pak 
------------------------------------------------------------
+🐱 | Changes by u4pak
+🐧 | Changes by Piplup7575
+   | Changes by Echo (unless specified)
+
++ Means something was added
+^ Means something was upgraded or changed
+- Means something was removed
+------------------------------------------------------------
+Apr, 7
+^ Added more info to README.md
+------------------------------------------------------------
+Apr, 6
+Fun fact! Github.com was unblocked for me (Echo)!!! Lets gooooooo! Also on the Discord we played Among Us (in chat) with rigged voting, alot of imposters, and me (Echo) screwing up the game! Make sure to join the Discord to do weird thing like this!!! https://discord.gg/6d2MNXWVmV
++ Added World's Hardest Game
++ Added Tube Jumpers
++ Added Papery Planes
++ Added Cell Machine
+- Removed BitLife (the limit popup cant be fixed)
+------------------------------------------------------------
 Apr, 4
 + Added Mario 🐧
 + Added CSGO Clicker 🐱
------------------------------------------------------------
+------------------------------------------------------------
 Apr, 3
 + Added Bloxors 🐧
------------------------------------------------------------
+------------------------------------------------------------
 Mar, 30
+My mom did not notice :)
 + Added Super Mario 64 🐧
------------------------------------------------------------
+------------------------------------------------------------
 Mar, 26
+I brought my gaming laptop to school. AGAIN!
 + Added Getaway Shootout
------------------------------------------------------------
+------------------------------------------------------------
 Mar, 25
 + Added Heroku website deployment method 🐧
 ------------------------------------------------------------
@@ -123,7 +146,7 @@ Feb, 21
 + Added Zombs Royale
 + Added Vex 5
 + Added people.txt (https://3kh0.github.io/dump/people.txt)
-^ Revamp the comment box, will reenable soon-ish
+^ Revamp the comment box, will re-enable soon-ish
 ^ Fixed issue of Tetris not working.
 ^ Updated green text (again)
 ------------------------------------------------------------
@@ -134,6 +157,7 @@ Feb, 16
 Feb, 14
 Happy Valentines day for those how celebrate it!
 + Changelog page! Pog!
-+ Started research on writing iframes on a about:blank page
 ^ Updated the "green text" on the homepage.
-Have a great rest of your day!
+------------------------------------------------------------
+
+Looks like you have reached the end!

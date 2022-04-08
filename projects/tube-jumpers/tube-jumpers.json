@@ -1,0 +1,13 @@
+{
+    "companyName": "Michael Eichler",
+    "productName": "Tube Jumpers",
+    "dataUrl": "unity/TubeJumpers.data.unityweb",
+    "asmCodeUrl": "unity/TubeJumpers.asm.code.unityweb",
+    "asmMemoryUrl": "unity/TubeJumpers.asm.memory.unityweb",
+    "asmFrameworkUrl": "unity/TubeJumpers.asm.framework.unityweb",
+    "TOTAL_MEMORY": 268435456,
+    "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+    "webglContextAttributes": { "preserveDrawingBuffer": false },
+    "splashScreenStyle": "Dark",
+    "backgroundColor": "black"
+  }

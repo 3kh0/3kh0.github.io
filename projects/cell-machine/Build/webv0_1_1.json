@@ -1,0 +1,17 @@
+{
+    "companyName": "Sam Hogan",
+    "productName": "Cell Machine",
+    "productVersion": "0.1.1",
+    "dataUrl": "webv0_1_1.data.unityweb",
+    "wasmCodeUrl": "webv0_1_1.wasm.code.unityweb",
+    "wasmFrameworkUrl": "webv0_1_1.wasm.framework.unityweb",
+    "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+    "webglContextAttributes": { "preserveDrawingBuffer": false },
+    "splashScreenStyle": "Dark",
+    "backgroundColor": "#231F20",
+    "cacheControl": { "default": "must-revalidate" },
+    "developmentBuild": false,
+    "multithreading": false,
+    "unityVersion": "2019.3.14f1"
+  }
+  
