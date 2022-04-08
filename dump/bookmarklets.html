@@ -1,107 +1,123 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Bookmarklets | 3kh0</title>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet" />
-        <link href="/css/bookmarklets.css" rel="stylesheet" />
-        <script src="/js/main.js"></script>
-    </head>
-    <body>
-        <h1>Bookmarklet Collection</h1>
-        <h2>General Info</h2>
-        <p>
-            <b>How to add Bookmarklets</b> Click the bookmark button (star), a box will pop up and click more. Where it says URL, copy and paste the bookmarklet code. Then click save and your bookmarklet should appear with other bookmarks.
-            It is that simple.
-        </p>
+  <head>
+    <title>Bookmarklets | 3kh0</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet" />
+    <link href="/css/bookmarklets.css" rel="stylesheet" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <h1>Bookmarklet Collection</h1>
+    <h2>General Info</h2>
+    <p>
+      <b>How to add Bookmarklets</b> Click the bookmark button (star), a box will pop up and click more. Where it says URL, copy and paste the bookmarklet code. Then click save and your bookmarklet should appear with other bookmarks. It is
+      that simple.
+    </p>
 
-        <h3>X-Ray Goggles</h3>
-        <p>This lets you edit the raw HTML. It's very advanced editing.</p>
-        <p>
-            javascript:(function () {var
-            script=document.createElement('script');script.src='https://x-ray-goggles.mouse.org/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');document.body.appendChild(script);}())
-        </p>
+    <h3>X-Ray Goggles</h3>
+    <p>This lets you edit the raw HTML. It's very advanced editing.</p>
+    <p>
+      javascript:(function () {var
+      script=document.createElement('script');script.src='https://x-ray-goggles.mouse.org/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');document.body.appendChild(script);}())
+    </p>
 
-        <h3>Randomized Tilt</h3>
-        <p>Tilts each element at a different degree (only slightly,you wont be seeing things upside down.) You can use this more than once to get different tilts.</p>
-        <p>
-            javascript:(function(){['', '-ms-', '-webkit-', '-o-', '-moz-'].map(function(prefix){Array.prototype.slice.call(document.querySelectorAll('div,p,span,img,a,body')).map(function(el){el.style[prefix + 'transform'] = 'rotate(' +
-            (Math.floor(Math.random() * 3) - 1) + 'deg)';});});}())
-        </p>
+    <h3>Make page 3D</h3>
+    <p>This does what the title says! Everything will be 3D!</p>
+    <p>
+        javascript:(function(){var js=document.body.appendChild(document.createElement("script"));js.onerror=function(){alert("Sorry, the script could not be loaded.")};js.src="https://rawgit.com/Krazete/bookmarklets/master/tri.js"})();
+    </p>
 
-        <h3>Coordinates</h3>
-        <p>Shows the coordinates of you mouse's position. Coordinates shown at end of URL.</p>
-        <p>javascript:document.addEventListener('mousemove',function(e)%7Blocation.hash=(window.scrollX+e.clientX)+','+(window.scrollY+e.clientY)%7D,true);</p>
+    <h3>Flashlight</h3>
+    <p>Turn on your flashlight!</p>
+    <p>
+        javascript:(function(){var js=document.body.appendChild(document.createElement("script"));js.onerror=function(){alert("Sorry, the script could not be loaded.")};js.src="https://rawgit.com/Krazete/bookmarklets/master/mouselight.js"})();
+    </p>
 
-        <h3>Tab Cloak</h3>
-        <p>With this code you can change the the icon and the title of any tab.</p>
-        <p>I can not put the code here because it will destroy the page, but here is a <a href="/js/tab-cloak.js">link to the code</a>.</p>
+    <h3>Randomized Tilt</h3>
+    <p>Tilts each element at a different degree (only slightly,you wont be seeing things upside down.) You can use this more than once to get different tilts.</p>
+    <p>
+      javascript:(function(){['', '-ms-', '-webkit-', '-o-', '-moz-'].map(function(prefix){Array.prototype.slice.call(document.querySelectorAll('div,p,span,img,a,body')).map(function(el){el.style[prefix + 'transform'] = 'rotate(' +
+      (Math.floor(Math.random() * 3) - 1) + 'deg)';});});}())
+    </p>
 
-        <h3>Minecraft anywhere</h3>
-        <p>Play a mock minecraft on any webpage! Recovered by luphoria.</p>
-        <p>
-            javascript:(function(){window.mcbmRootURI='https://luphoria.com/MCanywhere/';window.mcbmScriptURI='mcbm.min.js';window.mcbmLang='eng';var
-            s,ss=window.mcbmRootURI+'js/mcbm-load.min.js';s=document.createElement('script');s.src=ss;document.body.appendChild(s);})();
-        </p>
+    <h3>Coordinates</h3>
+    <p>Shows the coordinates of you mouse's position. Coordinates shown at end of URL.</p>
+    <p>javascript:document.addEventListener('mousemove',function(e)%7Blocation.hash=(window.scrollX+e.clientX)+','+(window.scrollY+e.clientY)%7D,true);</p>
 
-        <h3>Edit+</h3>
-        <p>Allows to edit the page but if you click it while editing it removes the edit function. Thank you BluePotato#8397 for finding this!</p>
-        <p>javascript:if(document.body.contentEditable != 'true')void(document.body.contentEditable = 'true');else void(document.body.contentEditable = 'false');</p>
+    <h3>Tab Cloak</h3>
+    <p>With this code you can change the the icon and the title of any tab.</p>
+    <p>I can not put the code here because it will destroy the page, but here is a <a href="/js/tab-cloak.js">link to the code</a>.</p>
 
-        <h3>Edit</h3>
-        <p>Allows you to edit the page.</p>
-        <p>javascript:document.body.contentEditable = 'true'; document.designMode='on'; void 0</p>
+    <h3>Minecraft anywhere</h3>
+    <p>Play a mock minecraft on any webpage! Recovered by luphoria.</p>
+    <p>
+      javascript:(function(){window.mcbmRootURI='https://luphoria.com/MCanywhere/';window.mcbmScriptURI='mcbm.min.js';window.mcbmLang='eng';var
+      s,ss=window.mcbmRootURI+'js/mcbm-load.min.js';s=document.createElement('script');s.src=ss;document.body.appendChild(s);})();
+    </p>
 
-        <h3>Unedit</h3>
-        <p>Removes editing ability (also removes cursor from edit).</p>
-        <p>javascript:document.body.contentEditable = 'false'; document.designMode='off'; void 0</p>
+    <h3>Edit+</h3>
+    <p>Allows to edit the page but if you click it while editing it removes the edit function. Thank you BluePotato#8397 for finding this!</p>
+    <p>javascript:if(document.body.contentEditable != 'true')void(document.body.contentEditable = 'true');else void(document.body.contentEditable = 'false');</p>
 
-        <h3>Kick Ass</h3>
-        <p>Asteroids but 10 times better! You can choose what ship you use to destroy the web! It even has a very cool <a href="https://kickassapp.com/">website</a>!</p>
-        <p>javascript:var%20KICKASSVERSION='2.0';var%20s%20=%20document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='//hi.kickassapp.com/kickass.js';void(0);</p>
+    <h3>Edit</h3>
+    <p>Allows you to edit the page.</p>
+    <p>javascript:document.body.contentEditable = 'true'; document.designMode='on'; void 0</p>
 
-        <h3>Asteroids</h3>
-        <p>Spawns a spaceship which can destroy stuff. Arrow keys to move, space to shoot, and escape to quit. You can also bounce!</p>
-        <p>
-            javascript:var s=document.createElement('script');s.type='text/javascript';s.onerror=function(e){alert('Failed to load the script. The site\'s Content Security Policy might be blocking it. Feel free to try
-            again.');};document.body.appendChild(s);s.src='https://blog.roysolberg.com/js/dom2.min.js';void(0);
-        </p>
+    <h3>Unedit</h3>
+    <p>Removes editing ability (also removes cursor from edit).</p>
+    <p>javascript:document.body.contentEditable = 'false'; document.designMode='off'; void 0</p>
 
-        <h3>Uglify</h3>
-        <p>Changes the font to comic sans, messes up pictures, changes font sizes, changes colors to pink and green, and when you click the screen spins. Highly destructive. Can make any page unrecognizable.</p>
-        <p>I can not put the code here because it will destroy the page, but here is a <a href="/js/uglify.js">link to the code</a>.</p>
+    <h3>Kick Ass</h3>
+    <p>Asteroids but 10 times better! You can choose what ship you use to destroy the web! It even has a very cool <a href="https://kickassapp.com/">website</a>!</p>
+    <p>javascript:var%20KICKASSVERSION='2.0';var%20s%20=%20document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='//hi.kickassapp.com/kickass.js';void(0);</p>
 
-        <h3>Glitch All</h3>
-        <p>Changes the whole screen into a glitchy mess.</p>
-        <p>I can not put the code here because it will destroy the page, but here is a <a href="/js/glitch.js">link to the code</a>.</p>
+    <h3>Asteroids</h3>
+    <p>Spawns a spaceship which can destroy stuff. Arrow keys to move, space to shoot, and escape to quit. You can also bounce!</p>
+    <p>
+      javascript:var s=document.createElement('script');s.type='text/javascript';s.onerror=function(e){alert('Failed to load the script. The site\'s Content Security Policy might be blocking it. Feel free to try
+      again.');};document.body.appendChild(s);s.src='https://blog.roysolberg.com/js/dom2.min.js';void(0);
+    </p>
 
-        <h3>360</h3>
-        <p>Makes the page spin in a circle.</p>
-        <p>
-            javascript:(function(){var s=document.createElement('style');s.innerHTML='%40-moz-keyframes roll { 100%25 { -moz-transform: rotate(129600deg); } } %40-o-keyframes roll { 100%25 { -o-transform: rotate(129600deg); } }
-            %40-webkit-keyframes roll { 100%25 { -webkit-transform: rotate(129600deg); } } body{ -moz-animation-name: roll; -moz-animation-duration: 1440s; -moz-animation-iteration-count: 360; -o-animation-name: roll; -o-animation-duration:
-            1440s; -o-animation-iteration-count: 360; -webkit-animation-name: roll; -webkit-animation-duration: 1440s; -webkit-animation-iteration-count: 360; }';document.getElementsByTagName('head')[0].appendChild(s);}());
-        </p>
+    <h3>Uglify</h3>
+    <p>Changes the font to comic sans, messes up pictures, changes font sizes, changes colors to pink and green, and when you click the screen spins. Highly destructive. Can make any page unrecognizable.</p>
+    <p>I can not put the code here because it will destroy the page, but here is a <a href="/js/uglify.js">link to the code</a>.</p>
 
-        <h3>Eruda (Inspect element)</h3>
-        <p>A simple version of inspect element, but with plugins and more cool stuff! <a href="https://github.com/liriliri/eruda">It is open-source!</a></p>
-        <p>javascript:(function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda"; document.body.appendChild(script); script.onload = function () { eruda.init() } })();</p>
+    <h3>Glitch All</h3>
+    <p>Changes the whole screen into a glitchy mess.</p>
+    <p>I can not put the code here because it will destroy the page, but here is a <a href="/js/glitch.js">link to the code</a>.</p>
 
-        <h3>Ad-B-Gone</h3>
-        <p>A simple ad-blocker in a bookmarklet! Note: You will have to click it everytime you want to block ads!</p>
-        <p>I can not put the code here because it will destroy the page, but here is a <a href="/js/ad-b-gone.js">link to the code</a>.</p>
+    <h3>360</h3>
+    <p>Makes the page spin in a circle.</p>
+    <p>
+      javascript:(function(){var s=document.createElement('style');s.innerHTML='%40-moz-keyframes roll { 100%25 { -moz-transform: rotate(129600deg); } } %40-o-keyframes roll { 100%25 { -o-transform: rotate(129600deg); } }
+      %40-webkit-keyframes roll { 100%25 { -webkit-transform: rotate(129600deg); } } body{ -moz-animation-name: roll; -moz-animation-duration: 1440s; -moz-animation-iteration-count: 360; -o-animation-name: roll; -o-animation-duration:
+      1440s; -o-animation-iteration-count: 360; -webkit-animation-name: roll; -webkit-animation-duration: 1440s; -webkit-animation-iteration-count: 360; }';document.getElementsByTagName('head')[0].appendChild(s);}());
+    </p>
 
-        <h3>Snake Game</h3>
-        <p>This makes a little game window that you can play snake on.</p>
-        <p>
-            javascript:Q=32;m=b=Q*Q;a=[P=l=u=d=p=S=w=0];u=8;f=(h=j=t=(b+Q)/2)-1;(B=(D=document).body).appendChild(x=D.createElement("p"));(X=x.style).position="fixed";X.left=X.top=0;X.background="#FFF%22;x.innerHTML=%22%3Cp%3E%3C/p%3E%3Ccanvas%3E%22;v=(s=x.childNodes)[0];(s=s[1]).width=s.height=5*Q;c=s.getContext(%222d%22);%20onkeydown=onblur=F=function(e,g){g?a[f]?(w+=m,f=Math.random(l+=8)*(R=Q-2)*R|(u=0),F(f+=Q+1+2*(f/R|0),g)):F(f):0%3Ee?(l?--l:(y=t,t=a[t]-2,F(y)),S+=(w*=0.8)/4,m=999/(u++%20+10),a[h+=[-1,-Q,1,Q][d=p]]?B.removeChild(x,alert(%22Game%20Over!\nThe%20game%20window%20will%20now%20be%20closed.\n\nMade%20by%203kh0%22)):(F(h),F(e,j=h),v.innerHTML=P?(setTimeout(F,50,e,0),S|0):%22Press%20P%20to%20play!%20Made%20by%203kh0%22)):-e?(y=(a[e]=e%3CQ|e%3E=Q*Q-Q|!(e%Q)|e%Q==Q-1|2*(e==h))+(e==f),e==h&&(a[j]=2+h),c.fillStyle=%22hsl(%22+99*!a[e]+%22,%22+2*m+%22%,%22+50*y+%22%)%22,c.fillRect(e%Q*5,5*(e/Q|0),5,5)):isNaN(y=e.keyCode-37)|43==y?(P=y&&!P)&&F(-1):%20p=!P|y&-4|!(y^2^d)?p:y;return!1};for(;--b;F(b));void%20F(-1);
-        </p>
+    <h3>Eruda (Inspect element)</h3>
+    <p>A simple version of inspect element, but with plugins and more cool stuff! <a href="https://github.com/liriliri/eruda">It is open-source!</a></p>
+    <p>javascript:(function () { var script = document.createElement('script'); script.src="//cdn.jsdelivr.net/npm/eruda"; document.body.appendChild(script); script.onload = function () { eruda.init() } })();</p>
 
-        <h3>YoHoHo.io Hack</h3>
-        <p>This just gives you the max player and the maxed pets so you can beat the crap all of the children :)</p>
-        <p>javascript:(function()%7Bvar%20_0x174722%3D_0x5349%3Bfunction%20_0x5349(_0x189185%2C_0x5292a0)%7Bvar%20_0xf69f83%3D_0x1101()%3Breturn%20_0x5349%3Dfunction(_0x22b1ac%2C_0xdee93c)%7B_0x22b1ac%3D_0x22b1ac-0x1d9%3Bvar%20_0x1c59b4%3D_0xf69f83%5B_0x22b1ac%5D%3Breturn%20_0x1c59b4%3B%7D%2C_0x5349(_0x189185%2C_0x5292a0)%3B%7D(function(_0x162947%2C_0x5a35c1)%7Bvar%20_0x1d7e79%3D_0x5349%2C_0x3f41fd%3D_0x162947()%3Bwhile(!!%5B%5D)%7Btry%7Bvar%20_0x5ee40d%3DparseInt(_0x1d7e79(0x1e2))%2F0x1*(-parseInt(_0x1d7e79(0x1fb))%2F0x2)%2B-parseInt(_0x1d7e79(0x1eb))%2F0x3*(-parseInt(_0x1d7e79(0x1f7))%2F0x4)%2B-parseInt(_0x1d7e79(0x20f))%2F0x5%2B-parseInt(_0x1d7e79(0x1f8))%2F0x6%2B-parseInt(_0x1d7e79(0x20b))%2F0x7%2BparseInt(_0x1d7e79(0x204))%2F0x8*(parseInt(_0x1d7e79(0x1e9))%2F0x9)%2BparseInt(_0x1d7e79(0x1f4))%2F0xa*(parseInt(_0x1d7e79(0x1d9))%2F0xb)%3Bif(_0x5ee40d%3D%3D%3D_0x5a35c1)break%3Belse%20_0x3f41fd%5B'push'%5D(_0x3f41fd%5B'shift'%5D())%3B%7Dcatch(_0x338e30)%7B_0x3f41fd%5B'push'%5D(_0x3f41fd%5B'shift'%5D())%3B%7D%7D%7D(_0x1101%2C0x83dbe))%3Bvar%20_0xf03dc6%3D(function()%7Bvar%20_0x1817ae%3D!!%5B%5D%3Breturn%20function(_0x24b9a6%2C_0x56e202)%7Bvar%20_0x2e6656%3D_0x1817ae%3Ffunction()%7Bvar%20_0x1cfd89%3D_0x5349%3Bif(_0x56e202)%7Bvar%20_0x56b063%3D_0x56e202%5B_0x1cfd89(0x1ea)%5D(_0x24b9a6%2Carguments)%3Breturn%20_0x56e202%3Dnull%2C_0x56b063%3B%7D%7D%3Afunction()%7B%7D%3Breturn%20_0x1817ae%3D!%5B%5D%2C_0x2e6656%3B%7D%3B%7D())%2C_0x4be9bc%3D_0xf03dc6(this%2Cfunction()%7Bvar%20_0x7f72c4%3D_0x5349%3Breturn%20_0x4be9bc%5B'toString'%5D()%5B_0x7f72c4(0x1e3)%5D('(((.%2B)%2B)%2B)%2B%24')%5B'toString'%5D()%5B_0x7f72c4(0x211)%5D(_0x4be9bc)%5B_0x7f72c4(0x1e3)%5D(_0x7f72c4(0x1da))%3B%7D)%3B_0x4be9bc()%3Bvar%20_0x5a2fb3%3D(function()%7Bvar%20_0x4fa72b%3D!!%5B%5D%3Breturn%20function(_0x1d7e05%2C_0x5562c5)%7Bvar%20_0x37721b%3D_0x4fa72b%3Ffunction()%7Bvar%20_0x16d0ee%3D_0x5349%3Bif(_0x16d0ee(0x215)%3D%3D%3D'iRQFn')%7Bvar%20_0x4e6b3a%3D_0x38d8d7%3Ffunction()%7Bvar%20_0x3b2120%3D_0x16d0ee%3Bif(_0x1570d0)%7Bvar%20_0x4107aa%3D_0x4999cd%5B_0x3b2120(0x1ea)%5D(_0x14c1a1%2Carguments)%3Breturn%20_0x446509%3Dnull%2C_0x4107aa%3B%7D%7D%3Afunction()%7B%7D%3Breturn%20_0x29a8b1%3D!%5B%5D%2C_0x4e6b3a%3B%7Delse%7Bif(_0x5562c5)%7Bvar%20_0x581c83%3D_0x5562c5%5B_0x16d0ee(0x1ea)%5D(_0x1d7e05%2Carguments)%3Breturn%20_0x5562c5%3Dnull%2C_0x581c83%3B%7D%7D%7D%3Afunction()%7B%7D%3Breturn%20_0x4fa72b%3D!%5B%5D%2C_0x37721b%3B%7D%3B%7D())%3B(function()%7Bvar%20_0x180252%3D_0x5349%2C_0x57a488%3Btry%7Bvar%20_0x38868a%3DFunction(_0x180252(0x1f2)%2B_0x180252(0x209)%2B')%3B')%3B_0x57a488%3D_0x38868a()%3B%7Dcatch(_0x768270)%7B_0x57a488%3Dwindow%3B%7D_0x57a488%5B_0x180252(0x20c)%5D(_0x4bf308%2C0x1)%3B%7D())%2C(function()%7B_0x5a2fb3(this%2Cfunction()%7Bvar%20_0x122756%3D_0x5349%3Bif('WFald'!%3D%3D'WFald')%7Bvar%20_0x2be14a%3D_0x1286ba%5B_0x122756(0x1ea)%5D(_0x21c742%2Carguments)%3Breturn%20_0xc10b3a%3Dnull%2C_0x2be14a%3B%7Delse%7Bvar%20_0x376390%3Dnew%20RegExp(_0x122756(0x201))%2C_0x3acb61%3Dnew%20RegExp('%5Cx5c%2B%5Cx5c%2B%5Cx20*(%3F%3A%5Ba-zA-Z_%24%5D%5B0-9a-zA-Z_%24%5D*)'%2C'i')%2C_0x1a360c%3D_0x4bf308(_0x122756(0x1fd))%3B!_0x376390%5B_0x122756(0x1e5)%5D(_0x1a360c%2B_0x122756(0x203))%7C%7C!_0x3acb61%5B'test'%5D(_0x1a360c%2B_0x122756(0x1e4))%3F'ebNHv'!%3D%3D_0x122756(0x216)%3F_0x1a360c('0')%3A_0x450f89()%3A_0x4bf308()%3B%7D%7D)()%3B%7D())%3Bfunction%20_0x1101()%7Bvar%20_0x550c10%3D%5B'183285lNowSP'%2C'apply'%2C'6KFoCWW'%2C'%5B1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%5D'%2C'bind'%2C'fpBzY'%2C'toString'%2C'dhBsH'%2C'SWNEZ'%2C'return%5Cx20(function()%5Cx20'%2C'call'%2C'98310cvxqkT'%2C'exception'%2C'playerPetLevel'%2C'1456292zrKVuj'%2C'5620128LIVAYr'%2C'action'%2C'setItem'%2C'1078BKXzXO'%2C'ZxGQZ'%2C'init'%2C'If%5Cx20this%5Cx20page%5Cx20is%5Cx20not%5Cx20a%5Cx20yohoho.io%5Cx20game%2C%5Cx20please%5Cx20click%5Cx20on%5Cx20cancel.%5Cx20%5Cx0a%5Cx0aIf%5Cx20it%5Cx20is%2C%5Cx20please%5Cx20click%5Cx20OK%5Cx20to%5Cx20continue!'%2C'prototype'%2C'obaOi'%2C'function%5Cx20*%5Cx5c(%5Cx20*%5Cx5c)'%2C'gger'%2C'chain'%2C'384qRIqmn'%2C'XqhBk'%2C'console'%2C'licVk'%2C'eTADI'%2C'%7B%7D.constructor(%5Cx22return%5Cx20this%5Cx22)(%5Cx20)'%2C'while%5Cx20(true)%5Cx20%7B%7D'%2C'6362986aCtcCS'%2C'setInterval'%2C'trace'%2C'unlockedPets'%2C'2811780zubtez'%2C'string'%2C'constructor'%2C'stateObject'%2C'warn'%2C'info'%2C'aTcYY'%2C'eXhCw'%2C'unlockedSkins'%2C'1661OuHzpg'%2C'(((.%2B)%2B)%2B)%2B%24'%2C'Finished!%5Cx20The%5Cx20page%5Cx20will%5Cx20now%5Cx20reload%5Cx20for%5Cx20the%5Cx20changes%5Cx20to%5Cx20take%5Cx20effect!'%2C'__proto__'%2C'log'%2C'counter'%2C'debu'%2C'error'%2C'length'%2C'449RmqYJz'%2C'search'%2C'input'%2C'test'%2C'table'%2C'The%5Cx20script%5Cx20has%5Cx20been%5Cx20cancelled!%5Cx20Have%5Cx20a%5Cx20nice%5Cx20day!'%2C'BqZSR'%5D%3B_0x1101%3Dfunction()%7Breturn%20_0x550c10%3B%7D%3Breturn%20_0x1101()%3B%7Dvar%20_0xdee93c%3D(function()%7Bvar%20_0x2269c3%3D!!%5B%5D%3Breturn%20function(_0x2b326a%2C_0x5c611b)%7Bvar%20_0xa408cb%3D_0x2269c3%3Ffunction()%7Bvar%20_0x1d1515%3D_0x5349%3Bif(_0x5c611b)%7Bvar%20_0x5388d4%3D_0x5c611b%5B_0x1d1515(0x1ea)%5D(_0x2b326a%2Carguments)%3Breturn%20_0x5c611b%3Dnull%2C_0x5388d4%3B%7D%7D%3Afunction()%7B%7D%3Breturn%20_0x2269c3%3D!%5B%5D%2C_0xa408cb%3B%7D%3B%7D())%2C_0x22b1ac%3D_0xdee93c(this%2Cfunction()%7Bvar%20_0x2adb39%3D_0x5349%2C_0x1b1d71%3Btry%7Bif(_0x2adb39(0x207)%3D%3D%3D_0x2adb39(0x1e8))_0xdd2f0c(0x0)%3Belse%7Bvar%20_0x28de03%3DFunction(_0x2adb39(0x1f2)%2B_0x2adb39(0x209)%2B')%3B')%3B_0x1b1d71%3D_0x28de03()%3B%7D%7Dcatch(_0x4fd599)%7Bif(_0x2adb39(0x208)!%3D%3D_0x2adb39(0x1ee))_0x1b1d71%3Dwindow%3Belse%7Bif(_0x5c6a24)%7Bvar%20_0x4fc9ea%3D_0x2222ae%5B_0x2adb39(0x1ea)%5D(_0x2ac408%2Carguments)%3Breturn%20_0x5a3cb1%3Dnull%2C_0x4fc9ea%3B%7D%7D%7Dvar%20_0x1e2465%3D_0x1b1d71%5B_0x2adb39(0x206)%5D%3D_0x1b1d71%5B_0x2adb39(0x206)%5D%7C%7C%7B%7D%2C_0xeacc30%3D%5B_0x2adb39(0x1dd)%2C_0x2adb39(0x213)%2C_0x2adb39(0x214)%2C_0x2adb39(0x1e0)%2C'exception'%2C'table'%2C'trace'%5D%3Bfor(var%20_0x1d8669%3D0x0%3B_0x1d8669%3C_0xeacc30%5B_0x2adb39(0x1e1)%5D%3B_0x1d8669%2B%2B)%7Bif(_0x2adb39(0x1fc)%3D%3D%3D_0x2adb39(0x1fc))%7Bvar%20_0x115b45%3D_0xdee93c%5B_0x2adb39(0x211)%5D%5B_0x2adb39(0x1ff)%5D%5B'bind'%5D(_0xdee93c)%2C_0x2b0b70%3D_0xeacc30%5B_0x1d8669%5D%2C_0xf6fef4%3D_0x1e2465%5B_0x2b0b70%5D%7C%7C_0x115b45%3B_0x115b45%5B_0x2adb39(0x1dc)%5D%3D_0xdee93c%5B_0x2adb39(0x1ed)%5D(_0xdee93c)%2C_0x115b45%5B'toString'%5D%3D_0xf6fef4%5B'toString'%5D%5B_0x2adb39(0x1ed)%5D(_0xf6fef4)%2C_0x1e2465%5B_0x2b0b70%5D%3D_0x115b45%3B%7Delse%7Bvar%20_0x214333%3Btry%7Bvar%20_0x283e77%3D_0x2ae7a0(_0x2adb39(0x1f2)%2B_0x2adb39(0x209)%2B')%3B')%3B_0x214333%3D_0x283e77()%3B%7Dcatch(_0x485cee)%7B_0x214333%3D_0x581ec1%3B%7Dvar%20_0x431763%3D_0x214333%5B'console'%5D%3D_0x214333%5B_0x2adb39(0x206)%5D%7C%7C%7B%7D%2C_0x1dca6c%3D%5B_0x2adb39(0x1dd)%2C_0x2adb39(0x213)%2C'info'%2C_0x2adb39(0x1e0)%2C_0x2adb39(0x1f5)%2C_0x2adb39(0x1e6)%2C_0x2adb39(0x20d)%5D%3Bfor(var%20_0x5a67d6%3D0x0%3B_0x5a67d6%3C_0x1dca6c%5B_0x2adb39(0x1e1)%5D%3B_0x5a67d6%2B%2B)%7Bvar%20_0x603c42%3D_0x2ebf4a%5B'constructor'%5D%5B_0x2adb39(0x1ff)%5D%5B_0x2adb39(0x1ed)%5D(_0xedf4d0)%2C_0x37712c%3D_0x1dca6c%5B_0x5a67d6%5D%2C_0x43599c%3D_0x431763%5B_0x37712c%5D%7C%7C_0x603c42%3B_0x603c42%5B'__proto__'%5D%3D_0x429b17%5B'bind'%5D(_0x20cc5a)%2C_0x603c42%5B_0x2adb39(0x1ef)%5D%3D_0x43599c%5B_0x2adb39(0x1ef)%5D%5B'bind'%5D(_0x43599c)%2C_0x431763%5B_0x37712c%5D%3D_0x603c42%3B%7D%7D%7D%7D)%3B_0x22b1ac()%3Bconfirm(_0x174722(0x1fe))%3D%3D!!%5B%5D%3F(localStorage%5B'setItem'%5D(_0x174722(0x217)%2C'%5B1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C15%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C23%2C24%2C25%2C26%2C27%2C28%2C29%2C30%2C31%2C32%2C33%2C34%2C35%5D')%2ClocalStorage%5B_0x174722(0x1fa)%5D('playerSkin'%2C'35')%2ClocalStorage%5B_0x174722(0x1fa)%5D(_0x174722(0x20e)%2C_0x174722(0x1ec))%2ClocalStorage%5B'setItem'%5D('playerPet'%2C'9')%2ClocalStorage%5B_0x174722(0x1fa)%5D(_0x174722(0x1f6)%2C'14')%2Calert(_0x174722(0x1db))%2Clocation%5B'reload'%5D())%3Aalert(_0x174722(0x1e7))%3Bfunction%20_0x4bf308(_0x34a9ca)%7Bvar%20_0x486d99%3D_0x174722%3Bfunction%20_0x359a6f(_0x5be8f3)%7Bvar%20_0x3eedd3%3D_0x5349%3Bif(typeof%20_0x5be8f3%3D%3D%3D_0x3eedd3(0x210))return%20function(_0x4673d8)%7B%7D%5B'constructor'%5D(_0x3eedd3(0x20a))%5B_0x3eedd3(0x1ea)%5D(_0x3eedd3(0x1de))%3Belse%7Bif((''%2B_0x5be8f3%2F_0x5be8f3)%5B_0x3eedd3(0x1e1)%5D!%3D%3D0x1%7C%7C_0x5be8f3%250x14%3D%3D%3D0x0)'ascFO'!%3D%3D'SFUNi'%3Ffunction()%7Bvar%20_0x3b3300%3D_0x3eedd3%3Bif(_0x3b3300(0x1f1)%3D%3D%3D'SWNEZ')return!!%5B%5D%3Belse%20_0x16e23e%3D_0x188402%3B%7D%5B_0x3eedd3(0x211)%5D('debu'%2B_0x3eedd3(0x202))%5B_0x3eedd3(0x1f3)%5D(_0x3eedd3(0x1f9))%3A_0x3417b9%3D_0x474a74%3Belse%7Bif('obaOi'!%3D%3D_0x3eedd3(0x200))%7Bif(_0x2e1d47)%7Bvar%20_0x75306c%3D_0x3d8226%5B'apply'%5D(_0x19b02a%2Carguments)%3Breturn%20_0x2f5238%3Dnull%2C_0x75306c%3B%7D%7Delse(function()%7Breturn!%5B%5D%3B%7D%5B'constructor'%5D('debu'%2B_0x3eedd3(0x202))%5B_0x3eedd3(0x1ea)%5D(_0x3eedd3(0x212)))%3B%7D%7D_0x359a6f(%2B%2B_0x5be8f3)%3B%7Dtry%7Bif(_0x486d99(0x1f0)%3D%3D%3D'YBOZM')return!%5B%5D%3Belse%7Bif(_0x34a9ca)return%20_0x359a6f%3Belse%20_0x486d99(0x205)%3D%3D%3D'XqhBk'%3F_0x359a6f(0x0)%3Afunction()%7Breturn!!%5B%5D%3B%7D%5B'constructor'%5D(_0x486d99(0x1df)%2B_0x486d99(0x202))%5B_0x486d99(0x1f3)%5D(_0x486d99(0x1f9))%3B%7D%7Dcatch(_0x3cfc0e)%7B%7D%7D%7D)()%3B</p>
-        
-        <h3>dog year calculator</h3>
-        <p>a useless dog year calculator to use in any tab</p>
-        <p>javascript:(function()%7Bfunction%20callback()%7B%2F%2Fhi%7Dvar%20s%3Ddocument.createElement(%22script%22)%3Bs.src%3D%22https%3A%2F%2Faspaceman527.github.io%2Fdogyears%2Fscript.js%22%3Bif(s.addEventListener)%7Bs.addEventListener(%22load%22%2Ccallback%2Cfalse)%7Delse%20if(s.readyState)%7Bs.onreadystatechange%3Dcallback%7Ddocument.body.appendChild(s)%3B%7D)()</p>
-            </body>
+    <h3>Ad-B-Gone</h3>
+    <p>A simple ad-blocker in a bookmarklet! Note: You will have to click it everytime you want to block ads!</p>
+    <p>I can not put the code here because it will destroy the page, but here is a <a href="/js/ad-b-gone.js">link to the code</a>.</p>
+
+    <h3>Snake Game</h3>
+    <p>This makes a little game window that you can play snake on.</p>
+    <p>
+      javascript:Q=32;m=b=Q*Q;a=[P=l=u=d=p=S=w=0];u=8;f=(h=j=t=(b+Q)/2)-1;(B=(D=document).body).appendChild(x=D.createElement("p"));(X=x.style).position="fixed";X.left=X.top=0;X.background="#FFF%22;x.innerHTML=%22%3Cp%3E%3C/p%3E%3Ccanvas%3E%22;v=(s=x.childNodes)[0];(s=s[1]).width=s.height=5*Q;c=s.getContext(%222d%22);%20onkeydown=onblur=F=function(e,g){g?a[f]?(w+=m,f=Math.random(l+=8)*(R=Q-2)*R|(u=0),F(f+=Q+1+2*(f/R|0),g)):F(f):0%3Ee?(l?--l:(y=t,t=a[t]-2,F(y)),S+=(w*=0.8)/4,m=999/(u++%20+10),a[h+=[-1,-Q,1,Q][d=p]]?B.removeChild(x,alert(%22Game%20Over!\nThe%20game%20window%20will%20now%20be%20closed.\n\nMade%20by%203kh0%22)):(F(h),F(e,j=h),v.innerHTML=P?(setTimeout(F,50,e,0),S|0):%22Press%20P%20to%20play!%20Made%20by%203kh0%22)):-e?(y=(a[e]=e%3CQ|e%3E=Q*Q-Q|!(e%Q)|e%Q==Q-1|2*(e==h))+(e==f),e==h&&(a[j]=2+h),c.fillStyle=%22hsl(%22+99*!a[e]+%22,%22+2*m+%22%,%22+50*y+%22%)%22,c.fillRect(e%Q*5,5*(e/Q|0),5,5)):isNaN(y=e.keyCode-37)|43==y?(P=y&&!P)&&F(-1):%20p=!P|y&-4|!(y^2^d)?p:y;return!1};for(;--b;F(b));void%20F(-1);
+    </p>
+
+    <h3>YoHoHo.io Hack</h3>
+    <p>This just gives you the max player and the maxed pets so you can beat the crap all of the children :)</p>
+    <p>
+      javascript:(function()%7Bvar%20_0x174722%3D_0x5349%3Bfunction%20_0x5349(_0x189185%2C_0x5292a0)%7Bvar%20_0xf69f83%3D_0x1101()%3Breturn%20_0x5349%3Dfunction(_0x22b1ac%2C_0xdee93c)%7B_0x22b1ac%3D_0x22b1ac-0x1d9%3Bvar%20_0x1c59b4%3D_0xf69f83%5B_0x22b1ac%5D%3Breturn%20_0x1c59b4%3B%7D%2C_0x5349(_0x189185%2C_0x5292a0)%3B%7D(function(_0x162947%2C_0x5a35c1)%7Bvar%20_0x1d7e79%3D_0x5349%2C_0x3f41fd%3D_0x162947()%3Bwhile(!!%5B%5D)%7Btry%7Bvar%20_0x5ee40d%3DparseInt(_0x1d7e79(0x1e2))%2F0x1*(-parseInt(_0x1d7e79(0x1fb))%2F0x2)%2B-parseInt(_0x1d7e79(0x1eb))%2F0x3*(-parseInt(_0x1d7e79(0x1f7))%2F0x4)%2B-parseInt(_0x1d7e79(0x20f))%2F0x5%2B-parseInt(_0x1d7e79(0x1f8))%2F0x6%2B-parseInt(_0x1d7e79(0x20b))%2F0x7%2BparseInt(_0x1d7e79(0x204))%2F0x8*(parseInt(_0x1d7e79(0x1e9))%2F0x9)%2BparseInt(_0x1d7e79(0x1f4))%2F0xa*(parseInt(_0x1d7e79(0x1d9))%2F0xb)%3Bif(_0x5ee40d%3D%3D%3D_0x5a35c1)break%3Belse%20_0x3f41fd%5B'push'%5D(_0x3f41fd%5B'shift'%5D())%3B%7Dcatch(_0x338e30)%7B_0x3f41fd%5B'push'%5D(_0x3f41fd%5B'shift'%5D())%3B%7D%7D%7D(_0x1101%2C0x83dbe))%3Bvar%20_0xf03dc6%3D(function()%7Bvar%20_0x1817ae%3D!!%5B%5D%3Breturn%20function(_0x24b9a6%2C_0x56e202)%7Bvar%20_0x2e6656%3D_0x1817ae%3Ffunction()%7Bvar%20_0x1cfd89%3D_0x5349%3Bif(_0x56e202)%7Bvar%20_0x56b063%3D_0x56e202%5B_0x1cfd89(0x1ea)%5D(_0x24b9a6%2Carguments)%3Breturn%20_0x56e202%3Dnull%2C_0x56b063%3B%7D%7D%3Afunction()%7B%7D%3Breturn%20_0x1817ae%3D!%5B%5D%2C_0x2e6656%3B%7D%3B%7D())%2C_0x4be9bc%3D_0xf03dc6(this%2Cfunction()%7Bvar%20_0x7f72c4%3D_0x5349%3Breturn%20_0x4be9bc%5B'toString'%5D()%5B_0x7f72c4(0x1e3)%5D('(((.%2B)%2B)%2B)%2B%24')%5B'toString'%5D()%5B_0x7f72c4(0x211)%5D(_0x4be9bc)%5B_0x7f72c4(0x1e3)%5D(_0x7f72c4(0x1da))%3B%7D)%3B_0x4be9bc()%3Bvar%20_0x5a2fb3%3D(function()%7Bvar%20_0x4fa72b%3D!!%5B%5D%3Breturn%20function(_0x1d7e05%2C_0x5562c5)%7Bvar%20_0x37721b%3D_0x4fa72b%3Ffunction()%7Bvar%20_0x16d0ee%3D_0x5349%3Bif(_0x16d0ee(0x215)%3D%3D%3D'iRQFn')%7Bvar%20_0x4e6b3a%3D_0x38d8d7%3Ffunction()%7Bvar%20_0x3b2120%3D_0x16d0ee%3Bif(_0x1570d0)%7Bvar%20_0x4107aa%3D_0x4999cd%5B_0x3b2120(0x1ea)%5D(_0x14c1a1%2Carguments)%3Breturn%20_0x446509%3Dnull%2C_0x4107aa%3B%7D%7D%3Afunction()%7B%7D%3Breturn%20_0x29a8b1%3D!%5B%5D%2C_0x4e6b3a%3B%7Delse%7Bif(_0x5562c5)%7Bvar%20_0x581c83%3D_0x5562c5%5B_0x16d0ee(0x1ea)%5D(_0x1d7e05%2Carguments)%3Breturn%20_0x5562c5%3Dnull%2C_0x581c83%3B%7D%7D%7D%3Afunction()%7B%7D%3Breturn%20_0x4fa72b%3D!%5B%5D%2C_0x37721b%3B%7D%3B%7D())%3B(function()%7Bvar%20_0x180252%3D_0x5349%2C_0x57a488%3Btry%7Bvar%20_0x38868a%3DFunction(_0x180252(0x1f2)%2B_0x180252(0x209)%2B')%3B')%3B_0x57a488%3D_0x38868a()%3B%7Dcatch(_0x768270)%7B_0x57a488%3Dwindow%3B%7D_0x57a488%5B_0x180252(0x20c)%5D(_0x4bf308%2C0x1)%3B%7D())%2C(function()%7B_0x5a2fb3(this%2Cfunction()%7Bvar%20_0x122756%3D_0x5349%3Bif('WFald'!%3D%3D'WFald')%7Bvar%20_0x2be14a%3D_0x1286ba%5B_0x122756(0x1ea)%5D(_0x21c742%2Carguments)%3Breturn%20_0xc10b3a%3Dnull%2C_0x2be14a%3B%7Delse%7Bvar%20_0x376390%3Dnew%20RegExp(_0x122756(0x201))%2C_0x3acb61%3Dnew%20RegExp('%5Cx5c%2B%5Cx5c%2B%5Cx20*(%3F%3A%5Ba-zA-Z_%24%5D%5B0-9a-zA-Z_%24%5D*)'%2C'i')%2C_0x1a360c%3D_0x4bf308(_0x122756(0x1fd))%3B!_0x376390%5B_0x122756(0x1e5)%5D(_0x1a360c%2B_0x122756(0x203))%7C%7C!_0x3acb61%5B'test'%5D(_0x1a360c%2B_0x122756(0x1e4))%3F'ebNHv'!%3D%3D_0x122756(0x216)%3F_0x1a360c('0')%3A_0x450f89()%3A_0x4bf308()%3B%7D%7D)()%3B%7D())%3Bfunction%20_0x1101()%7Bvar%20_0x550c10%3D%5B'183285lNowSP'%2C'apply'%2C'6KFoCWW'%2C'%5B1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%5D'%2C'bind'%2C'fpBzY'%2C'toString'%2C'dhBsH'%2C'SWNEZ'%2C'return%5Cx20(function()%5Cx20'%2C'call'%2C'98310cvxqkT'%2C'exception'%2C'playerPetLevel'%2C'1456292zrKVuj'%2C'5620128LIVAYr'%2C'action'%2C'setItem'%2C'1078BKXzXO'%2C'ZxGQZ'%2C'init'%2C'If%5Cx20this%5Cx20page%5Cx20is%5Cx20not%5Cx20a%5Cx20yohoho.io%5Cx20game%2C%5Cx20please%5Cx20click%5Cx20on%5Cx20cancel.%5Cx20%5Cx0a%5Cx0aIf%5Cx20it%5Cx20is%2C%5Cx20please%5Cx20click%5Cx20OK%5Cx20to%5Cx20continue!'%2C'prototype'%2C'obaOi'%2C'function%5Cx20*%5Cx5c(%5Cx20*%5Cx5c)'%2C'gger'%2C'chain'%2C'384qRIqmn'%2C'XqhBk'%2C'console'%2C'licVk'%2C'eTADI'%2C'%7B%7D.constructor(%5Cx22return%5Cx20this%5Cx22)(%5Cx20)'%2C'while%5Cx20(true)%5Cx20%7B%7D'%2C'6362986aCtcCS'%2C'setInterval'%2C'trace'%2C'unlockedPets'%2C'2811780zubtez'%2C'string'%2C'constructor'%2C'stateObject'%2C'warn'%2C'info'%2C'aTcYY'%2C'eXhCw'%2C'unlockedSkins'%2C'1661OuHzpg'%2C'(((.%2B)%2B)%2B)%2B%24'%2C'Finished!%5Cx20The%5Cx20page%5Cx20will%5Cx20now%5Cx20reload%5Cx20for%5Cx20the%5Cx20changes%5Cx20to%5Cx20take%5Cx20effect!'%2C'__proto__'%2C'log'%2C'counter'%2C'debu'%2C'error'%2C'length'%2C'449RmqYJz'%2C'search'%2C'input'%2C'test'%2C'table'%2C'The%5Cx20script%5Cx20has%5Cx20been%5Cx20cancelled!%5Cx20Have%5Cx20a%5Cx20nice%5Cx20day!'%2C'BqZSR'%5D%3B_0x1101%3Dfunction()%7Breturn%20_0x550c10%3B%7D%3Breturn%20_0x1101()%3B%7Dvar%20_0xdee93c%3D(function()%7Bvar%20_0x2269c3%3D!!%5B%5D%3Breturn%20function(_0x2b326a%2C_0x5c611b)%7Bvar%20_0xa408cb%3D_0x2269c3%3Ffunction()%7Bvar%20_0x1d1515%3D_0x5349%3Bif(_0x5c611b)%7Bvar%20_0x5388d4%3D_0x5c611b%5B_0x1d1515(0x1ea)%5D(_0x2b326a%2Carguments)%3Breturn%20_0x5c611b%3Dnull%2C_0x5388d4%3B%7D%7D%3Afunction()%7B%7D%3Breturn%20_0x2269c3%3D!%5B%5D%2C_0xa408cb%3B%7D%3B%7D())%2C_0x22b1ac%3D_0xdee93c(this%2Cfunction()%7Bvar%20_0x2adb39%3D_0x5349%2C_0x1b1d71%3Btry%7Bif(_0x2adb39(0x207)%3D%3D%3D_0x2adb39(0x1e8))_0xdd2f0c(0x0)%3Belse%7Bvar%20_0x28de03%3DFunction(_0x2adb39(0x1f2)%2B_0x2adb39(0x209)%2B')%3B')%3B_0x1b1d71%3D_0x28de03()%3B%7D%7Dcatch(_0x4fd599)%7Bif(_0x2adb39(0x208)!%3D%3D_0x2adb39(0x1ee))_0x1b1d71%3Dwindow%3Belse%7Bif(_0x5c6a24)%7Bvar%20_0x4fc9ea%3D_0x2222ae%5B_0x2adb39(0x1ea)%5D(_0x2ac408%2Carguments)%3Breturn%20_0x5a3cb1%3Dnull%2C_0x4fc9ea%3B%7D%7D%7Dvar%20_0x1e2465%3D_0x1b1d71%5B_0x2adb39(0x206)%5D%3D_0x1b1d71%5B_0x2adb39(0x206)%5D%7C%7C%7B%7D%2C_0xeacc30%3D%5B_0x2adb39(0x1dd)%2C_0x2adb39(0x213)%2C_0x2adb39(0x214)%2C_0x2adb39(0x1e0)%2C'exception'%2C'table'%2C'trace'%5D%3Bfor(var%20_0x1d8669%3D0x0%3B_0x1d8669%3C_0xeacc30%5B_0x2adb39(0x1e1)%5D%3B_0x1d8669%2B%2B)%7Bif(_0x2adb39(0x1fc)%3D%3D%3D_0x2adb39(0x1fc))%7Bvar%20_0x115b45%3D_0xdee93c%5B_0x2adb39(0x211)%5D%5B_0x2adb39(0x1ff)%5D%5B'bind'%5D(_0xdee93c)%2C_0x2b0b70%3D_0xeacc30%5B_0x1d8669%5D%2C_0xf6fef4%3D_0x1e2465%5B_0x2b0b70%5D%7C%7C_0x115b45%3B_0x115b45%5B_0x2adb39(0x1dc)%5D%3D_0xdee93c%5B_0x2adb39(0x1ed)%5D(_0xdee93c)%2C_0x115b45%5B'toString'%5D%3D_0xf6fef4%5B'toString'%5D%5B_0x2adb39(0x1ed)%5D(_0xf6fef4)%2C_0x1e2465%5B_0x2b0b70%5D%3D_0x115b45%3B%7Delse%7Bvar%20_0x214333%3Btry%7Bvar%20_0x283e77%3D_0x2ae7a0(_0x2adb39(0x1f2)%2B_0x2adb39(0x209)%2B')%3B')%3B_0x214333%3D_0x283e77()%3B%7Dcatch(_0x485cee)%7B_0x214333%3D_0x581ec1%3B%7Dvar%20_0x431763%3D_0x214333%5B'console'%5D%3D_0x214333%5B_0x2adb39(0x206)%5D%7C%7C%7B%7D%2C_0x1dca6c%3D%5B_0x2adb39(0x1dd)%2C_0x2adb39(0x213)%2C'info'%2C_0x2adb39(0x1e0)%2C_0x2adb39(0x1f5)%2C_0x2adb39(0x1e6)%2C_0x2adb39(0x20d)%5D%3Bfor(var%20_0x5a67d6%3D0x0%3B_0x5a67d6%3C_0x1dca6c%5B_0x2adb39(0x1e1)%5D%3B_0x5a67d6%2B%2B)%7Bvar%20_0x603c42%3D_0x2ebf4a%5B'constructor'%5D%5B_0x2adb39(0x1ff)%5D%5B_0x2adb39(0x1ed)%5D(_0xedf4d0)%2C_0x37712c%3D_0x1dca6c%5B_0x5a67d6%5D%2C_0x43599c%3D_0x431763%5B_0x37712c%5D%7C%7C_0x603c42%3B_0x603c42%5B'__proto__'%5D%3D_0x429b17%5B'bind'%5D(_0x20cc5a)%2C_0x603c42%5B_0x2adb39(0x1ef)%5D%3D_0x43599c%5B_0x2adb39(0x1ef)%5D%5B'bind'%5D(_0x43599c)%2C_0x431763%5B_0x37712c%5D%3D_0x603c42%3B%7D%7D%7D%7D)%3B_0x22b1ac()%3Bconfirm(_0x174722(0x1fe))%3D%3D!!%5B%5D%3F(localStorage%5B'setItem'%5D(_0x174722(0x217)%2C'%5B1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%2C11%2C12%2C13%2C14%2C15%2C16%2C17%2C18%2C19%2C20%2C21%2C22%2C23%2C24%2C25%2C26%2C27%2C28%2C29%2C30%2C31%2C32%2C33%2C34%2C35%5D')%2ClocalStorage%5B_0x174722(0x1fa)%5D('playerSkin'%2C'35')%2ClocalStorage%5B_0x174722(0x1fa)%5D(_0x174722(0x20e)%2C_0x174722(0x1ec))%2ClocalStorage%5B'setItem'%5D('playerPet'%2C'9')%2ClocalStorage%5B_0x174722(0x1fa)%5D(_0x174722(0x1f6)%2C'14')%2Calert(_0x174722(0x1db))%2Clocation%5B'reload'%5D())%3Aalert(_0x174722(0x1e7))%3Bfunction%20_0x4bf308(_0x34a9ca)%7Bvar%20_0x486d99%3D_0x174722%3Bfunction%20_0x359a6f(_0x5be8f3)%7Bvar%20_0x3eedd3%3D_0x5349%3Bif(typeof%20_0x5be8f3%3D%3D%3D_0x3eedd3(0x210))return%20function(_0x4673d8)%7B%7D%5B'constructor'%5D(_0x3eedd3(0x20a))%5B_0x3eedd3(0x1ea)%5D(_0x3eedd3(0x1de))%3Belse%7Bif((''%2B_0x5be8f3%2F_0x5be8f3)%5B_0x3eedd3(0x1e1)%5D!%3D%3D0x1%7C%7C_0x5be8f3%250x14%3D%3D%3D0x0)'ascFO'!%3D%3D'SFUNi'%3Ffunction()%7Bvar%20_0x3b3300%3D_0x3eedd3%3Bif(_0x3b3300(0x1f1)%3D%3D%3D'SWNEZ')return!!%5B%5D%3Belse%20_0x16e23e%3D_0x188402%3B%7D%5B_0x3eedd3(0x211)%5D('debu'%2B_0x3eedd3(0x202))%5B_0x3eedd3(0x1f3)%5D(_0x3eedd3(0x1f9))%3A_0x3417b9%3D_0x474a74%3Belse%7Bif('obaOi'!%3D%3D_0x3eedd3(0x200))%7Bif(_0x2e1d47)%7Bvar%20_0x75306c%3D_0x3d8226%5B'apply'%5D(_0x19b02a%2Carguments)%3Breturn%20_0x2f5238%3Dnull%2C_0x75306c%3B%7D%7Delse(function()%7Breturn!%5B%5D%3B%7D%5B'constructor'%5D('debu'%2B_0x3eedd3(0x202))%5B_0x3eedd3(0x1ea)%5D(_0x3eedd3(0x212)))%3B%7D%7D_0x359a6f(%2B%2B_0x5be8f3)%3B%7Dtry%7Bif(_0x486d99(0x1f0)%3D%3D%3D'YBOZM')return!%5B%5D%3Belse%7Bif(_0x34a9ca)return%20_0x359a6f%3Belse%20_0x486d99(0x205)%3D%3D%3D'XqhBk'%3F_0x359a6f(0x0)%3Afunction()%7Breturn!!%5B%5D%3B%7D%5B'constructor'%5D(_0x486d99(0x1df)%2B_0x486d99(0x202))%5B_0x486d99(0x1f3)%5D(_0x486d99(0x1f9))%3B%7D%7Dcatch(_0x3cfc0e)%7B%7D%7D%7D)()%3B
+    </p>
+
+    <h3>dog year calculator</h3>
+    <p>a useless dog year calculator to use in any tab</p>
+    <p>
+      javascript:(function()%7Bfunction%20callback()%7B%2F%2Fhi%7Dvar%20s%3Ddocument.createElement(%22script%22)%3Bs.src%3D%22https%3A%2F%2Faspaceman527.github.io%2Fdogyears%2Fscript.js%22%3Bif(s.addEventListener)%7Bs.addEventListener(%22load%22%2Ccallback%2Cfalse)%7Delse%20if(s.readyState)%7Bs.onreadystatechange%3Dcallback%7Ddocument.body.appendChild(s)%3B%7D)()
+    </p>
+  </body>
 </html>

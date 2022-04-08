@@ -63,12 +63,8 @@ inlinegascript.innerHTML = `window.dataLayer = window.dataLayer || [];
   gtag('config', 'G-98DP5VKS42');`;
 document.head.append(gascript, inlinegascript);
 script("Injected script 1/1");
-
-const gascript2 = document.createElement("script");
-
-
-
 console.groupEnd();
+
 log("Script injections finished!");
 
 log("All done!");
