@@ -25,6 +25,7 @@ Apr, 8
 + Added more bookmarklets
 + Added Moto X3M Pool Party
 + Added The Final Earth
++ Added Moto X3M Spooky Land
 ------------------------------------------------------------
 Apr, 7
 ^ Added more info to README.md
