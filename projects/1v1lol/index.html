@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<script>
+  if (window.parent !== window.self) window.parent.postMessage("bonk", "*");
+  window.addEventListener("DOMContentLoaded", function () {
+    document.body.style.margin = "0";
+    document.body.style.height = "100vh";
+    document.body.style.overflow = "hidden";
+  });
+</script>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>1v1.LOL | 3kh0</title>
+    <script src="js/dependencyLoader.js"></script>
+    <script>
+      var gameLoaded = false;
+      window.alert = function (e) {
+        console.log(e);
+      };
+    </script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="ads">
+      <div class="ad-smallscreen">
+        <div class="ad ad-rectangle-bottom"></div>
+      </div>
+      <div class="ad ad-rectangle-upper" id="adRectangleUpper">
+        <!-- 300X250B PLACEMENT TAG - PLACE INTO BODY (ZONE TAG REQUIRED) -->
+        <script>
+          (function (w, pid) {
+            var r = function (c, m) {
+                c = c.split("").reduce(function (a, b) {
+                  return ((a << 5) - a + b.charCodeAt(0)) >>> m;
+                }, 0);
+                return (10 + ((c * 7) % 26)).toString(36) + c.toString(36);
+              },
+              y = r(w.location.href.split("#")[0], 1),
+              c = r(w.location.href.split("#")[0] + pid, 0);
+            w.document.write('<div style="width:300px;height:250px" class="' + c + '"></div>');
+          })(window, 83023);
+        </script>
+      </div>
+      <div class="ad-largescreen">
+        <div class="ad ad-leaderboard-bottom">
+          <!-- 300X600B PLACEMENT TAG - PLACE INTO BODY (ZONE TAG REQUIRED) -->
+          <script>
+            (function (w, pid) {
+              var r = function (c, m) {
+                  c = c.split("").reduce(function (a, b) {
+                    return ((a << 5) - a + b.charCodeAt(0)) >>> m;
+                  }, 0);
+                  return (10 + ((c * 7) % 26)).toString(36) + c.toString(36);
+                },
+                y = r(w.location.href.split("#")[0], 1),
+                c = r(w.location.href.split("#")[0] + pid, 0);
+              w.document.write('<div style="width:300px;height:600px" class="' + c + '"></div>');
+            })(window, 85420);
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <div id="interAdsContainer" style="display: none;"></div>
+    <div id="gameContainer"></div>
+    <div id="loader">
+      <img class="logo" src="img/logo.png" />
+      <div class="spinner"></div>
+      <div class="progress">
+        <div class="full"></div>
+      </div>
+    </div>
+    <script>
+    </script>
+    <div id="unity-loader-div"></div>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-remote-config.js"></script>
+  </body>
+</html>
+<!-- https://rudolph-the-red-nosed-reindeer.ga/tam-1v1-lol/ -->
