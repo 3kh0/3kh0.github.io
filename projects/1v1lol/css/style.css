@@ -1,0 +1,229 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background: #000 !important;
+  overflow: hidden;
+}
+
+#gameContainer {
+  width: 100vw;
+  height: 100vh;
+  background: #000 !important;
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* try to handle mobile dialog */
+
+#canvas + * {
+  z-index: 2;
+}
+
+.logo {
+  display: block;
+  max-width: 15vw;
+  max-height: 15vh;
+}
+
+.progress {
+  margin: 1.5em;
+  border: 1px solid white;
+  width: 30vw;
+  display: none;
+}
+
+.progress .full {
+  margin: 2px;
+  background: white;
+  height: 1em;
+  transform-origin: top left;
+}
+
+#loader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner,
+.spinner:after {
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+}
+
+#unity-progress-bar-empty {
+  width: 30%;
+  height: 24px;
+  margin: 10px 20px 20px 10px;
+  text-align: left;
+  border: 1px solid white;
+  padding: 2px;
+}
+#unity-progress-bar-full {
+  width: 0%;
+  height: 100%;
+  background: white;
+}
+.light #unity-progress-bar-empty {
+  border-color: black;
+}
+.light #unity-progress-bar-full {
+  background: black;
+}
+
+.spinner {
+  margin: 10px;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-left: 1.1em solid #ffffff;
+  transform: translateZ(0);
+  animation: spinner-spin 1.1s infinite linear;
+}
+
+@keyframes spinner-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ad {
+  background: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  display: none;
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.modalContent {
+  margin: auto;
+  width: 100%;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#continueWindow {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+
+#adWindow {
+  background: #4382f5;
+  border: 10px solid #4382f5;
+  width: 660px;
+  border-top: 0;
+  height: 540px;
+}
+
+.ads {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  z-index: 40;
+}
+
+.ad-rectangle-bottom {
+  width: 304px;
+  height: 258px;
+  border-style: solid;
+  border-width: 4px 4px 4px 0px;
+  border-color: rgba(0, 0, 0, 0.01);
+}
+
+.ad-rectangle-upper {
+  width: 304px;
+  height: 258px;
+  border-style: solid;
+  border-width: 4px 4px 4px 0px;
+  border-color: rgba(0, 0, 0, 0.01);
+}
+.ad-leaderboard-bottom {
+  width: 304px;
+  height: 608px;
+  border-style: solid;
+  border-width: 4px 4px 4px 0px;
+  border-color: rgba(0, 0, 0, 0.01);
+}
+
+@media (min-height: 900px) {
+  .ad-smallscreen {
+    display: none;
+  }
+}
+
+@media (max-height: 900px) {
+  .ad-largescreen {
+    display: none;
+  }
+}
+
+#adWindow {
+  border: 10px solid #4382f5 !important;
+  height: 500px !important;
+}
+
+a[onclick*="showConsentToolSettings"] {
+  right: 0px;
+  left: auto !important;
+}
