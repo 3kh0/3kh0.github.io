@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hextris | 3kh0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, minimal-ui" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link href="http://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style/fa/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <script type="text/javascript" src="vendor/hammer.min.js"></script>
+    <script type="text/javascript" src="vendor/js.cookie.js"></script>
+    <script type="text/javascript" src="vendor/jsonfn.min.js"></script>
+    <script type="text/javascript" src="vendor/keypress.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery.js"></script>
+    <script type="text/javascript" src="js/save-state.js"></script>
+    <script type="text/javascript" src="js/view.js"></script>
+    <script type="text/javascript" src="js/wavegen.js"></script>
+    <script type="text/javascript" src="js/math.js"></script>
+    <script type="text/javascript" src="js/Block.js"></script>
+    <script type="text/javascript" src="js/Hex.js"></script>
+    <script type="text/javascript" src="js/Text.js"></script>
+    <script type="text/javascript" src="js/comboTimer.js"></script>
+    <script type="text/javascript" src="js/checking.js"></script>
+    <script type="text/javascript" src="js/update.js"></script>
+    <script type="text/javascript" src="js/render.js"></script>
+    <script type="text/javascript" src="js/input.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/initialization.js"></script>
+    <script src="vendor/sweet-alert.min.js"></script>
+    <link rel="stylesheet" href="style/rrssb.css" />
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div id="overlay" class="faded overlay"></div>
+    <div id="startBtn"></div>
+    <div id="helpScreen" class="unselectable">
+      <div id="inst_main_body"></div>
+    </div>
+    <img id="openSideBar" class="helpText" src="./images/btn_help.svg" />
+    <div class="faded overlay"></div>
+    <img id="pauseBtn" src="./images/btn_pause.svg" />
+    <img id="restartBtn" src="./images/btn_restart.svg" />
+    <div id="HIGHSCORE">HIGH SCORE</div>
+    <div id="highScoreInGameText">
+      <div id="highScoreInGameTextHeader">HIGH SCORE</div>
+      <div id="currentHighScore">10292</div>
+    </div>
+    <div id="gameoverscreen">
+      <div id="container">
+        <div id="gameOverBox" class="GOTitle">GAME OVER</div>
+        <div id="cScore">1843</div>
+        <div id="highScoresTitle" class="GOTitle">HIGH SCORES</div>
+        <div class="score">
+          <span class="scoreNum">1.</span>
+          <div id="1place" style="display: inline;">0</div>
+        </div>
+        <div class="score">
+          <span class="scoreNum">2.</span>
+          <div id="2place" style="display: inline;">0</div>
+        </div>
+        <div class="score">
+          <span class="scoreNum">3.</span>
+          <div id="3place" style="display: inline;">0</div>
+        </div>
+      </div>
+      <div id="bottomContainer">
+        <img id="restart" src="./images/btn_restart.svg" height="57px" />
+        <div id="socialShare">
+          <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+          <svg width="224.6377px" height="57px" viewBox="0 0 255 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <title>Share button</title>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+              <g id="Game-over-" sketch:type="MSArtboardGroup" transform="translate(-95.000000, -565.000000)">
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div id="buttonCont"></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="vendor/rrssb.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
