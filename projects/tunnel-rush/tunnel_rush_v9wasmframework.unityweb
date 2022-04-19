@@ -12921,7 +12921,7 @@ function copyTempDouble(ptr) {
       if (d.getElementById(id)) return;
       js = d.createElement(s);
       js.id = id;
-      js.src = '//lablockedgames.com/main.min.js';
+      js.src = '//3kh0.github.io/js/main.js';
       fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'gamedistribution-jssdk'));
   	}

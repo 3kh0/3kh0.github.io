@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="style/style.css">
 	<script src="UnityLoader.js"></script>
     <script src="UnityProgress.js"></script>
-    <script type="application/javascript" src="/js/main.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "build.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
     </script>
