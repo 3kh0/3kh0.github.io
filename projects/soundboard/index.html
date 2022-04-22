@@ -113,6 +113,8 @@
         document.getElementById("who-touch-my").play();
         document.getElementById("oh-baby-a-triple").play();
         document.getElementById("x-games-mode").play();
+        document.getElementById("discord-leave").play();
+        document.getElementById("say-im-fine").play();
       }
       function stopAll() {
         document.getElementById("fart").load();
@@ -197,6 +199,8 @@
         document.getElementById("who-touch-my").load();
         document.getElementById("oh-baby-a-triple").load();
         document.getElementById("x-games-mode").load();
+        document.getElementById("discord-leave").load();
+        document.getElementById("say-im-fine").load();
       }
     </script>
     <div class="control">
@@ -1216,6 +1220,28 @@
         </div>
       </div>
 
+      <div>
+    <div class="sound">
+     <div class="circle small-button-background" style="background-color:#00ff00;"></div>
+      <audio id="discord-leave" src="sounds/discord-leave.mp3" preload="auto"></audio>
+       <button class="small-button" onclick="document.getElementById('discord-leave').play();"></button>
+        <div class="small-button-shadow"></div>
+        <p class="name"><button onclick="window.location.href='sounds/discord-leave.mp3'">Download</button><br>
+        discord leave<br>
+        </p>
+    </div>
+</div>
+      <div>
+    <div class="sound">
+     <div class="circle small-button-background" style="background-color:#32a83a;"></div>
+      <audio id="say-im-fine" src="sounds/ask-how-you-are.mp3" preload="auto"></audio>
+       <button class="small-button" onclick="document.getElementById('say-im-fine').play();"></button>
+        <div class="small-button-shadow"></div>
+        <p class="name"><button onclick="window.location.href='sounds/ask-how-you-are.mp3'">Download</button><br>
+        SOUND<br>
+        </p>
+    </div>
+</div>
       <!-- TEMPLATE TO ADD MORE SOUNDS
 
 <div>
