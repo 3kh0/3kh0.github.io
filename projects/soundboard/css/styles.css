@@ -1,87 +1,87 @@
 body {
-    font-size: 12px;
-    background: #fff !important;
-    border-style: none;
-    font-family: helvetica, arial, sans-serif;
-  }
-  .sound {
-    border-style: outset;
-    width: 100px;
-    height: 170px;
-  }
-  .download {
-    cursor: pointer
-  }
-  .name {
-    text-align: center;
-    font-size: 15px;
-  }
-  #instants_container {
-    margin: 30px auto 0;
-    text-align: center;
-    border-style: none;
-  }
-  .instant {
-    position: relative;
-    vertical-align: top;
-    width: 94px;
-    border-style: none;
-    text-align: center;
-    display: inline-block;
-    margin-bottom: 30px;
-    margin-right: 5px;
-    margin-left: 5px;
-    word-wrap: break-word;
-  }
-  .small-button {
-    width: 94px;
-    height: 89px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    margin-left: 3px;
-    margin-top: 0px;
-    border-style: none;
-    position: absolute;
-    background: url(/projects/soundboard/img/button.png) no-repeat;
-    cursor: pointer
-  }
-  .small-button:active {
-    background: url(/projects/soundboard/img/button-pressed.png) no-repeat;
-    cursor: progress
-  }
-  .small-button-background {
-    width: 86px;
-    height: 84px;
-    margin-top: 3px;
-    margin-left: 6px;
-    position: absolute;
-  }
-  .small-button-shadow {
-    width: 94px;
-    height: 89px;
-    margin-bottom: 5px;
-    background: url(/projects/soundboard/img/button-shadow.png) no-repeat;
-  }
-  .circle {
-    border-radius: 50%;
-  }
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: white;
-  }
-  .flex-container > div {
-    padding: 5px;
-  }
-  div.control {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: auto;
-    padding: 3px;
-    border: 3px solid #000;
-    background: #ffffff;
-  }
-  .woah {
-    cursor: pointer
-  }
+  font-size: 12px;
+  background: #fff !important;
+  border-style: none;
+  font-family: helvetica, arial, sans-serif;
+}
+.sound {
+  border-style: outset;
+  width: 100px;
+  height: 170px;
+}
+.download {
+  cursor: pointer;
+}
+.name {
+  text-align: center;
+  font-size: 15px;
+}
+#instants_container {
+  margin: 30px auto 0;
+  text-align: center;
+  border-style: none;
+}
+.instant {
+  position: relative;
+  vertical-align: top;
+  width: 94px;
+  border-style: none;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-right: 5px;
+  margin-left: 5px;
+  word-wrap: break-word;
+}
+.small-button {
+  width: 94px;
+  height: 89px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 3px;
+  margin-top: 0px;
+  border-style: none;
+  position: absolute;
+  background: url(/projects/soundboard/img/button.png) no-repeat;
+  cursor: pointer;
+}
+.small-button:active {
+  background: url(/projects/soundboard/img/button-pressed.png) no-repeat;
+  cursor: progress;
+}
+.small-button-background {
+  width: 86px;
+  height: 84px;
+  margin-top: 3px;
+  margin-left: 6px;
+  position: absolute;
+}
+.small-button-shadow {
+  width: 94px;
+  height: 89px;
+  margin-bottom: 5px;
+  background: url(/projects/soundboard/img/button-shadow.png) no-repeat;
+}
+.circle {
+  border-radius: 50%;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.flex-container > div {
+  padding: 5px;
+}
+div.control {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  padding: 3px;
+  border: 3px solid #000;
+  background: #ffffff;
+}
+.woah {
+  cursor: pointer;
+}
