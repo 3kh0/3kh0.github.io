@@ -1,0 +1,9 @@
+@font-face {
+    font-family:"Aller Display";
+    src:    url("../fonts/AllerDisplay/AllerDisplay.eot?")                format("eot"),
+            url("../fonts/AllerDisplay/AllerDisplay.woff")                format("woff"),
+            url("../fonts/AllerDisplay/AllerDisplay.ttf")                 format("truetype"),
+            url("../fonts/AllerDisplay/AllerDisplay.svg#AllerDisplay")    format("svg");
+    font-weight:normal;
+    font-style:normal;
+}

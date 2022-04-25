@@ -1,0 +1,22 @@
+{
+  "name": "Smash Karts",
+  "short_name": "Smash Karts",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "scope": ".",
+  "icons": [
+    {
+      "src": "images/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./"
+}

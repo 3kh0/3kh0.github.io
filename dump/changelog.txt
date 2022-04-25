@@ -21,6 +21,13 @@ NOTE: Make sure you refresh the page! Sometimes you will not get the lastest upd
 ^ Means something was upgraded or changed
 - Means something was removed
 ------------------------------------------------------------
+Apr, 23
++ Added Smash Karts 🐧
+------------------------------------------------------------
+Apr, 22
++ Added Moto X3M Winter
+^ Update green text
+------------------------------------------------------------
 Apr, 21
 + Added more sounds to Soundboard 🐧
 + Added about:blank embed bookmarklet (Thanks fo-od!)

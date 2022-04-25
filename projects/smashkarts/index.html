@@ -1,0 +1,490 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <link rel="icon" href="images/favicon.png" sizes="16x16">
+      <!-- og: Open graph meta tags allow you to control what content shows up when a page is shared on Facebook -->
+      <meta property="og:site_name" content="smashkarts.peytonplayz585.tk">
+      <meta property="og:title" content="Smash Karts" />
+      <meta property="og:url" content="https://smashkarts.peytonplayz585.tk/" />
+      <meta property="og:type" content="website" />
+      <meta property="og:description" content="Smash Karts is a free io Multiplayer Kart Battle Arena game. Drive fast. Fire rockets. Make big explosions." />
+      <meta property="og:image" content="images/icon-144.png" />
+      <meta property="og:image:width" content="144" />
+      <meta property="og:image:height" content="144" />
+      <meta itemprop="name" content="Smash Karts" />
+      <meta itemprop="url" content="https://smashkarts.peytonplayz585.tk/" />
+      <meta itemprop="description" content="Smash Karts is a free io Multiplayer Kart Battle Arena game. Drive fast. Fire rockets. Make big explosions." />
+      <meta itemprop="thumbnailUrl" content="https://smashkarts.peytonplayz585.tk/" />
+      <link rel="image_src" href="https://smashkarts.peytonplayz585.tk/" />
+      <meta itemprop="image" content="https://smashkarts.peytonplayz585.tk/" />
+      <meta name="twitter:title" content="Smash Karts" />
+      <meta name="twitter:image" content="images/icon-144.png" />
+      <meta name="twitter:url" content="https://smashkarts.peytonplayz585.tk/" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:description" content="Smash Karts is a free io Multiplayer Kart Battle Arena game. Drive fast. Fire rockets. Make big explosions." />
+      <meta name="description" content="Smash Karts is a free io Multiplayer Kart Battle Arena game. Drive fast. Fire rockets. Make big explosions." />
+      <meta name="google-site-verification" content="Kb9JniKgGSfuiJM_DNO2-Va7cSC00GlcBzbDw1Lgw_4" />
+      <meta itemprop="image primaryImageOfPage" content="images/smashkarts.png" />
+      
+      <link rel="manifest" href="manifest.json">
+
+      <meta name="viewport" content="user-scalable=no">
+
+      <meta name="apple-mobile-web-app-title" content="Smash Karts">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+      <link rel="apple-touch-icon" href="images/icon-144.png">
+
+      <!-- <script type="text/javascript" src="xmlhttprequest-length-computable.js"></script> -->
+      <script type="text/javascript" src="xmlhttprequest-length-computable.min.js"></script>
+      <script type="text/javascript">
+        window.xmlHTTPRequestLengthComputable = {
+          CONTENT_ENCODING_MULTIPLE: 3.0
+        }
+      </script>
+      <!-- Onesignal push notifications -->
+      <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+      <script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+          OneSignal.init({
+            appId: "e618063a-f56d-448f-9dbf-c1bebb50f935",
+          });
+        });
+      </script> 
+      <!-- Youtube Game Schema -->
+      <script type="application/ld+json">
+         {  
+           "@context": "http://schema.org",
+           "@type":"VideoGame",
+           "publisher": "Tall Team",
+           "name":[
+             {
+               "@language":"en",
+               "@value":"Smash Karts"
+             }
+           ],
+           "description":[
+             {
+               "@language":"en",
+               "@value":"Smash Karts is a free io Multiplayer Kart Battle Arena game. Drive fast. Fire rockets. Make big explosions."
+             }
+           ],
+           "applicationCategory":[
+             "Game"
+           ],
+           "operatingSystem":[
+             "WEB"
+           ],
+           "genre":[
+             "Car Battle",
+             "Shooter",
+             "Multiplayer"
+           ],
+           "url":"https://smashkarts.peytonplayz585.tk/",
+           "image":"images/SmashKartsPoster.jpg",
+           "screenshot":"images/SmashKartsBackground.jpg"
+         }
+      </script>
+      <title>Smash Karts | 3kh0</title>
+      <style>
+         html {
+         box-sizing: border-box;
+         }
+         *, *:before, *:after {
+         box-sizing: inherit;
+         }
+         body {
+         margin: 0;
+         background: #1b70f0;
+         background-image: url("images/overlay.png"), url("images/menuBGTile.png");
+         background-size: cover, 13vw;
+         background-repeat: no-repeat, repeat; 
+         }
+         #gameContainer {
+          position: relative;
+          width: 100vw;
+          height: 100vh;
+         }
+         #adLongContainer {
+          position: absolute;
+          /* border: 1px solid red; */
+          z-index: 100;
+          bottom: 0px;
+          width: 100vw;
+          align-items: center;
+          justify-content: center;
+          }
+         #adContainer {
+          position: absolute;
+          /* border: 1px solid red; */
+          z-index: 100;
+          top: 0px;
+          right: 0px;
+          width: auto;
+          height: auto;
+        }
+          @media screen and (max-width: 600px) 
+            {
+              #smashkarts-io_300x250
+              {
+                /* border: 1px solid blue; */
+                display: none;
+              }
+            }
+            #adContainer2 {
+          position: absolute;
+          /* border: 1px solid red; */
+          z-index: 100;
+          top: 0px;
+          right: 0px;
+          width: auto;
+          height: auto;
+        }
+          @media screen and (max-width: 600px) 
+            {
+              #smashkarts-io_300x250_2
+              {
+                /* border: 1px solid blue; */
+                display: none;
+              }
+            }
+         canvas {
+         width: 100%;
+         height: 100%;
+         display: block;
+         }
+         /* try to handle mobile dialog */
+         canvas + * {
+         z-index: 2;
+         }
+         .logo {
+         display: block;
+         max-width: 90%;
+         max-height: 40vh;
+         }
+         .progress {
+         margin: 1.5em;
+         border: 2px solid ;
+         width: 25vw;
+         display: none;
+         }
+         .progress .full {
+         margin: 2px;
+         background: white;
+         height: 1em;
+         transform-origin: top left;
+         }
+         #loader {
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 100vw;
+         height: 100vh;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         background: #1b70f0;
+         background-image: url("images/overlay.png"), url("images/menuBGTile.png");
+         background-size: cover, 13vw;
+         background-repeat: no-repeat, repeat; 
+         }
+         .spinner {
+            position:absolute;
+            left: 2vw;
+            bottom: 2vh;
+            border: 10px solid #f3f3f3; 
+            border-top: 10px solid #3498db;
+            border-radius: 50%;
+            width: 10vh;
+            height: 10vh;
+            animation: spin 1s linear infinite;
+          }
+
+          @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+          }
+
+
+         /* for all screens */
+        #rotate-landscape {display: none;}
+       
+        /* only when orientation is in portrait mode */
+        @media all and (orientation:portrait) {
+            #rotate-landscape {
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100vw;
+              height: 100vh;
+              display: block;
+              background: #1b70f0;
+              background-image: url("images/overlay.png"), url("images/menuBGTile.png");
+              background-size: cover, 13vw;
+              background-repeat: no-repeat, repeat; 
+            }
+        }
+
+        .center {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 90vw;
+        }
+      </style>
+
+      <!-- AD INIT START -->
+
+      <!-- GOOGLE AD START -->
+      <script>
+        window.googletag = window.googletag || {cmd: []};
+        let adBreak;
+        googletag.cmd.push(() => {
+        var url = (window.location != window.parent.location) ? document.referrer : document.location.href;
+        if(url.startsWith("https://smashkarts.peytonplayz585.tk/") || url.startsWith("smashkarts.peytonplayz585.tk/") ||
+         url.startsWith("https://www.smashkarts.peytonplayz585.tk/") || url.startsWith("http://www.smashkarts.peytonplayz585.tk/")
+         || url.includes("smashkarts-dev.firebaseapp.com"))
+        {
+        (function () {
+          var afgads = document.createElement('script');
+          afgads.setAttribute("async", true);
+          afgads.setAttribute("type", "text/javascript");
+          afgads.setAttribute("data-ad-client", "ca-pub-1463476156508236");
+          afgads.setAttribute("src", "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js");
+          var node = document.getElementsByTagName('script')[0];
+          node.parentNode.insertBefore(afgads, node);
+        })();
+        
+        window.adsbygoogle = window.adsbygoogle || [];
+        adBreak =  adConfig = function(o) {adsbygoogle.push(o);};
+        adConfig({preloadAdBreaks: "on", sound: "on"});
+        }
+        });
+        </script>
+      <!-- GOOGLE AD END -->
+
+      <!-- AIP AD START -->
+      <meta name="viewport" content="minimal-ui, user-scalable=no, initial-scale=1, maximum-scale=1, width=device-width" />
+      <title>AdinPlay Ads</title>
+      <script>
+      window.aiptag = window.aiptag || {cmd: []};
+      aiptag.cmd.display = aiptag.cmd.display || [];
+
+      // Show GDPR consent tool
+      aiptag.gdprShowConsentTool = true;
+      aiptag.gdprConsentToolPosition = "bottom";
+      </script>
+      <script async src="//api.adinplay.com/libs/aiptag/pub/SHK/smashkarts.io/tag.min.js"></script>
+      <!-- AIP AD END -->
+      <!-- AD INIT END -->
+   </head>
+   <body>
+    <div id="mainContainer">
+      <canvas id="gameContainer"></canvas>
+      <div id="loader">
+         <img class="logo" src="images/smashkarts.png">
+         <div class="spinner"></div>
+         <div class="progress">
+            <div class="full"></div>
+         </div>
+                  
+      </div>
+      <div id="adContainer" style="display: none;">
+        <div id="smashkarts-io_300x250" ></div>
+      </div>
+      <div id="adContainer2" style="display: none;">
+        <div id="smashkarts-io_300x250_2" ></div>
+      </div>
+      <div id="adLongContainer" style="display: none;">
+        <!-- <div id="smashkarts-io_728x90" ></div> -->
+        <div id="smashkarts-io_320x100"></div>
+        <div id="smashkarts-io_970x250"></div>
+      </div>
+      <div id="videoAdContainer">
+        <div id="preroll"></div>
+      </div>
+    </div>
+    <div id="rotate-landscape">
+      <img src="images/r.png" class="center">
+    </div>
+   </body>
+   <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-performance.js"></script>
+
+   <script src="scripts/main-v2.js"></script>
+   <script src="scripts/auth-v3.js"></script>
+   <script src="scripts/ads-v2.js"></script>
+   <script src="scripts/ads-adsbygoogle-v2.js"></script>
+   <script src="scripts/ad-blocker.js" type="text/javascript"></script>
+
+   <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker2.js');
+      }
+
+      var firebaseConfig = {
+			apiKey: "AIzaSyAdY2qq9083amKDS0R8tn2tjIKQB8mocco",
+			authDomain: "webgltest-17af1.firebaseapp.com",
+			databaseURL: "https://webgltest-17af1.firebaseio.com",
+			projectId: "webgltest-17af1",
+			storageBucket: "webgltest-17af1.appspot.com",
+			messagingSenderId: "480659433590",
+			appId: "1:480659433590:web:a01ad1599e963843a0d757",
+			measurementId: "G-1W23DRFHK9"
+		};
+
+	  // Initialize Firebase
+	  	firebase.initializeApp(firebaseConfig);
+
+      var firebaseSupported = false;
+      if(firebase.analytics != null)
+      {
+        firebase.analytics.isSupported().then((isSupported) => 
+        {
+          if (isSupported) 
+          {
+            analytics = firebase.analytics();
+            firebaseSupported = true;
+          }
+          else 
+          {
+            console.log("firebase.analytics() not supported ");
+          }
+        })
+      }
+
+      var perf = firebase.performance();
+
+      firebaseSetScreen("loading_start");
+      firebaseLogEvent("loading_page_start");
+
+      var timerStart = Date.now();
+      var sentGameInstanceStartEvent = false;
+      
+      const buildUrl = "https://smashkartsgc.b-cdn.net/Build2020New";
+      const loaderUrl = buildUrl + "/SmashKartsSCPatch4.loader.js";
+      const config = {
+        dataUrl: buildUrl + "/fd9af547cadb72fc4b6e83d56d5da82a.data.br",
+        frameworkUrl: buildUrl + "/44bcce360664b499f9205162a4907044.js.br",
+        codeUrl: buildUrl + "/cf55536d109c6254a3cf1d22e6451618.wasm.br",
+// #if MEMORY_FILENAME
+//         memoryUrl: buildUrl + "/",
+// #endif
+// #if SYMBOLS_FILENAME
+//         symbolsUrl: buildUrl + "/",
+// #endif
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "TallTeam",
+        productName: "Smash Karts",
+        productVersion: "1.0.14",
+      };
+
+      var container = document.querySelector("#mainContainer");
+      var canvas = document.querySelector("#gameContainer");
+      var loadingBar = document.querySelector("#loader");
+      var progressBarFull = document.querySelector("#loader .progress .full");
+      var rotateLandscape = document.querySelector("#rotate-landscape");
+
+      if (isMobile()) 
+      {
+        container.className = "unity-mobile";
+      }
+      else
+      {
+        rotateLandscape.id = "rotateLandscapeOff";
+        rotateLandscape.style.display = "none";
+      }
+      const progress = document.querySelector("#loader .progress");
+          progress.style.display = "block";
+          progressBarFull.style.width = "0%";
+      const myTrace = perf.trace('unityLoader');
+      myTrace.start();
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+
+      var progressCreateUnityInstance = 0;
+      var progressPostCreateUnityInstance = 0;
+      var updateProgressInterval = setInterval(updateProgress, 100);
+
+      if(isMobile())
+      {
+        setInterval(updateScreenSize, 100);
+      }
+      var gameInstance;
+      script.onload = () => {
+          createUnityInstance(canvas, config, (progress) => {
+          progressCreateUnityInstance = 100 * progress;
+          setProgressWidth();
+        }).then((unityInstance) => {
+          if(isMobile()) document.body.style.background = "#000000";
+          loadingBar.style.display = "none";
+          window.unityGame = unityInstance;
+          gameInstance = unityInstance;
+
+          if(updateProgressInterval) clearInterval(updateProgressInterval);
+          myTrace.stop();
+          var lt = Date.now() - timerStart;
+          firebaseLogEventWithParam("loading_page_complete", "time", lt);
+          setV(lt);
+        }).catch((message) => {
+          alert("TT UnityLoader Error" + message);
+        });
+      };
+      document.body.appendChild(script);
+
+function updateProgress()
+{
+  if(progressCreateUnityInstance > 85)
+  {
+    progressPostCreateUnityInstance += 1;
+    setProgressWidth();
+  }
+}
+
+var lastInnerHeight;
+function updateScreenSize()
+{
+  if(canvas)
+  {
+    if(!lastInnerHeight || lastInnerHeight != window.innerHeight)
+    {
+      lastInnerHeight = window.innerHeight;
+      canvas.style.height = lastInnerHeight + "px";
+    }
+  }
+}
+
+function setProgressWidth()
+{
+  if(progressCreateUnityInstance == 100.0)
+  {
+    progressBarFull.style.width = "100%";
+  }
+  else
+  {
+    var percent;
+    if(isMobile()) 
+    {
+      percent = progressCreateUnityInstance * 0.6 + (progressPostCreateUnityInstance*0.5*0.2 + progressCreateUnityInstance*0.5*0.2*0.05);
+      percent =  Math.min(percent, 90);
+    }
+    else
+    {
+      percent = progressCreateUnityInstance * 0.9 + progressPostCreateUnityInstance * 0.1;
+      percent = Math.min(percent, 95);
+    }
+    progressBarFull.style.width = percent + "%";
+  }
+}
+   </script>
+</html>
