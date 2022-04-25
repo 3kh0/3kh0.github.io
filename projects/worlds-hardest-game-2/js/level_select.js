@@ -96,7 +96,7 @@ function LS_draw_coins(l, x, y) {
 			y + Math.floor(coins[l][i].simpleY * LS_TILE_SIZE + ((LS_TILE_SIZE - LS_COIN_SIZE) / 2)),
 			LS_COIN_SIZE,
 			LS_COIN_SIZE);
-		canvas.fillStyle = COIN_FILL_COLOR + "1)";;
+		canvas.fillStyle = COIN_FILL_COLOR + "1)";
 		canvas.fill();
 	}
 }
@@ -109,7 +109,7 @@ function LS_draw_keys(l, x, y) {
 			y + Math.floor(keys[l][i].simpleY * LS_TILE_SIZE + ((LS_TILE_SIZE - LS_KEY_SIZE) / 2)),
 			LS_KEY_SIZE,
 			LS_KEY_SIZE);
-		canvas.fillStyle = KEY_OUTLINE_COLOR + "1)";;
+		canvas.fillStyle = KEY_OUTLINE_COLOR + "1)";
 		canvas.fill();
 	}
 }
