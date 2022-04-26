@@ -21,6 +21,18 @@ NOTE: Make sure you refresh the page! Sometimes you will not get the lastest upd
 ^ Means something was upgraded or changed
 - Means something was removed
 ------------------------------------------------------------
+Apr, 26
++ Added You are Jeff Bezos
++ Added Backrooms
++ Added Push the Square
+^ Added more sounds to the soundboard (again)
+------------------------------------------------------------
+Apr, 25
++ Added 30.mp3
++ Added Game inside a Game
+^ Updated green text
+^ Added more sounds to the soundboard
+------------------------------------------------------------
 Apr, 23
 + Added Smash Karts 🐧
 ------------------------------------------------------------

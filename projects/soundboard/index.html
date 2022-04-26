@@ -113,6 +113,14 @@
         document.getElementById("who-touch-my").play();
         document.getElementById("oh-baby-a-triple").play();
         document.getElementById("x-games-mode").play();
+        document.getElementById("ben-yes").play();
+        document.getElementById("roblox-num-num").play();
+        document.getElementById("mc-anvil").play();
+        document.getElementById("wii-sports-aww").play();
+        document.getElementById("crona-time").play();
+        document.getElementById("guess-who-back").play();
+        document.getElementById("coc-intro").play();
+        document.getElementById("cr-intro").play();
       }
       function stopAll() {
         document.getElementById("fart").load();
@@ -197,6 +205,14 @@
         document.getElementById("who-touch-my").load();
         document.getElementById("oh-baby-a-triple").load();
         document.getElementById("x-games-mode").load();
+        document.getElementById("ben-yes").load();
+        document.getElementById("roblox-num-num").load();
+        document.getElementById("mc-anvil").load();
+        document.getElementById("wii-sports-aww").load();
+        document.getElementById("crona-time").load();
+        document.getElementById("guess-who-back").load();
+        document.getElementById("coc-intro").load();
+        document.getElementById("cr-intro").load();
       }
     </script>
     <div class="control">
@@ -1211,7 +1227,103 @@
           <div class="small-button-shadow"></div>
           <p class="name">
             <button onclick="window.location.href='sounds/x-games-mode.mp3'">Download</button><br />
-            He on X-Games mode!<br />
+            He on X Games mode!<br />
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="sound">
+          <div class="circle small-button-background" style="background-color: #522d1d;"></div>
+          <audio id="ben-yes" src="sounds/ben-yes.mp3" preload="auto"></audio>
+          <button class="small-button" onclick="document.getElementById('ben-yes').play();"></button>
+          <div class="small-button-shadow"></div>
+          <p class="name">
+            <button onclick="window.location.href='sounds/ben-yes.mp3'">Download</button><br />
+            Talking Ben Yes<br />
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="sound">
+          <div class="circle small-button-background" style="background-color:#825624;"></div>
+          <audio id="roblox-num-num" src="sounds/roblox-num-num.mp3" preload="auto"></audio>
+          <button class="small-button" onclick="document.getElementById('roblox-num-num').play();"></button>
+          <div class="small-button-shadow"></div>
+          <p class="name">
+            <button onclick="window.location.href='sounds/roblox-num-num.mp3'">Download</button><br>
+            Roblox Num Num Num<br>
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="sound">
+          <div class="circle small-button-background" style="background-color:#414345;"></div>
+          <audio id="mc-anvil" src="sounds/mc-anvil.mp3" preload="auto"></audio>
+          <button class="small-button" onclick="document.getElementById('mc-anvil').play();"></button>
+          <div class="small-button-shadow"></div>
+          <p class="name">
+            <button onclick="window.location.href='sounds/mc-anvil.mp3'">Download</button><br>
+            Minecraft Anvil Sound<br>
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="sound">
+          <div class="circle small-button-background" style="background-color:#ffffff;"></div>
+          <audio id="wii-sports-aww" src="sounds/wii-sports-aww.mp3" preload="auto"></audio>
+          <button class="small-button" onclick="document.getElementById('wii-sports-aww').play();"></button>
+          <div class="small-button-shadow"></div>
+          <p class="name">
+            <button onclick="window.location.href='sounds/wii-sports-aww.mp3'">Download</button><br>
+            Wii Sports Awww<br>
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="sound">
+          <div class="circle small-button-background" style="background-color:#fae7e3;"></div>
+          <audio id="crona-time" src="sounds/crona-time.mp3" preload="auto"></audio>
+          <button class="small-button" onclick="document.getElementById('crona-time').play();"></button>
+          <div class="small-button-shadow"></div>
+          <p class="name">
+            <button onclick="window.location.href='sounds/crona-time.mp3'">Download</button><br>
+            It's Corona Time<br>
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="sound">
+          <div class="circle small-button-background" style="background-color:#63c73c;"></div>
+          <audio id="guess-who-back" src="sounds/guess-who-back.mp3" preload="auto"></audio>
+          <button class="small-button" onclick="document.getElementById('guess-who-back').play();"></button>
+          <div class="small-button-shadow"></div>
+          <p class="name">
+            <button onclick="window.location.href='sounds/guess-who-back.mp3'">Download</button><br>
+            Guess who's back!<br>
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="sound">
+          <div class="circle small-button-background" style="background-color:#ff0000;"></div>
+          <audio id="coc-intro" src="sounds/coc-intro.mp3" preload="auto"></audio>
+          <button class="small-button" onclick="document.getElementById('coc-intro').play();"></button>
+          <div class="small-button-shadow"></div>
+          <p class="name">
+            <button onclick="window.location.href='sounds/coc-intro.mp3'">Download</button><br>
+            Clash of Clans Intro<br>
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="sound">
+          <div class="circle small-button-background" style="background-color:#0000ff;"></div>
+          <audio id="cr-intro" src="sounds/cr-intro.mp3" preload="auto"></audio>
+          <button class="small-button" onclick="document.getElementById('cr-intro').play();"></button>
+          <div class="small-button-shadow"></div>
+          <p class="name">
+            <button onclick="window.location.href='sounds/cr-intro.mp3'">Download</button><br>
+            Clash Royale Intro<br>
           </p>
         </div>
       </div>
@@ -1219,15 +1331,16 @@
       <!-- TEMPLATE TO ADD MORE SOUNDS
 
 <div>
-    <div class="sound">
-     <div class="circle small-button-background" style="background-color:#COLOR;"></div>
-      <audio id="SOUND" src="sounds/SOUND.mp3" preload="auto"></audio>
-       <button class="small-button" onclick="document.getElementById('SOUND').play();"></button>
-        <div class="small-button-shadow"></div>
-        <p class="name"><button onclick="window.location.href='sounds/SOUND.mp3'">Download</button><br>
-        SOUND<br>
-        </p>
-    </div>
+  <div class="sound">
+    <div class="circle small-button-background" style="background-color:#COLOR;"></div>
+    <audio id="SOUND" src="sounds/SOUND.mp3" preload="auto"></audio>
+    <button class="small-button" onclick="document.getElementById('SOUND').play();"></button>
+    <div class="small-button-shadow"></div>
+    <p class="name">
+      <button onclick="window.location.href='sounds/SOUND.mp3'">Download</button><br>
+      SOUND<br>
+    </p>
+  </div>
 </div>
 
 -->

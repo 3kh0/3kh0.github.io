@@ -1,9 +1,0 @@
-https://www.coolmathgames.com/sites/default/files/public_games/24628/sounds/sfx_bounce0.mp3
-https://www.coolmathgames.com/sites/default/files/public_games/24628/sounds/sfx_bounce1.mp3
-https://www.coolmathgames.com/sites/default/files/public_games/24628/sounds/sfx_checkpoint.mp3
-https://www.coolmathgames.com/sites/default/files/public_games/24628/sounds/sfx_click.mp3
-https://www.coolmathgames.com/sites/default/files/public_games/24628/sounds/sfx_coin.mp3
-https://www.coolmathgames.com/sites/default/files/public_games/24628/sounds/sfx_die.mp3
-https://www.coolmathgames.com/sites/default/files/public_games/24628/sounds/sfx_win.mp3
-https://www.coolmathgames.com/sites/default/files/public_games/24628/sounds/sfx_intermission.mp3
-https://www.coolmathgames.com/sites/default/files/public_games/24628/sounds/sfx_win.mp3
