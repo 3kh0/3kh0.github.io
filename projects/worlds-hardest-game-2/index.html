@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <script language="javascript" src="/js/main.js" type="text/javascript"></script>
+    <meta name="robots" content="index" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no, style='width:120%'" />
+    <script language="javascript" src="js/jquery.min.js" type="text/javascript"></script>
+    <script language="javascript" src="js/jquery.hotkeys.js" type="text/javascript"></script>
+    <script language="javascript" src="js/key_status.js" type="text/javascript"></script>
+    <script language="javascript" src="js/vars.js" type="text/javascript"></script>
+    <script language="javascript" src="js/sounds.js" type="text/javascript"></script>
+    <script language="javascript" src="js/colors.js" type="text/javascript"></script>
+    <script language="javascript" src="js/canvas.js" type="text/javascript"></script>
+    <script language="javascript" src="js/timer.js" type="text/javascript"></script>
+    <script language="javascript" src="js/border.js" type="text/javascript"></script>
+    <script language="javascript" src="js/mobile_controls.js" type="text/javascript"></script>
+    <script language="javascript" src="js/walls.js" type="text/javascript"></script>
+    <script language="javascript" src="js/enemy.js" type="text/javascript"></script>
+    <script language="javascript" src="js/checkpoint.js" type="text/javascript"></script>
+    <script language="javascript" src="js/coins.js" type="text/javascript"></script>
+    <script language="javascript" src="js/keys.js" type="text/javascript"></script>
+    <script language="javascript" src="js/doors.js" type="text/javascript"></script>
+    <script language="javascript" src="js/player.js" type="text/javascript"></script>
+    <script language="javascript" src="js/instructions.js" type="text/javascript"></script>
+    <script language="javascript" src="js/intermission.js" type="text/javascript"></script>
+    <script language="javascript" src="js/buttons.js" type="text/javascript"></script>
+    <script language="javascript" src="js/mouse.js" type="text/javascript"></script>
+    <script language="javascript" src="js/bars.js" type="text/javascript"></script>
+    <script language="javascript" src="js/main_menu.js" type="text/javascript"></script>
+    <script language="javascript" src="js/level_select.js" type="text/javascript"></script>
+    <script language="javascript" src="js/finish.js" type="text/javascript"></script>
+    <script language="javascript" src="js/ingame_menu.js" type="text/javascript"></script>
+    <script language="javascript" src="js/preloader.js" type="text/javascript"></script>
+    <script language="javascript" src="js/hotkeys.js" type="text/javascript"></script>
+    <title>WHG2 | 3kh0</title>
+
+    <style type="text/css">
+      .no-select {
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+      }
+    </style>
+
+    <script type="text/javascript">
+      setTimeout(function () {
+        if (document.getElementsByTagName("canvas").length) {
+          document.getElementsByTagName("body")[0].classList.add("no-select");
+        }
+      }, 2000);
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <script language="javascript" src="js/main.js" type="text/javascript"></script>
+    </div>
+
+    <script>
+      function fnSendMsg(evt) {
+        window.parent.postMessage("keypress-from-game", "*");
+      }
+      document.body.addEventListener("click", function (event) {
+        fnSendMsg(event);
+      });
+      document.addEventListener("keypress", function (event) {
+        fnSendMsg(event);
+      });
+      document.addEventListener("keydown", function (e) {
+        fnSendMsg(event);
+      });
+      document.addEventListener("keyup", function (e) {
+        fnSendMsg(event);
+      });
+    </script>
+  </body>
+</html>

@@ -21,8 +21,38 @@ NOTE: Make sure you refresh the page! Sometimes you will not get the lastest upd
 ^ Means something was upgraded or changed
 - Means something was removed
 ------------------------------------------------------------
+Apr, 28
++ Added Sort The Court
+------------------------------------------------------------
+Apr, 27
++ Added Just One Boss
+------------------------------------------------------------
+Apr, 26
++ Added You are Jeff Bezos
++ Added Backrooms
++ Added Push the Square
+^ Added more sounds to the soundboard (again)
+------------------------------------------------------------
+Apr, 25
++ Added 30.mp3
++ Added Game inside a Game
+^ Updated green text
+^ Added more sounds to the soundboard
+------------------------------------------------------------
+Apr, 23
++ Added Smash Karts 🐧
+------------------------------------------------------------
+Apr, 22
++ Added Moto X3M Winter
+^ Update green text
+------------------------------------------------------------
+Apr, 21
++ Added more sounds to Soundboard 🐧
++ Added about:blank embed bookmarklet (Thanks fo-od!)
++ Added stopwatch bookmarklet (Thanks BluePotato!)
+------------------------------------------------------------
 Apr, 19
-^ Fixed ads showing on Tunnel Rush
+^ Fixed issue with ads showing on Tunnel Rush
 ------------------------------------------------------------
 Apr, 8
 + Added more bookmarklets

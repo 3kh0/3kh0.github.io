@@ -20,8 +20,6 @@ function script(text) {
 // TAB CLOAK
 // ====================================
 
-log("Starting Tab cloak engine!");
-console.groupCollapsed("Click to view Tab Cloak operations!");
 tab("Loading Tab Cloak...");
 //Declare variables for cloak here
 const local_title = localStorage.getItem("title");
@@ -42,15 +40,11 @@ if (window.localStorage.hasOwnProperty("icon")) {
   tab("Icon not set :(");
 }
 tab("Tab cloak settings can be found in localStorage! If you want to change them, you can go tab cloak page.");
-console.groupEnd();
-log("Tab cloak engine finished!");
 
 // ====================================
 // SCRIPT INJECTION
 // ====================================
 
-log("Preparing script injections!");
-console.groupCollapsed("Click to view Script Injection operations!");
 script("Preparing 1 script to be injected...");
 
 const gascript = document.createElement("script");
@@ -63,7 +57,6 @@ inlinegascript.innerHTML = `window.dataLayer = window.dataLayer || [];
   gtag('config', 'G-98DP5VKS42');`;
 document.head.append(gascript, inlinegascript);
 script("Injected script 1/1");
-console.groupEnd();
 
 log("Script injections finished!");
 

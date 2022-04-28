@@ -43,10 +43,6 @@ Below are some of the options you can use to deploy your own copy of the site. *
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F3kh0%2F3kh0.github.io) 
 [![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/3kh0/3kh0.github.io)
 
-> [![Run on Replit](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/master/buttons/remade/replit.svg)](https://replit.com/github/3kh0/3kh0.github.io)<br>
-> Only use Replit if you have the hacker plan on it!
-
-
 ## Cloning
 
 You can clone this repo with this handy URL:
