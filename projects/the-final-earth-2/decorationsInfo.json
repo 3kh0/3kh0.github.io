@@ -1,0 +1,46 @@
+[
+    {
+        "textureName": "spr_grass",
+        "name": "High Grass",
+        "description": "",
+        "food": 0,
+        "wood": 1,
+        "stone": 0,
+        "machineParts": 0,
+        "knowledge": 0,
+        "category": "Decoration & Nature"
+    },
+    {
+        "textureName": "spr_flowers",
+        "name": "High Grass with Flowers",
+        "description": "",
+        "food": 0,
+        "wood": 1,
+        "stone": 0,
+        "machineParts": 0,
+        "knowledge": 0,
+        "category": "Decoration & Nature"
+    },
+    {
+        "textureName": "spr_decoration_rocks",
+        "name": "Small Rocks",
+        "description": "",
+        "food": 0,
+        "wood": 0,
+        "stone": 1,
+        "machineParts": 0,
+        "knowledge": 0,
+        "category": "Decoration & Nature"
+    },
+    {
+        "textureName": "spr_removedecoration",
+        "name": "Remove Decoration",
+        "description": "Clear any decoration from a world surface.",
+        "food": 0,
+        "wood": 0,
+        "stone": 0,
+        "machineParts": 0,
+        "knowledge": 0,
+        "category": "Decoration & Nature"
+    }
+]

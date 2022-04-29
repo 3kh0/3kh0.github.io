@@ -1,0 +1,72 @@
+[
+    {
+        "name": "A New Beginning",
+        "description": "Earth is a wasteland. You built a space ship, but now food is running out. A tiny world is your only hope.",
+        "link": "theLostShip",
+        "unlockedWithAll": true
+    },
+    {
+        "name": "An Interworld City",
+        "description": "When a world turns out to be way too small, you decide to build a city that crosses worlds.",
+        "link": "multipleWorlds",
+        "requirements": ["theLostShip"],
+        "unlockedWithAll": true
+    },
+    {
+        "name": "Computerization",
+        "description": "Use computers to modernize a city.",
+        "link": "computerization",
+        "requirements": ["thisIsNotFinished"]
+    },
+    {
+        "name": "Hacking Alien Tech",
+        "description": "You discover some alien influences on your newest outpost.",
+        "link": "hackersandaliens",
+        "requirements": ["multipleWorlds"],
+        "unlockedWithAll": true
+    },
+    {
+        "name": "Free Play - Mega World",
+        "description": "Build the city of your dreams on this huge world!",
+        "link": "FreePlayMegaWorld",
+        "freePlay": true
+    },
+    {
+        "name": "Free Play - Random Archipelago",
+        "description": "Construct a complex city on this random clique of worlds.",
+        "link": "FreePlayManyWorldsRandom",
+        "freePlay": true
+    },
+    {
+        "name": "Free Play - Empty Canvas",
+        "description": "A huge, barren world that you can furnish to your desire, plus some small worlds filled with resources.",
+        "link": "FreePlayEmptyCanvas",
+        "freePlay": true
+    },
+    {
+        "name": "Free Play - Divided",
+        "description": "Mind the gap! It separates forests and rocks.",
+        "link": "FreePlayDivided",
+        "freePlay": true
+    },
+    {
+        "name": "Free Play - Random Mini Worlds",
+        "description": "Countless tiny worlds, randomly placed in space.",
+        "link": "FreePlayRandomMiniWorlds",
+        "freePlay": true
+    },
+    {
+        "name": "Free Play - Giga",
+        "description": "Many tiny mini worlds, plus a huge mostly empty one!",
+        "link": "FreePlayRandomMiniWorldsAndEmptyCanvas",
+        "requirements": ["notDemo", "fullVersion"],
+        "freePlay": true
+    },
+    {
+        "name": "Free Play - Archipelago Classic",
+        "description": "Construct a complex city on this clique of worlds.",
+        "link": "FreePlayManyWorlds",
+        "requirements": ["notDemo"],
+        "freePlay": true
+    }
+]

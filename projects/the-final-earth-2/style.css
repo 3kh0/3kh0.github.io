@@ -1,0 +1,47 @@
+html,
+body,
+canvas {
+  margin: 0;
+  padding: 0;
+  touch-action: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+canvas {
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+body,
+html {
+  /* position: fixed;
+    width: 100%;
+    height: 100%;*/
+  overflow: hidden;
+  height: 100%;
+}
+
+.loadingExplainer {
+  opacity: 0.8;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2.2s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}

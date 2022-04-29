@@ -1,0 +1,35 @@
+[
+    {
+        "className": "FoodRationing",
+        "name": "Food Rationing",
+        "description": "Your citizens consume half as much food. However, their happiness is reduced by a third if it's above 10.",
+        "food": 0,
+        "wood": 0,
+        "stone": 0,
+        "machineParts": 0,
+        "knowledge": 0,
+        "unlockedByDefault": true
+    },
+    {
+        "className": "SmallerClasses",
+        "name": "Smaller Class Sizes",
+        "description": "Schools give a 15% better eduction, but their capacity is reduced by a third.",
+        "food": 0,
+        "wood": 0,
+        "stone": 0,
+        "machineParts": 0,
+        "knowledge": 0,
+        "unlockedByDefault": true
+    },
+    {
+        "className": "MandatoryOvertime",
+        "name": "Mandatory Overtime",
+        "description": "Your citizens work two hours per day longer. Their happiness goes down gradually while this policy is implemented. After you end it, happiness starts to restore again slowly after a day.",
+        "food": 0,
+        "wood": 0,
+        "stone": 0,
+        "machineParts": 0,
+        "knowledge": 0,
+        "unlockedByDefault": true
+    }
+]

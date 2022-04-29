@@ -1,0 +1,90 @@
+{
+    "name": "displayCity",
+    "goals": [],
+    "startGoal": "",
+    "worlds": [
+        {
+            "rect": {
+                "x": 0,
+                "y": 160,
+                "width": 440,
+                "height": 100
+            },
+            "seed": 1000,
+            "worldResources": [
+                {
+                    "position": 0,
+                    "className": "Forest"
+                },
+                {
+                    "position": 6,
+                    "className": "Rock"
+                },
+                {
+                    "position": 7,
+                    "className": "Forest"
+                },
+                {
+                    "position": 9,
+                    "className": "Rock"
+                },
+                {
+                    "position": 12,
+                    "className": "AlienRuins"
+                },
+                {
+                    "position": 14,
+                    "className": "Forest"
+                },
+                {
+                    "position": 17,
+                    "className": "AlienRuins"
+                },
+                {
+                    "position": 18,
+                    "className": "Rock"
+                },
+                {
+                    "position": 19,
+                    "className": "Forest"
+                },
+                {
+                    "position": 20,
+                    "className": "Rock"
+                },
+                {
+                    "position": 21,
+                    "className": "Forest"
+                }
+            ],
+            "buildingStacks": [
+                {
+                    "position": 3,
+                    "classNames": [
+                        "LandedExplorationShip"
+                    ]
+                }
+            ],
+            "citizens": [
+                {
+                    "amount": 5,
+                    "ageRangeMin": 60,
+                    "ageRangeMax": 64,
+                    "minX": 60,
+                    "maxX": 80
+                }
+            ]
+        }
+    ],
+    "initialMaterials": {
+        "food": 500000,
+        "stone": 1000000,
+        "wood": 100000,
+        "knowledge": 0,
+        "machineParts": 0,
+        "refinedMetal": 0,
+        "computerChips": 0
+    },
+    "viewYFromBottom": 270,
+    "viewYMobi": 240
+}

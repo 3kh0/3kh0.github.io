@@ -1,0 +1,28 @@
+[
+    {
+        "textureName": "spr_forest@0,0,20,20",
+        "name": "Forest",
+        "className": "Forest",        
+        "description": "Plant young trees which will grow to a forest.",
+        "initialGrow": 10,
+        "food": 0,
+        "wood": 20,
+        "stone": 0,
+        "machineParts": 0,
+        "knowledge": 0,
+        "category": "Decoration & Nature"
+    },
+    {
+        "textureName": "spr_pineforest@0,0,20,20",
+        "name": "Pine Forest",
+        "className": "PineForest",
+        "description": "Plant young trees which will grow to a pine forest.",
+        "initialGrow": 10,
+        "food": 0,
+        "wood": 20,
+        "stone": 0,
+        "machineParts": 0,
+        "knowledge": 0,
+        "category": "Decoration & Nature"
+    }
+]

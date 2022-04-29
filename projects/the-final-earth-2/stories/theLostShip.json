@@ -1,0 +1,321 @@
+{
+    "goals": [
+        {
+            "name": "Start",
+            "title": "",
+            "text": "It's 2142, and earth is a wasteland. Colonizing this tiny world is humanity's only hope.\n\nFirst, you'll need some more building materials. Let's build a woodcutting center.",
+            "quickText": "Build a woodcutting center.",
+            "nextGoal": "BuildStoneMine",
+            "subGoals": [
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "WoodcuttingCentre",
+                    "amount": 1
+                }
+            ],
+            "unlocks": [
+                "WoodcuttingCentre"
+            ],
+            "flags": {
+                "disableDying": true,
+                "disableDestroy": true,
+                "hiddenBoost": true,
+                "disableRewardedAd": true
+            },
+            "showTutorial": 1
+        },
+        {
+            "name": "BuildStoneMine",
+            "title": "",
+            "text": "Good job! Now, collect some wood and build a stone mine.",
+            "quickText": "Build a stone mine.",
+            "nextGoal": "GatherWoodAndStone",
+            "subGoals": [
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "StoneMine",
+                    "amount": 1
+                }
+            ],
+            "unlocks": [
+                "StoneMine"
+            ],
+            "showTutorial": 101
+        },
+        {
+            "name": "GatherWoodAndStone",
+            "title": "",
+            "text": "Well done! Right now, nobody is going to gather stone, as everybody already has a job at the woodcutting center. Let's reassign some of these workers.",
+            "quickText": "Gather 6 wood and 4 stone. You'll need to reassign some workers.",
+            "nextGoal": "BuildIndoorFarmAndHouse",
+            "subGoals": [
+                {
+                    "type": "GatherMaterials",
+                    "materials": {
+                        "wood": 6,
+                        "stone": 4
+                    }
+                }
+            ],
+            "showTutorial": 2
+        },
+        {
+            "name": "BuildIndoorFarmAndHouse",
+            "title": "",
+            "text": "You used a space ship to get here. Some of your friends are still on it. You'll want to give them a place to live. A steady food supply would be nice, too.\n\nTo accomplish these goals, let's build a house and an indoor farm.[nonmobi] Please note that buildings can be stacked.",
+            "quickText": "Build a house and an indoor farm.",
+            "nextGoal": "SpawnMorePeople",
+            "flags": { "hiddenBoost": false },
+            "subGoals": [
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "NormalHouse",
+                    "amount": 1
+                },
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "IndoorFarm",
+                    "amount": 1
+                }
+            ],
+            "unlocks": [
+                "NormalHouse",
+                "IndoorFarm"
+            ],
+            "showTutorial": 3
+        },
+        {
+            "name": "SpawnMorePeople",
+            "title": "",
+            "text": "Good job! Some more people will arrive soon.\nIt could be helpful to learn some more about this world. In particular, the alien ruins look quite interesting. Let's build an exploration center to learn all about them and maybe get some useful resources too.[mobi]\nIf you ever think the game is going a bit too slowly, you can speed it up with the Game Speed button near the bottom right.",
+            "quickText": "Build an exploration center.",
+            "nextGoal": "NowArrivingRegularly",
+            "subGoals": [
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "ExplorationCentre",
+                    "amount": 1
+                }
+            ],
+            "planning": [{
+                "type": "SpawnCitizensFlyingSaucer",
+                "time": 1,
+                "amount": 4,
+                "ageRangeMin": 60,
+                "ageRangeMax": 64,
+                "world": 0
+            }],
+            "unlocks": [
+                "ExplorationCentre"
+            ],
+            "showTutorial": 4
+        },
+        {
+            "name": "NowArrivingRegularly",
+            "title": "",
+            "text": "New people will now start arriving regularly. Make sure to keep them fed and housed. Also, children can be born from now on. You can build a school for them if you want.[n]\nTo build up your city, you'll need lots of stone, so let's build one more stone mine.",
+            "quickText": "Build a second stone mine.",
+            "nextGoal": "StoneMineUpgrade",
+            "subGoals": [
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "StoneMine",
+                    "amount": 2
+                }
+            ],
+            "planning": [
+                {
+                    "type": "ScriptedStoryPart",
+                    "className": "SpawnCitizensRegularly",
+                    "spawnNumber": 60,
+                    "time": 0,
+                    "groupSizeMin": 2,
+                    "groupSizeMax": 3,
+                    "ageRangeMin": 18,
+                    "ageRangeMax": 40,
+                    "world": 0,
+                    "timeBetweenMin": 36,
+                    "timeBetweenMax": 40,
+                    "afterDoneMessage": "All the people from your ship have now arrived. Of course, your population can still grow through their offspring."
+                },
+                {
+                    "type": "SpawnCitizensFlyingSaucer",
+                    "time": 360,
+                    "amount": 2,
+                    "ageRangeMin": 18,
+                    "ageRangeMax": 24,
+                    "world": 0
+                }
+            ],
+            "unlocks": ["School"],
+            "flags": { "disableRewardedAd": false }
+        },
+        {
+            "name": "StoneMineUpgrade",
+            "title": "",
+            "text": "[c]Your stone miners have good equipment thanks to the Better Pickaxes upgrade. Great job![/][n]Your stone miners are currently working with low-quality mining equipment. Better pickaxes would improve their mining speed. Upgrade at least one of your stone mines. To do so, [nonmobi]click[mobi]tap[/] on the stone mine, then on the Better Pickaxes upgrade.",
+            "quickText": "Upgrade a stone mine with better pickaxes.",
+            "nextGoal": "Happiness",
+            "subGoals": [
+                {
+                    "type": "PerformBuildingUpgrades",
+                    "upgradeClass": "BetterPickaxes",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "name": "Happiness",
+            "title": "",
+            "text": "Now that you've got a pretty good economy, it's time to focus on your citizens' wellbeing for a bit. Not that there's no economic advantage to that at all, as happy citizens work faster. To make them more happy, let's build a pub. Also, make sure you have at least 10 food.",
+            "quickText": "Build a pub and have at least 10 food.",
+            "nextGoal": "BuildMachinePartsFactory",
+            "subGoals": [
+                {
+                    "type": "GatherMaterials",
+                    "materials": {
+                        "food": 10
+                    }
+                },
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "Pub",
+                    "amount": 1
+                }
+            ],
+            "unlocks": ["buildingModes", "managementOptions", "Pub", "Park"]
+        },
+        {
+            "name": "BuildMachinePartsFactory",
+            "title": "",
+            "text": "Great job! Make sure there's actually someone working at the pub or it won't have any effect.\nThe city will need machines. [c]Fortunately, you looked ahead and have already built a machine parts factory.[/c][n]Let's build a machine parts factory to be able to construct them.[/n]",
+            "quickText": "Build a machine parts factory.",
+            "nextGoal": "GetMinHappiness",
+            "flags": {
+                "disableDying": false,
+                "disableDestroy": false
+            },
+            "subGoals": [
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "MachinePartsFactory",
+                    "amount": 1
+                }
+            ],
+            "unlocks": [
+                "MachinePartsFactory"
+            ]
+        },
+        {
+            "name": "GetMinHappiness",
+            "title": "",
+            "text": "The machine parts factory uses lots of stone, so make sure you have enough! If you need stone for something else, just switch it off for a while.[n]\nIt's always nice to see happy faces, isn't it? Let's make sure the happiness in your city is at least 52. Just [nnonmobi]click[nmobi]tap[n] on the Happiness button if you'd like to see which areas could use improvement.[/n]",
+            "quickText": "Bring the happiness in your city above 52.",
+            "nextGoal": "BuildStoneTeleporter",
+            "subGoals": [
+                {
+                    "type": "MinimumHappiness",
+                    "happiness": 52
+                }
+            ],
+            "unlocks": ["Workshop", "ExperimentalFarm", "NightClub", "ModernRusticHome"]
+        },
+        {
+            "name": "BuildStoneTeleporter",
+            "title": "",
+            "text": "The amount of stone on this planet is quite limited. Fortunately, you've just thought of a way to solve that problem: a rock teleporter could teleport mineable rocks from elsewhere. Let's research and build one. You may want to build some labs to get more knowledge.",
+            "quickText": "Build a rock teleporter.",
+            "nextGoal": "BuildObservatory",
+            "subGoals": [
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "StoneTeleporter",
+                    "amount": 1
+                }
+            ],
+            "unlocks": ["StoneTeleporter", "Laboratory"]
+        },
+        {
+            "name": "BuildObservatory",
+            "title": "",
+            "text": "Well done! You'll never run out of stone now.\nYour population is growing quickly, and this world is quite small. It's probably a good idea to look for other worlds to colonize, so let's build an observatory.",
+            "quickText": "Build the observatory.",
+            "nextGoal": "Win",
+            "subGoals": [
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "Observatory",
+                    "amount": 1
+                }
+            ],
+            "unlocks": [
+                "Observatory"
+            ]
+        },
+        {
+            "name": "Win",
+            "title": "Scenario Complete!",
+            "text": "Great job! Your scientists will now look for other worlds to colonize. You can play the next scenario to see what they'll find.\nIf you'd like to continue improving this city, you can always go to the next scenario later from the menu.",
+            "quickText": "",
+            "nextGoal": "",
+            "nextStory": "multipleWorlds",
+            "subGoals": [],
+            "unlocks": [
+                "LandingSite",
+                "Arcade",
+                "TreePlantation",
+                "RefinedMetalFactory",
+                "decorations",
+                "MedicalClinic",
+                "ModernArtMuseum"
+            ],
+            "flags": {
+                "demoText": "\n\nAlso, if you like this demo of The Final Earth 2, please wishlist the full version so you'll be notified when it's released!"
+            }
+        }
+    ],
+    "startGoal": "Start",
+    "lockAllPermanents": true,
+    "worlds": [
+        {
+            "rect": {
+                "x": 0,
+                "y": 160,
+                "width": 440,
+                "height": 100
+            },
+            "seed": 1000,
+            "worldResources": [        
+                { "position": 0, "className": "Forest" },
+                { "position": 6, "className": "Rock" },
+                { "position": 7, "className": "Forest" },
+                { "position": 9, "className": "Rock" },
+                { "position": 12, "className": "AlienRuins" },
+                { "position": 14, "className": "Forest" },
+                { "position": 17, "className": "AlienRuins" } ,
+                { "position": 18, "className": "Rock" },
+                { "position": 19, "className": "Forest" },
+                { "position": 21, "className": "Forest" }
+            ],
+            "buildingStacks": [
+                { "position": 3, "classNames": ["LandedExplorationShip"] }
+            ],
+            "citizens": [
+                { "amount": 3, "ageRangeMin": 60, "ageRangeMax": 64, "minX": 60, "maxX": 80 }
+            ]
+        }
+    ],
+    "initialMaterials": {
+        "food": 50,
+        "stone": 7,
+        "wood": 0.95,
+        "knowledge": 0,
+        "machineParts": 0,
+        "refinedMetal": 0,
+        "computerChips": 0
+    },
+    "viewYFromBottom": 270,
+    "viewYMobi": 220,
+    "mobileViewStartX": 50,
+    "speedUpStartNights": true
+}

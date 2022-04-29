@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Houses",
+        "description": "Build houses for your citizens to live in.",
+        "image": "spr_icon_houses"
+    },
+    {
+        "name": "Production",
+        "description": "Build production buildings to get more resources.",
+        "image": "spr_icon_work"
+    },
+    {
+        "name": "Services",
+        "description": "Services help people, improving their lives.",
+        "image": "spr_icon_services"
+    },
+    {
+        "name": "Entertainment",
+        "description": "Build entertainment to keep your citizens happy.",
+        "image": "spr_icon_entertainment"
+    },
+    {
+        "name": "Transportation",
+        "description": "Build transportation to let citizens move on and between worlds quickly.",
+        "image": "spr_icon_transport"
+    },
+    {
+        "name": "Unique Buildings",
+        "description": "Only one of each of these special buildings can be built.",
+        "image": "spr_icon_specialbuildings"
+    },
+    {
+        "name": "Decoration & Nature",
+        "description": "Place decoration on the ground, and plant forests.",
+        "image": "spr_nature"
+    }
+]

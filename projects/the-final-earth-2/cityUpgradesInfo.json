@@ -1,0 +1,150 @@
+[
+    {
+        "className": "UniverseMapping",
+        "name": "Precise Universe Mapping",
+        "description": "Rock Teleporters teleport bigger meteoroids.",
+        "food": 0,
+        "wood": 0,
+        "stone": 0,
+        "machineParts": 0,
+        "knowledge": 25000,
+        "unlockedByDefault": true
+    },
+    {   
+        "className": "OptimizedChipLayouts",
+        "name": "Optimized Chip Layouts",
+        "description": "Computer Chip Factories work 33% faster.",
+        "food": 0,
+        "wood": 0,
+        "stone": 0,
+        "machineParts": 0,
+        "knowledge": 50000,
+        "unlockedByDefault": true
+    },
+    {
+        "className": "MedicalMachineLearning",
+        "name": "Medical Machine Learning",
+        "description": "Makes your citizens live longer.",
+        "food": 0,
+        "wood": 0,
+        "stone": 0,
+        "machineParts": 0,
+        "knowledge": 100000,
+        "unlockedByDefault": true
+    },
+    {   
+        "className": "SpaciousLiving",
+        "name": "Spacious Living",
+        "description": "Improves the house quality of all Spacious Houses by 15.",
+        "food": 0,
+        "wood": 0,
+        "stone": 0,
+        "machineParts": 0,
+        "knowledge": 250,
+        "unlockedByDefault": true
+    },
+    {   
+        "className": "SlimyLiving",
+        "name": "Slimy Living",
+        "description": "Improves the house quality of all Alien Houses by 25. Also unlocks a building upgrade for them.",
+        "food": 0,
+        "wood": 0,
+        "stone": 0,
+        "machineParts": 0,
+        "knowledge": 500,
+        "unlockedByDefault": false
+    },
+    {   
+        "className": "SecretiveLiving",
+        "name": "Secretive Living",
+        "description": "Improves the house quality of the Secret Society of the Key by 25.",
+        "food": 0,
+        "wood": 0,
+        "stone": 0,
+        "machineParts": 0,
+        "knowledge": 200,
+        "unlockedByDefault": false,
+        "notUnlockedWithAll": true
+    },
+    {   
+        "className": "MechanicalLiving",
+        "name": "Mechanical Living",
+        "description": "Adds capacity for one more resident in all Mechanical Houses and Tinkerers' Houses.",
+        "food": 0,
+        "wood": 0,
+        "stone": 0,
+        "machineParts": 0,
+        "knowledge": 8000,
+        "unlockedByDefault": false
+    },
+    {   
+        "className": "SuperSpaciousLiving",
+        "name": "Societal Living",
+        "description": "Adds capacity for one more resident in all Spacious Houses.",
+        "food": 0,
+        "wood": 0,
+        "stone": 0,
+        "machineParts": 0,
+        "knowledge": 9500,
+        "unlockedByDefault": false
+    },
+    {
+        "className": "BirthControl",
+        "name": "Birth Control",
+        "description": "Allows you to decrease or increase the population growth.",
+        "food": 0,
+        "wood": 0,
+        "stone": 0,
+        "machineParts": 0,
+        "knowledge": 100,
+        "unlockedByDefault": true
+    },
+    {
+        "className": "BuildingRecycling",
+        "name": "Building Recycling",
+        "description": "When you destroy a building, you get back half its cost.",
+        "food": 0,
+        "wood": 0,
+        "stone": 0,
+        "machineParts": 0,
+        "knowledge": 25,
+        "unlockedByDefault": true,
+        "nextUpgrade": "BuildingRecycling2"
+    },
+    {
+        "className": "BuildingRecycling2",
+        "name": "Smart Demolition (Currently: Building Recycling)",
+        "description": "When you destroy a building, you get back 75% of its cost (currently 50%).",
+        "food": 0,
+        "wood": 0,
+        "stone": 0,
+        "machineParts": 0,
+        "knowledge": 125,
+        "unlockedByDefault": false,
+        "nextUpgrade": "BuildingRecycling3"
+    },
+    {
+        "className": "BuildingRecycling3",
+        "name": "Sustainable Building (Currently: Smart Demolition)",
+        "description": "When you destroy a building, you get back 90% of its cost (currently 75%).",
+        "nameIfNotDone": "Sustainable Building",
+        "descriptionIfNotDone": "When you destroy a building, you get back 90% of its cost.",
+        "food": 0,
+        "wood": 0,
+        "stone": 0,
+        "machineParts": 0,
+        "knowledge": 500,
+        "unlockedByDefault": false
+    },
+    {   
+        "className": "ChipBinning",
+        "name": "Chip Binning",
+        "description": "Computer Chip Factories work 20% faster.",
+        "food": 0,
+        "wood": 0,
+        "stone": 0,
+        "machineParts": 0,
+        "knowledge": 5000,
+        "unlockedByDefault": false
+    }
+]
