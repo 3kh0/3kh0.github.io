@@ -21,6 +21,10 @@ NOTE: Make sure you refresh the page! Sometimes you will not get the lastest upd
 ^ Means something was upgraded or changed
 - Means something was removed
 ------------------------------------------------------------
+May, 3
+First update of May! For the people who are doing the rift, you all have been making great progress!
++ Added Grindcraft
+------------------------------------------------------------
 Apr, 29
 + Added BlooketUI
 + Added back Holy Unblocker

@@ -45,7 +45,7 @@ tab("Tab cloak settings can be found in localStorage! If you want to change them
 // SCRIPT INJECTION
 // ====================================
 
-script("Preparing 1 script to be injected...");
+script("Preparing 2 scripts to be injected...");
 
 const gascript = document.createElement("script");
 gascript.setAttribute("async", "");
@@ -56,7 +56,14 @@ inlinegascript.innerHTML = `window.dataLayer = window.dataLayer || [];
   gtag('js', new Date());
   gtag('config', 'G-98DP5VKS42');`;
 document.head.append(gascript, inlinegascript);
-script("Injected script 1/1");
+script("Injected script 1/2");
+
+const dmca = document.createElement("img");
+dmca.setAttribute("src", "https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=b58222e2-70c9-4ade-b53a-ef9a7b5ea03b");
+dmca.setAttribute("style", "display: none;")
+const dmcaS = document.createElement("script");
+dmcaS.setAttribute("src", "https://images.dmca.com/Badges/DMCABadgeHelper.min.js");
+script("Injected script 2/2");
 
 log("Script injections finished!");
 

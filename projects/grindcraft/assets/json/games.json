@@ -1,0 +1,90 @@
+{
+  "bubble-burst": {
+    "data": {
+      "title": "Bubble Burst",
+      "description": "Burst your way through space in Bubble Burst! Shoot all bubbles of a kind and fill your burst meter. Play this amazing bubbleshooter now!",
+      "latestUpdate": "Tue May 02 2017 15:50:06 GMT+0200 (CEST)",
+      "layout": "game.hbs",
+      "class": "b",
+      "gamecoll": "true",
+      "thumb": "images/icons/bubble-burst.png",
+      "url": "http://bubble-burst.fbrq.io/bubble-burst/index.html"
+    }
+  },
+  "fun-game-play-mahjong": {
+    "data": {
+      "title": "Fun Game Play Mahjong",
+      "description": "Play Classic Mahjong in Fun Game Play Mahjong. Match mahjong stones and clear each of the many levels.",
+      "latestUpdate": "Wed May 03 2017 10:31:52 GMT+0200 (CEST)",
+      "layout": "game.hbs",
+      "class": "f",
+      "gamecoll": "true",
+      "thumb": "images/icons/fun-game-play-mahjong.png",
+      "url": "http://fun-game-play-mahjong.fbrq.io/fun-game-play-mahjong/index.html"
+    }
+  },
+  "heroes-of-myths": {
+    "data": {
+      "title": "Heroes of Myths",
+      "description": "Deploy your army, choose your god and fight amongst the Heroes of Myths! Legendary heroes will help you defend against otherworldly foes!",
+      "latestUpdate": "Mon May 01 2017 15:10:51 GMT+0200 (CEST)",
+      "layout": "game.hbs",
+      "class": "h",
+      "gamecoll": "true",
+      "thumb": "images/icons/heroes-of-myths.png",
+      "url": "http://heroes-of-myths.fbrq.io/heroes-of-myths/index.html"
+    }
+  },
+  "jelly-madness-2": {
+    "data": {
+      "title": "Jelly Madness 2",
+      "description": "The Jellies are back for a new jellicious match-3 adventure! Take out the Fat, Ninja, Fast and Eating Jellies. Enjoy!",
+      "publishDate": "Fri Dec 09 2016 10:52:00 GMT+0100 (CET)",
+      "latestUpdate": "Tue May 02 2017 10:05:25 GMT+0200 (CEST)",
+      "layout": "game.hbs",
+      "class": "j",
+      "gamecoll": "true",
+      "thumb": "images/icons/jelly-madness-2.png",
+      "url": "http://jelly-madness-2.fbrq.io/jelly-madness-2/index.html"
+    }
+  },
+  "jewel-burst": {
+    "data": {
+      "title": "Jewel Burst",
+      "description": "Embark on a mission and collect jewels from the stars. Match 3 or more identical jewels. Play Jewel Burst now!",
+      "publishDate": "Tue Sep 13 2016 00:00:00 GMT+0200 (CEST)",
+      "latestUpdate": "Wed Apr 19 2017 08:56:04 GMT+0200 (CEST)",
+      "layout": "game.hbs",
+      "class": "j",
+      "gamecoll": "true",
+      "thumb": "images/icons/jewel-burst.png",
+      "url": "http://jewel-burst.fbrq.io/jewel-burst/index.html"
+    }
+  },
+  "super-stack": {
+    "data": {
+      "title": "Super Stack",
+      "description": "Stack all shapes in Super Stack. A fun physics based super stacker game. Have some stacking fun!",
+      "publishDate": "Tue Jan 24 2017 11:19:00 GMT+0100 (CET)",
+      "latestUpdate": "Tue May 02 2017 15:03:30 GMT+0200 (CEST)",
+      "layout": "game.hbs",
+      "class": "s",
+      "gamecoll": "true",
+      "thumb": "images/icons/super-stack.png",
+      "url": "http://super-stack.fbrq.io/super-stack/index.html"
+    }
+  },
+  "twisted-city": {
+    "data": {
+      "title": "Twisted City",
+      "description": "Connect the road in Twisted City! A game inspired by Plumber Game. Rotate pieces and solve many of the challenging puzzles.",
+      "publishDate": "Tue Apr 11 2017 09:08:53 GMT+0200 (CEST)",
+      "latestUpdate": "Mon May 01 2017 15:39:50 GMT+0200 (CEST)",
+      "layout": "game.hbs",
+      "class": "t",
+      "gamecoll": "true",
+      "thumb": "images/icons/twisted-city.png",
+      "url": "http://twisted-city.fbrq.io/twisted-city/index.html"
+    }
+  }
+}

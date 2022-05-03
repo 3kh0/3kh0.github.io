@@ -1,7 +1,0 @@
-https://v6p9d9t4.ssl.hwcdn.net/html/1995721-336862/audio/BTFE_BackgroundMusic_1.ogg
-https://v6p9d9t4.ssl.hwcdn.net/html/1995721-336862/audio/BTFE_BackgroundMusic_2.ogg
-https://v6p9d9t4.ssl.hwcdn.net/html/1995721-336862/audio/BTFE_BuildingBuild.ogg
-https://v6p9d9t4.ssl.hwcdn.net/html/1995721-336862/audio/BTFE_BuildingClick.ogg
-https://v6p9d9t4.ssl.hwcdn.net/html/1995721-336862/audio/BTFE_BuildingUpgrade.ogg
-https://v6p9d9t4.ssl.hwcdn.net/html/1995721-336862/audio/BTFE_Button.ogg
-https://v6p9d9t4.ssl.hwcdn.net/html/1995721-336862/audio/BTFE_ButtonFail.ogg

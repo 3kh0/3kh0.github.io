@@ -40663,6 +40663,3 @@
   
   },{"./accessibility":42,"./core":65,"./deprecation":130,"./extract":132,"./extras":141,"./filters":152,"./interaction":159,"./loaders":162,"./mesh":171,"./particles":174,"./polyfill":180,"./prepare":184}]},{},[188])(188)
   });
-  
-  
-  //# sourceMappingURL=pixi.js.map
