@@ -21,6 +21,10 @@ NOTE: Make sure you refresh the page! Sometimes you will not get the lastest upd
 ^ Means something was upgraded or changed
 - Means something was removed
 ------------------------------------------------------------
+May, 4
+My discord account was hacked by some people, and the discord server was deleted. I have reached out to discord suppport and hopefully I can restore it. I will keep you all posted on this issue!
++ Added Eaglercraft (credit to LAX1DUDE)
+------------------------------------------------------------
 May, 3
 First update of May! For the people who are doing the rift, you all have been making great progress!
 + Added Grindcraft
