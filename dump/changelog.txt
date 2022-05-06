@@ -9,7 +9,7 @@
 
 Here is where I will post updates on when a new game is added or something changed. Besure to check back often for any sneakpeaks or other goodies! If I can I will try to setup a RSS feed for all of those who use that. Coming soon!
 
-Besure to also join the discord: https://discord.gg/6d2MNXWVmV
+Besure to also join the discord: https://discord.gg/26jb8mQvzj
 
 NOTE: Make sure you refresh the page! Sometimes you will not get the lastest update!
 
@@ -20,6 +20,9 @@ NOTE: Make sure you refresh the page! Sometimes you will not get the lastest upd
 + Means something was added
 ^ Means something was upgraded or changed
 - Means something was removed
+------------------------------------------------------------
+May, 5
+New discord link: https://discord.gg/26jb8mQvzj
 ------------------------------------------------------------
 May, 4
 My discord account was hacked by some people, and the discord server was deleted. I have reached out to discord suppport and hopefully I can restore it. I will keep you all posted on this issue!
@@ -78,7 +81,7 @@ Apr, 7
 ^ Added more info to README.md
 ------------------------------------------------------------
 Apr, 6
-Fun fact! Github.com was unblocked for me (Echo)!!! Lets gooooooo! Also on the Discord we played Among Us (in chat) with rigged voting, alot of imposters, and me (Echo) screwing up the game! Make sure to join the Discord to do weird thing like this!!! https://discord.gg/6d2MNXWVmV
+Fun fact! Github.com was unblocked for me (Echo)!!! Lets gooooooo! Also on the Discord we played Among Us (in chat) with rigged voting, alot of imposters, and me (Echo) screwing up the game! Make sure to join the Discord to do weird thing like this!!! https://discord.gg/26jb8mQvzj
 + Added World's Hardest Game
 + Added Tube Jumpers
 + Added Papery Planes

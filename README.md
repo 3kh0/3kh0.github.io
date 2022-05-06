@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-<a target="_blank" href="https://discord.gg/6d2MNXWVmV">Discord</a> · 
+<a target="_blank" href="https://discord.gg/wv6huJAwEv">Discord</a> · 
 <a target="_blank" href="https://3kh0.github.io">Live site</a> · 
 <a target="_blank" href="https://github.com/3kh0/3kh0.github.io/wiki">Wiki</a>
 </p>
@@ -29,7 +29,7 @@ If the main site is blocked, there are many ways you can get around this!
 
 People have already made alterate links to the website, they are listed in the discord server. Click the button below to join the discord
 
-<a target="_blank" href="https://discord.gg/6d2MNXWVmV">
+<a target="_blank" href="https://discord.gg/wv6huJAwEv">
 <img width="200px" alt="Join our Discord" src="https://raw.githubusercontent.com/3kh0/3kh0.github.io/master/img/Join_Discord-logo.png">
 </a>
 
