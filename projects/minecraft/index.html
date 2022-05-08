@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="icon" sizes="192x192" href="grass.png" />
-    <link rel="shortcut icon" href="grass.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="grass.png" type="image/x-icon" />
-    <title>Minecraft 1.5.2 | 3kh0</title>
-    <script type="application/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <title>eaglercraft | 3kh0</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="image/x-icon" rel="icon" href="favicon.ico" />
+    <script type="text/javascript" src="classes10.js"></script>
+    <style type="text/css">
+      a.nolink,
+      a.nolink:link,
+      a.nolink:hover,
+      a.nolink:visited {
+        color: white;
+      }
+      a.nolink:active {
+        color: yellow;
+      }
+      #available {
+        position: fixed;
+        background-color: #333333;
+        top: 0px;
+        right: 0px;
+        padding: 10px 30px;
+        width: min(80vw, 250px);
+        color: white;
+      }
+      #available_hide {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        margin: 10px;
+        padding: 2px;
+        font-weight: bold;
+        border: 1px solid white;
+        font-size: 12px;
+        line-height: 12px;
+        cursor: pointer;
+        background-color: #333333;
+      }
+    </style>
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        window.minecraftOpts = [
+          "game_frame",
+          "assets.epk",
+          "CgAACQAHc2VydmVycwoAAAAECAACaXAAJHdzczovL3NlYWxjcmFmdC5kZG5zLm5ldDo0NDIvc2VydmVycwgABG5hbWUACVNlYWxDcmFmdAEAC2hpZGVBZGRyZXNzAAAIAAJpcAAdd3NzOi8vbWMucHJpbWl0dC5kZXYvc3Vydml2YWwIAARuYW1lAAdQcmltaXR0AQALaGlkZUFkZHJlc3MAAAgAAmlwABp3c3M6Ly9hZW9uLW5ldHdvcmsudGsvYWVvbggABG5hbWUABEFlb24BAAtoaWRlQWRkcmVzcwAACAACaXAAHXdzczovL3N1cy5zaGhub3dpc25vdHRoZXRpLm1lCAAEbmFtZQAQYXl1bmFtaSdzIHNlcnZlcgEAC2hpZGVBZGRyZXNzAAABAAloaWRlX2Rvd24BCAAPc2VydmVyTGlzdFRpdGxlABtBeW9udWxsIHJ1bnMgYSBzZXJ2ZXIgbGlzdDoIAA5zZXJ2ZXJMaXN0TGluawAhaHR0cHM6Ly9lYWdsZXIubnVsbHkudGVjaC9zZXJ2ZXJzAA==",
+        ];
+        (function () {
+          var q = window.location.search;
+          if (typeof q === "string" && q.startsWith("?")) {
+            q = new URLSearchParams(q);
+            var s = q.get("server");
+            if (s) window.minecraftOpts.push(s);
+          }
+        })();
+        setTimeout(function () {
+          document.getElementById("available").style.display = "block";
+        }, 5000);
+        window.remAvailable = setTimeout(function () {
+          document.getElementById("available").remove();
+        }, 18000);
+        document.getElementById("available_hide").addEventListener("click", function () {
+          clearTimeout(window.remAvailable);
+          document.getElementById("available").remove();
+        });
+        main();
+      });
+    </script>
   </head>
-  <body>
-    <!-- Thank Lax for this! -->
-    <iframe src="play.html" title="AWS launcher" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;"></iframe>
+  <body style="margin: 0px; width: 100vw; height: 100vh;" id="game_frame">
+    <div id="available" style="display: none;">
+      <p id="available_hide">&nbsp;X&nbsp;</p>
+      <p style="margin: 0px;">
+        You are playing Eaglercraft on 3kh0.github.io, credit to LAX1DUDE for making this!
+      </p>
+    </div>
   </body>
 </html>
