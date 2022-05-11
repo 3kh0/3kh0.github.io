@@ -21,6 +21,9 @@ NOTE: Make sure you refresh the page! Sometimes you will not get the lastest upd
 ^ Means something was upgraded or changed
 - Means something was removed
 ------------------------------------------------------------
+May, 10
++ Added CircloO
+------------------------------------------------------------
 May, 6
 + Added Wolfenstein 3D 🐱
 + Added Hextris 🐱

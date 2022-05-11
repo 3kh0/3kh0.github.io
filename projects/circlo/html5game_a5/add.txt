@@ -1,0 +1,5 @@
+https://v6p9d9t4.ssl.hwcdn.net/html/1796316/html5game_a5/snd_levelgrow.ogg
+https://v6p9d9t4.ssl.hwcdn.net/html/1796316/html5game_a5/snd_levelfinished.ogg
+https://v6p9d9t4.ssl.hwcdn.net/html/1796316/html5game_a5/snd_menu_choose.ogg
+https://v6p9d9t4.ssl.hwcdn.net/html/1796316/html5game_a5/snd_tok.ogg
+https://v6p9d9t4.ssl.hwcdn.net/html/1796316/html5game_a5/snd_music.ogg

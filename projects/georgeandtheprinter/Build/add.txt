@@ -1,0 +1,2 @@
+https://v6p9d9t4.ssl.hwcdn.net/html/2748523/gatp_webgl/Build/WebGL.wasm.code.unityweb
+https://v6p9d9t4.ssl.hwcdn.net/html/2748523/gatp_webgl/Build/WebGL.data.unityweb
