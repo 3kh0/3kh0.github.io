@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r2">
+    <folder id="0">
+        <file id="0" name="Bro_Body.png" width="64" height="64" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="Bro_Shoulder.png" width="16" height="16" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="Bro_Fist.png" width="49" height="49" pivot_x="0" pivot_y="1"/>
+        <file id="3" name="Bro_Arm.png" width="32" height="32" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <obj_info name="entity_000_Bro_Body" realname="Bro_Body" type="sprite">
+            <frames>
+                <i folder="0" file="0"/>
+            </frames>
+        </obj_info>
+        <obj_info name="entity_000_Bro_Shoulder" realname="Bro_Shoulder" type="sprite">
+            <frames>
+                <i folder="0" file="1"/>
+            </frames>
+        </obj_info>
+        <obj_info name="entity_000_Bro_Arm" realname="Bro_Arm" type="sprite">
+            <frames>
+                <i folder="0" file="3"/>
+            </frames>
+        </obj_info>
+        <obj_info name="entity_000_Bro_Fist" realname="Bro_Fist" type="sprite">
+            <frames>
+                <i folder="0" file="2"/>
+            </frames>
+        </obj_info>
+        <obj_info name="entity_000_Bro_Fist_000" realname="Bro_Fist_000" type="sprite">
+            <frames>
+                <i folder="0" file="2"/>
+            </frames>
+        </obj_info>
+        <obj_info name="entity_000_Bro_Arm_000" realname="Bro_Arm_000" type="sprite">
+            <frames>
+                <i folder="0" file="3"/>
+            </frames>
+        </obj_info>
+        <obj_info name="entity_000_Bro_Shoulder_000" realname="Bro_Shoulder_000" type="sprite">
+            <frames>
+                <i folder="0" file="1"/>
+            </frames>
+        </obj_info>
+        <animation id="0" name="Idle" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="Bro_Body" folder="0" file="0" abs_x="0" abs_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" name="Bro_Shoulder" folder="0" file="1" abs_x="68" abs_y="-2" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" name="Bro_Arm" folder="0" file="3" abs_x="89" abs_y="-16" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" name="Bro_Fist" folder="0" file="2" abs_x="81.555556" abs_y="-50.666667" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" name="Bro_Fist_000" folder="0" file="2" abs_x="-65.111111" abs_y="-50.666667" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" name="Bro_Arm_000" folder="0" file="3" abs_x="-57" abs_y="-15.555556" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" name="Bro_Shoulder_000" folder="0" file="1" abs_x="-20" abs_y="-2" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="0" z_index="6"/>
+                </key>
+                <key id="1" time="2">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="0" z_index="6"/>
+                </key>
+                <key id="2" time="53">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="0" z_index="6"/>
+                </key>
+                <key id="3" time="440">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="0" z_index="6"/>
+                </key>
+                <key id="4" time="441">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="1" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="1" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="1" z_index="6"/>
+                </key>
+                <key id="5" time="442">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="1" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="1" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="1" z_index="6"/>
+                </key>
+                <key id="6" time="664">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="1" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="1" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="1" z_index="6"/>
+                </key>
+            </mainline>
+            <timeline id="0" obj="0" name="Bro_Body">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" angle="0"/>
+                </key>
+                <key id="1" time="440" spin="0">
+                    <object folder="0" file="0" y="-14" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="1" obj="1" name="Bro_Shoulder">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="68" y="-2" angle="0"/>
+                </key>
+                <key id="1" time="440" spin="0">
+                    <object folder="0" file="1" x="68" y="-6" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="2" obj="2" name="Bro_Arm">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="89" y="-16" angle="0"/>
+                </key>
+                <key id="1" time="441" spin="0">
+                    <object folder="0" file="3" x="89" y="-18.000004" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="3" obj="3" name="Bro_Fist">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="81.555556" y="-50.666667" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="4" obj="4" name="Bro_Fist_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="-65.111111" y="-50.666667" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="5" obj="5" name="Bro_Arm_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="-57" y="-15.555556" angle="0"/>
+                </key>
+                <key id="1" time="441" spin="0">
+                    <object folder="0" file="3" x="-57" y="-17.55556" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="6" obj="6" name="Bro_Shoulder_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-20" y="-2" angle="0"/>
+                </key>
+                <key id="1" time="441" spin="0">
+                    <object folder="0" file="1" x="-20" y="-6" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="1" name="ThrowBurner" length="2000" interval="100" looping="false">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="Bro_Body" folder="0" file="0" abs_x="0" abs_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" name="Bro_Shoulder" folder="0" file="1" abs_x="68" abs_y="-2" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" name="Bro_Arm" folder="0" file="3" abs_x="89" abs_y="-16" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" name="Bro_Fist" folder="0" file="2" abs_x="81" abs_y="-50" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" name="Bro_Fist_000" folder="0" file="2" abs_x="-65.111111" abs_y="-50.666667" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" name="Bro_Arm_000" folder="0" file="3" abs_x="-57" abs_y="-15.555556" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" name="Bro_Shoulder_000" folder="0" file="1" abs_x="-20" abs_y="-2" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="0" z_index="6"/>
+                </key>
+                <key id="1" time="4">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="0" z_index="6"/>
+                </key>
+                <key id="2" time="106">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="0" z_index="6"/>
+                </key>
+                <key id="3" time="298">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="1" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="0" z_index="6"/>
+                </key>
+                <key id="4" time="321">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="1" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="1" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="0" z_index="6"/>
+                </key>
+                <key id="5" time="603">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="1" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="1" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="1" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="0" z_index="6"/>
+                </key>
+                <key id="6" time="697" curve_type="quadratic" c1="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="2" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="2" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="1" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="0" z_index="6"/>
+                </key>
+                <key id="7" time="2000">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="2" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="3" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="3" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="2" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="1" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="1" z_index="6"/>
+                </key>
+            </mainline>
+            <timeline id="0" obj="0" name="Bro_Body">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" angle="0"/>
+                </key>
+                <key id="1" time="2000" spin="0">
+                    <object folder="0" file="0" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="1" obj="1" name="Bro_Shoulder">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="68" y="-2" angle="0"/>
+                </key>
+                <key id="1" time="697" spin="0">
+                    <object folder="0" file="1" x="56.697" y="-1.303" angle="0"/>
+                </key>
+                <key id="2" time="2000" spin="0">
+                    <object folder="0" file="1" x="68" y="-2" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="2" obj="2" name="Bro_Arm">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="89" y="-16" angle="0"/>
+                </key>
+                <key id="1" time="321" spin="0">
+                    <object folder="0" file="3" x="98.91102" y="-9.11864" angle="0"/>
+                </key>
+                <key id="2" time="697" spin="0">
+                    <object folder="0" file="3" x="-32.08898" y="-9.11864" angle="0"/>
+                </key>
+                <key id="3" time="2000" spin="0">
+                    <object folder="0" file="3" x="89" y="-16" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="3" obj="3" name="Bro_Fist">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="81" y="-50" angle="0"/>
+                </key>
+                <key id="1" time="298" spin="0">
+                    <object folder="0" file="2" x="140.22081" y="-31.99294" angle="0"/>
+                </key>
+                <key id="2" time="697" spin="0">
+                    <object folder="0" file="2" x="-111.98274" y="-33.791893" angle="0"/>
+                </key>
+                <key id="3" time="2000" spin="0">
+                    <object folder="0" file="2" x="81" y="-50" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="4" obj="4" name="Bro_Fist_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="-65.111111" y="-50.666667" angle="0"/>
+                </key>
+                <key id="1" time="603" spin="0">
+                    <object folder="0" file="2" x="-65.111111" y="-51.66667" angle="0"/>
+                </key>
+                <key id="2" time="2000" spin="0">
+                    <object folder="0" file="2" x="-65.111111" y="-50.666667" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="5" obj="5" name="Bro_Arm_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="-57" y="-15.555556" angle="0"/>
+                </key>
+                <key id="1" time="2000" spin="0">
+                    <object folder="0" file="3" x="-57" y="-17.55556" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="6" obj="6" name="Bro_Shoulder_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-20" y="-2" angle="0"/>
+                </key>
+                <key id="1" time="2000" spin="0">
+                    <object folder="0" file="1" x="-20" y="-6" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="2" name="ArmsUp" length="1000" interval="100" looping="false">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="Bro_Body" folder="0" file="0" abs_x="0" abs_y="0" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" name="Bro_Shoulder" folder="0" file="1" abs_x="68" abs_y="-2" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" name="Bro_Arm" folder="0" file="3" abs_x="89" abs_y="-16" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" name="Bro_Fist" folder="0" file="2" abs_x="81.555556" abs_y="-50" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" name="Bro_Fist_000" folder="0" file="2" abs_x="-65.111111" abs_y="-50" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" name="Bro_Arm_000" folder="0" file="3" abs_x="-57" abs_y="-15.555556" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" name="Bro_Shoulder_000" folder="0" file="1" abs_x="-20" abs_y="-2" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="6" key="0" z_index="6"/>
+                </key>
+                <key id="1" time="2">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="0" z_index="6"/>
+                </key>
+                <key id="2" time="85">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="0" z_index="6"/>
+                </key>
+                <key id="3" time="119">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="0" z_index="6"/>
+                </key>
+                <key id="4" time="150">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="1" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="1" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="0" z_index="6"/>
+                </key>
+                <key id="5" time="201">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="2" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="1" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="1" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="2" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="1" z_index="6"/>
+                </key>
+                <key id="6" time="349">
+                    <object_ref id="0" timeline="0" key="3" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="2" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="3" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="2" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="2" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="3" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="2" z_index="6"/>
+                </key>
+                <key id="7" time="421">
+                    <object_ref id="0" timeline="0" key="3" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="2" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="3" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="2" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="2" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="3" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="2" z_index="6"/>
+                </key>
+                <key id="8" time="699">
+                    <object_ref id="0" timeline="0" key="3" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="3" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="4" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="3" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="3" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="4" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="3" z_index="6"/>
+                </key>
+                <key id="9" time="1000">
+                    <object_ref id="0" timeline="0" key="3" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="4" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="5" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="4" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="4" z_index="4"/>
+                    <object_ref id="5" timeline="5" key="5" z_index="5"/>
+                    <object_ref id="6" timeline="6" key="4" z_index="6"/>
+                </key>
+            </mainline>
+            <timeline id="0" obj="0" name="Bro_Body">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" angle="0"/>
+                </key>
+                <key id="1" time="2" spin="0">
+                    <object folder="0" file="0" angle="0"/>
+                </key>
+                <key id="2" time="201" spin="0">
+                    <object folder="0" file="0" y="-32" angle="0"/>
+                </key>
+                <key id="3" time="349" spin="0">
+                    <object folder="0" file="0" y="-32" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="1" obj="1" name="Bro_Shoulder">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="68" y="-2" angle="0"/>
+                </key>
+                <key id="1" time="201" spin="0">
+                    <object folder="0" file="1" x="68" y="-32.57294" angle="0"/>
+                </key>
+                <key id="2" time="349" spin="0">
+                    <object folder="0" file="1" x="68" y="-32.421957" angle="0"/>
+                </key>
+                <key id="3" time="699" spin="0">
+                    <object folder="0" file="1" x="68" y="-6" angle="0"/>
+                </key>
+                <key id="4" time="1000" spin="0">
+                    <object folder="0" file="1" x="68" y="-6" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="2" obj="2" name="Bro_Arm">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="89" y="-16" angle="0"/>
+                </key>
+                <key id="1" time="150" spin="0">
+                    <object folder="0" file="3" x="89" y="-34.522208" angle="0"/>
+                </key>
+                <key id="2" time="201" spin="0">
+                    <object folder="0" file="3" x="89" y="-35.35526" angle="0"/>
+                </key>
+                <key id="3" time="349" spin="0">
+                    <object folder="0" file="3" x="89" y="-35.186762" angle="0"/>
+                </key>
+                <key id="4" time="699" spin="0">
+                    <object folder="0" file="3" x="89" y="16" angle="0"/>
+                </key>
+                <key id="5" time="1000" spin="0">
+                    <object folder="0" file="3" x="89" y="16" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="3" obj="3" name="Bro_Fist">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="81.555556" y="-50" angle="0"/>
+                </key>
+                <key id="1" time="201" spin="0">
+                    <object folder="0" file="2" x="81.555556" y="-50" angle="0"/>
+                </key>
+                <key id="2" time="349" spin="0">
+                    <object folder="0" file="2" x="81.555556" y="-49.549313" angle="0"/>
+                </key>
+                <key id="3" time="699" spin="0">
+                    <object folder="0" file="2" x="81.555556" y="70.33333" angle="0"/>
+                </key>
+                <key id="4" time="1000" spin="0">
+                    <object folder="0" file="2" x="81.555556" y="80.33333" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="4" obj="4" name="Bro_Fist_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="-65.111111" y="-50" angle="0"/>
+                </key>
+                <key id="1" time="201" spin="0">
+                    <object folder="0" file="2" x="-65.111111" y="-50" angle="0"/>
+                </key>
+                <key id="2" time="349" spin="0">
+                    <object folder="0" file="2" x="-65.111111" y="-49.549313" angle="0"/>
+                </key>
+                <key id="3" time="699" spin="0">
+                    <object folder="0" file="2" x="-65.111111" y="70.33333" angle="0"/>
+                </key>
+                <key id="4" time="1000" spin="0">
+                    <object folder="0" file="2" x="-65.111111" y="80.33333" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="5" obj="5" name="Bro_Arm_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="-57" y="-15.555556" angle="0"/>
+                </key>
+                <key id="1" time="150" spin="0">
+                    <object folder="0" file="3" x="-57" y="-34.077764" angle="0"/>
+                </key>
+                <key id="2" time="201" spin="0">
+                    <object folder="0" file="3" x="-57" y="-34.910816" angle="0"/>
+                </key>
+                <key id="3" time="349" spin="0">
+                    <object folder="0" file="3" x="-57" y="-34.742318" angle="0"/>
+                </key>
+                <key id="4" time="699" spin="0">
+                    <object folder="0" file="3" x="-57" y="16.444444" angle="0"/>
+                </key>
+                <key id="5" time="1000" spin="0">
+                    <object folder="0" file="3" x="-57" y="16.444444" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="6" obj="6" name="Bro_Shoulder_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-20" y="-2" angle="0"/>
+                </key>
+                <key id="1" time="201" spin="0">
+                    <object folder="0" file="1" x="-20" y="-32.710522" angle="0"/>
+                </key>
+                <key id="2" time="349" spin="0">
+                    <object folder="0" file="1" x="-20" y="-32.451197" angle="0"/>
+                </key>
+                <key id="3" time="699" spin="0">
+                    <object folder="0" file="1" x="-20" y="-6" angle="0"/>
+                </key>
+                <key id="4" time="1000" spin="0">
+                    <object folder="0" file="1" x="-20" y="-6" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

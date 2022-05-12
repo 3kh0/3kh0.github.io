@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-        <style>
-            body {
-                font-family: 'Roboto', sans-serif;
-                color: #ffffff;
-                background-color: #1f1f1f;
-            }
-        </style>
-        <title>404 Error | 3kh0</title>
-    </head>
-    <body>
-            <h1>404 Error</h1>
-            <p>
-                The requested URL or file was not found on this server. <br>
-                That is all we know.<br><br>
-                If you want to you can go to the <a href="/">homepage</a>.
-            </p>
-            <p><b>Not what you expected? <a href="https://github.com/3kh0/3kh0.github.io/issues">Open a issue</a>!</b></p>
-            <h2>Stats for nerds</h2>
-            Requested URL: <code id="full"></code><br />
-            Requested file path: <code id="path"></code><br />
-            Error code: <code id="error"></code><br />
-            Host name: <code id="host"></code><br />
-            Protocol used: <code id="proto"></code><br />
-            <script>
-                document.getElementById("full").innerHTML = window.location.href;
-                document.getElementById("path").innerHTML = window.location.pathname;
-                document.getElementById("error").innerHTML = "404";
-                document.getElementById("host").innerHTML = window.location.hostname;
-                document.getElementById("proto").innerHTML = window.location.protocol;
-            </script>
-            <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-            <script src="/js/main.js"></script>
-    </body>
+  <head>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        color: #ffffff;
+        background-color: #1f1f1f;
+      }
+    </style>
+    <title>404 Error | 3kh0</title>
+  </head>
+  <body>
+    <h1>404 Error</h1>
+    <p>
+      The requested URL or file was not found on this server. <br />
+      That is all we know.<br />
+      <br />
+      If you want to you can go to the <a href="/">homepage</a>.
+    </p>
+    <p>
+      <b>Not what you expected? <a href="https://github.com/3kh0/3kh0.github.io/issues">Open a issue</a>!</b>
+    </p>
+    <h2>Stats for nerds</h2>
+    Requested URL: <code id="full"></code><br />
+    Requested file path: <code id="path"></code><br />
+    Error code: <code id="error"></code><br />
+    Host name: <code id="host"></code><br />
+    Protocol used: <code id="proto"></code><br />
+    <script>
+      document.getElementById("full").innerHTML = window.location.href;
+      document.getElementById("path").innerHTML = window.location.pathname;
+      document.getElementById("error").innerHTML = "404";
+      document.getElementById("host").innerHTML = window.location.hostname;
+      document.getElementById("proto").innerHTML = window.location.protocol;
+    </script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
 </html>
