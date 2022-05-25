@@ -1,2 +1,0 @@
-https://yell0wsuit.github.io/html5-games/games/subway-surfers-unity/Build/SanFrancisco/SanFrancisco.wasm.code.unityweb
-https://yell0wsuit.github.io/html5-games/games/subway-surfers-unity/Build/SanFrancisco/SanFrancisco.data.unityweb
